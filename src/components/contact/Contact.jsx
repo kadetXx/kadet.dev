@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
+import Form from '../utils/form/Form'
 
 export class Contact extends Component {
   render() {
     return (
       <div>
-        <form>
-          <input type="text" name="" id="" placeholder='hello world' />
-        </form>
+        <Form />
       </div>
     )
   }

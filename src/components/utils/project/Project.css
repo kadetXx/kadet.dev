@@ -26,6 +26,12 @@
   font-family: 'air-light';
 }
 
+.box .project_details small {
+  margin-bottom: 13px;
+  font-size: 13px;
+  color: grey;
+}
+
 .box .project_links a {
   /* font-size: 14px; */
   line-height: 21px;

@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form .form_section {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+form .form_section label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 21px;
+}
+
+form .form_section label input, textarea {
+  background: #16161A;
+  border: 1px solid transparent;
+  padding: 0.9rem;
+  margin-top: 7px;
+}
+
+form .form_section label input:focus, textarea:focus {
+  border-bottom-color: grey;
+  outline: none;
+}
+
+form .form_section label input::placeholder, textarea::placeholder  {
+  opacity: 0.25;
+}

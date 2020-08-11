@@ -14,12 +14,12 @@ export class Base extends Component {
       <div className='base_container'>
         <div className="hero">
           <div className="intro_box">
-            <h1>Hi there! I'm <br/> Collins Enebeli.</h1>
-            <div><img src={avi} alt="avatar"/></div>
+            <h1>Hello World! <br/> I'm Collins Enebeli.</h1>
+            <div className='avi'><img src={avi} alt="avatar"/></div>
           </div>
 
           <div className="description">
-            <p>Self taught frontend developer, passionate and dedicated in bringing ideas from pixels to live scalable products. I develop responsive applications with user experience as top priority. I’m always ready to adapt according to project specifications irrespective of stack.</p>
+            <p> <span>I'm a self taught frontend developer. I spend most of my time on writing code for applications using Javascript,</span> <span className='highlight'>React js</span><span> and a little Vue js. I use CSS and </span> <span className='highlight'>SASS </span> <span> to design efficient user interfaces. I love talking about tech and will be sharing some experiences on my blog</span></p>
           </div>
         </div>
   
@@ -27,15 +27,15 @@ export class Base extends Component {
         <nav>
           <ul>
             <li>
-              <small>01</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/'> WORK</Link></small>
+              <small>01 <Link to='/'><img src={navLine} alt="menu bullet"/> WORK</Link></small>
             </li>
 
             <li>
-              <small>02</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/resume'>RESUME</Link></small>
+              <small>02 <Link to='/resume'><img src={navLine} alt="menu bullet"/> RESUME</Link></small>
             </li>
 
             <li>
-              <small>03</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/contact'>CONTACT</Link> </small>
+            <small>03 <Link to='/contact'><img src={navLine} alt="menu bullet"/> CONTACT</Link></small>
             </li>
           </ul>
         </nav>

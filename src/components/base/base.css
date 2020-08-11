@@ -11,7 +11,7 @@
 .intro_box {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  margin-bottom: 10px;
 }
 
 .intro_box h1 {
@@ -21,11 +21,16 @@
   line-height: 62px;
   margin-right: 15px;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.intro_box avi {
+  padding: 10px;
 }
 
 .description {
   display: flex;
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 .description p {
@@ -34,9 +39,16 @@
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
-  opacity: 0.25;
   margin: 0;
   line-height: 2;
+}
+
+.description p span {
+  opacity: 0.25;
+}
+
+.description p span.highlight {
+  opacity: 0.7;
 }
 
 nav {
@@ -57,8 +69,26 @@ nav ul li {
   align-items: center;
   cursor: pointer;
   width: fit-content;
-  margin: 5px 0;
+  margin: 8px 0;
   padding: 0;
+}
+
+nav ul li small {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li small a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a img {
+  margin: 0 10px;
+  width: 60px;
 }
 
 nav ul li:nth-child(2) {
@@ -81,21 +111,6 @@ nav ul li:nth-child(2):hover img, nav ul li:nth-child(3):hover img {
 nav ul li:nth-child(2):hover, nav ul li:nth-child(3):hover {
   opacity: 1;
   transition: all 1s linear;
-}
-
-nav ul li img {
-  margin-left: 5px;
-  width: 60px;
-}
-
-nav ul li small {
-  margin: 0;
-  margin-left: 10px;
-}
-
-nav ul li small a {
-  text-decoration: none;
-  color: inherit;
 }
 
 
