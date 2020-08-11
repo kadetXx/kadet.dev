@@ -1,0 +1,105 @@
+.resume_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #16161A;
+  padding: 5%;
+}
+
+.resume_container .top_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume_container .top_row h2 {
+  font-size: 36px;
+  line-height: 47px;
+  margin: 0;
+}
+
+.resume_container .top_row .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.resume_container .top_row .buttons a {
+  margin: 5px;
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.resume_container .subheading {
+  margin: 6px 0;
+  opacity: 0.9;
+}
+
+.resume_container .summary {
+  display: flex;
+  margin-top: 5px;
+}
+
+.resume_container .summary p {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.25;
+}
+
+.resume_container .divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.resume_container .divider p {
+  margin: 0 10px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.resume_container .divider span {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.25;
+}
+
+.resume_container .skills p {
+  font-size: 14px;
+  font-family: 'air-light';
+  opacity: 0.25;
+  display: flex;
+  margin: 0;
+  line-height: 1.5;
+}
+/* 
+.resume_container .exp_container {
+
+} */
+
+.resume_container .exp_container .experience .title {
+  margin: 0;
+  font-size: 15px;
+}
+
+.resume_container .exp_container .experience .title span {
+  font-size: 12px;
+  opacity: 0.25;
+  margin-left:5px;
+}
+
+.resume_container .exp_container .experience .description {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.25;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.resume_container .exp_container .experience .description  p {
+  margin: 10px 0;
+  width: 100%;
+}

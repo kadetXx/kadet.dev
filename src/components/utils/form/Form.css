@@ -18,6 +18,7 @@ form .form_section label {
 
 form .form_section label input, textarea {
   background: #16161A;
+  color: lightgray;
   border: 1px solid transparent;
   padding: 0.9rem;
   margin-top: 7px;
@@ -30,4 +31,16 @@ form .form_section label input:focus, textarea:focus {
 
 form .form_section label input::placeholder, textarea::placeholder  {
   opacity: 0.25;
+}
+
+form .form_section button {
+  background-color: #16161A;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+}
+
+form .form_section button:focus {
+  outline: none;
+  border: none;
 }

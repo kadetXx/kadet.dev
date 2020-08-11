@@ -97,3 +97,10 @@ html, body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media (min-width: 1400px) {
+  .App {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
