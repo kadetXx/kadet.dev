@@ -45,7 +45,7 @@ export class Form extends Component {
           <div className="form_section">
             <label>
               <span>Your Message*</span>
-              <textarea name="message" rows="10" value={this.state.message} onChange={this.onChange.bind(this)}></textarea>
+              <textarea name="message" placeholder='Hi, we would like you to be a part of our project, can we schedule...' rows="10" value={this.state.message} onChange={this.onChange.bind(this)}></textarea>
             </label>
           </div>
 
