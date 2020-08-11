@@ -8,9 +8,22 @@ import arrow from '../../assets/svgs/arrow.svg'
 
 export class Base extends Component {
 
+  // activeMenu(e) {
+  //   let item = e.target.parentElement.parentElement;
+
+  //   for(let i = 0 ; i<3; i++) {
+  //     item.parentElement.children[i].classList.remove('active_menu')
+  //   }
+   
+  //   console.log()
+
+  //   item.className = 'active_menu'
+  // }
+
   render() {
 
     return (
+      
       <div className='base_container'>
         <div className="hero">
           <div className="intro_box">
@@ -26,15 +39,15 @@ export class Base extends Component {
 
         <nav>
           <ul>
-            <li>
+            <li className={this.props.menu[0]}>
               <small>01 <Link to='/'><img src={navLine} alt="menu bullet"/> WORK</Link></small>
             </li>
 
-            <li>
+            <li className={this.props.menu[1]}>
               <small>02 <Link to='/resume'><img src={navLine} alt="menu bullet"/> RESUME</Link></small>
             </li>
 
-            <li>
+            <li className={this.props.menu[2]}>
             <small>03 <Link to='/contact'><img src={navLine} alt="menu bullet"/> CONTACT</Link></small>
             </li>
           </ul>

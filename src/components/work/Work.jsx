@@ -68,6 +68,10 @@ export class Work extends Component {
     ]
   }
 
+  componentDidMount() {
+    this.props.activeMenu(0)
+  }
+
   render() {
     return (
       <div className='work'>

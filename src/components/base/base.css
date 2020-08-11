@@ -71,6 +71,7 @@ nav ul li {
   width: fit-content;
   margin: 8px 0;
   padding: 0;
+  opacity: 0.25;
 }
 
 nav ul li small {
@@ -88,29 +89,31 @@ nav ul li small a {
 
 nav ul li a img {
   margin: 0 10px;
-  width: 60px;
+  width: 30px;
+  pointer-events: none;
+  transition: width .3s linear;
 }
 
-nav ul li:nth-child(2) {
-  opacity: 0.25;;
-}
-
-nav ul li:nth-child(3) {
-  opacity: 0.25;;
-}
-
-nav ul li:nth-child(2) img, nav ul li:nth-child(3) img {
-  width: 25px;
-  transition: all 1s linear;
-}
-
-nav ul li:nth-child(2):hover img, nav ul li:nth-child(3):hover img {
-  width: auto;
-}
-
-nav ul li:nth-child(2):hover, nav ul li:nth-child(3):hover {
+nav ul li.active_menu {
   opacity: 1;
-  transition: all 1s linear;
+  transition: all .3s linear;
+}
+
+nav ul li.active_menu a img {
+  margin: 0 10px;
+  width:50px;
+  transition: width .3s linear;
+}
+
+nav ul li:hover {
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+nav ul li:hover a img {
+  margin: 0 10px;
+  width: 50px;
+  transition: width .3s linear;
 }
 
 
