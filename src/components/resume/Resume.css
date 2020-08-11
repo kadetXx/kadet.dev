@@ -12,7 +12,7 @@
 }
 
 .resume_container .top_row h2 {
-  font-size: 36px;
+  font-size: var(--h2-font);
   line-height: 47px;
   margin: 0;
 }
@@ -27,12 +27,13 @@
   margin: 5px;
   color: inherit;
   text-decoration: none;
-  font-size: 14px;
+  font-size: var(--normal-font);
 }
 
 .resume_container .subheading {
   margin: 6px 0;
   opacity: 0.9;
+  font-size: var(--semi-font);
 }
 
 .resume_container .summary {
@@ -41,7 +42,7 @@
 }
 
 .resume_container .summary p {
-  font-size: 14px;
+  font-size: var(--normal-font);
   line-height: 1.5;
   opacity: 0.25;
 }
@@ -55,7 +56,7 @@
 
 .resume_container .divider p {
   margin: 0 10px 0 0;
-  font-size: 14px;
+  font-size: var(--normal-font);
   opacity: 0.9;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .resume_container .skills p {
-  font-size: 14px;
+  font-size: var(--normal-font);
   font-family: 'air-light';
   opacity: 0.25;
   display: flex;
@@ -81,7 +82,8 @@
 
 .resume_container .exp_container .experience .title {
   margin: 0;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: var(--semi-font);
 }
 
 .resume_container .exp_container .experience .title span {
@@ -92,7 +94,7 @@
 
 .resume_container .exp_container .experience .description {
   display: block;
-  font-size: 14px;
+  font-size: var(--normal-font);
   line-height: 1.5;
   opacity: 0.25;
   margin: 10px 0;
