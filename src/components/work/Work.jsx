@@ -1,13 +1,25 @@
 import React, { Component } from 'react'
 import './Work.css'
 import Project from '../utils/project/Project'
+import uuid from 'react-uuid';
 
 export class Work extends Component {
 
   state = {
     projects: [
+
       {
-        id: 1,
+        id: uuid(),
+        title: 'Kadet.dev',
+        description: 'My Portfolio Site',
+        github: 'https://github.com/kadetXx/kadet.dev',
+        live: 'https://kadet.dev',
+        stack: 'React',
+        isPrivate: false
+      },
+
+      {
+        id: uuid(),
         title: 'Animepanda',
         description: 'Mobile App landing page',
         github: 'https://github.com/kadetXx/animepanda',
@@ -17,7 +29,7 @@ export class Work extends Component {
       },
 
       {
-        id: 2,
+        id: uuid(),
         title: 'MicroAPI',
         description: 'Opensource microservices',
         github: '',
@@ -27,7 +39,7 @@ export class Work extends Component {
       },
 
       {
-        id: 3,
+        id: uuid(),
         title: 'customerPay',
         description: 'Debt/Store management web application',
         github: '',
@@ -37,7 +49,7 @@ export class Work extends Component {
       },
 
       {
-        id: 4,
+        id: uuid(),
         title: 'Travertic',
         description: 'Real time multiplayer tic tac toe game',
         github: 'https://github.com/kadetXx/tictactoe',
@@ -47,7 +59,7 @@ export class Work extends Component {
       },
 
       {
-        id: 5,
+        id: uuid(),
         title: 'Github Scanner',
         description: 'Lookup github profiles',
         github: 'https://github.com/kadetXx/github-profile-scanner',
@@ -57,12 +69,22 @@ export class Work extends Component {
       },
 
       {
-        id: 6,
+        id: uuid(),
         title: 'Instathoughts',
-        description: 'CRUD social app',
+        description: 'CRUD social media app',
         github: 'https://github.com/kadetXx/insta_thoughts',
         live: 'https://instathoughts.netlify.app/',
         stack: 'ES6 + Firebase',
+        isPrivate: false
+      },
+
+      {
+        id: uuid(),
+        title: 'KadNavbar',
+        description: 'Responsive navbar component',
+        github: 'https://github.com/kadetXx/kadnavbar',
+        live: 'https://kadetxx.github.io/kadnavbar/',
+        stack: 'CSS + Javascript',
         isPrivate: false
       }
     ]
