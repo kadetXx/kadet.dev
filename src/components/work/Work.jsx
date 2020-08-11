@@ -20,7 +20,7 @@ export class Work extends Component {
         id: 2,
         title: 'MicroAPI',
         description: 'Opensource microservices',
-        github: 'https://github.com/microapi/dashboard',
+        github: '',
         live: 'https://microapi.dev',
         stack: 'Sass + Javsacript + Django',
         isPrivate: true
@@ -30,7 +30,7 @@ export class Work extends Component {
         id: 3,
         title: 'customerPay',
         description: 'Debt/Store management web application',
-        github: 'https://github.com/microapi/dashboard',
+        github: '',
         live: 'https://customerpay.me',
         stack: 'Bootstrap + Javsacript + Laravel',
         isPrivate: true
@@ -40,7 +40,7 @@ export class Work extends Component {
         id: 4,
         title: 'Travertic',
         description: 'Real time multiplayer tic tac toe game',
-        github: 'https://github.com/microapi/dashboard',
+        github: 'https://github.com/kadetXx/tictactoe',
         live: 'https://travertic.herokuapp.com',
         stack: 'Node + Socket.io',
         isPrivate: false
@@ -50,8 +50,8 @@ export class Work extends Component {
         id: 5,
         title: 'Github Scanner',
         description: 'Lookup github profiles',
-        github: 'https://github.com/microapi/dashboard',
-        live: 'https://customerpay.me',
+        github: 'https://github.com/kadetXx/github-profile-scanner',
+        live: 'https://github-profile-scanner.now.sh/',
         stack: 'ES6 + Github API',
         isPrivate: false
       },
@@ -60,8 +60,8 @@ export class Work extends Component {
         id: 6,
         title: 'Instathoughts',
         description: 'CRUD social app',
-        github: 'https://github.com/microapi/dashboard',
-        live: 'https://travertic.herokuapp.com',
+        github: 'https://github.com/kadetXx/insta_thoughts',
+        live: 'https://instathoughts.netlify.app/',
         stack: 'ES6 + Firebase',
         isPrivate: false
       }

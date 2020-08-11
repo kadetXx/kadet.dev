@@ -135,19 +135,21 @@ nav ul li:hover a img {
   margin-top: 7px;
 }
 
-.footer .social p {
+.footer .social a {
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-right: 5px;
+  color: inherit;
+  text-decoration: none;
 }
 
-.footer .social p i {
+.footer .social a i {
   margin-right: 10px;
   color: grey;
 }
 
-.footer .social p img {
+.footer .social a img {
  width: 20%;
  margin-left: 2px;
  height: 70%;

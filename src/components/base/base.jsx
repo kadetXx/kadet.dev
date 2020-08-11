@@ -56,8 +56,8 @@ export class Base extends Component {
         <div className="footer">
           <img src={logo} alt=""/>
           <div className="social">
-            <p><i className='fab fa-github'></i> Github <img src={arrow} alt="pointer"/></p>
-            <p><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></p>
+            <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i> Github <img src={arrow} alt="pointer"/></a>
+            <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
           </div>
         </div>
       </div>
