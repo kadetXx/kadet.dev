@@ -13,7 +13,8 @@ form .form_section label {
   width: 100%;
   display: flex;
   flex-direction: column;
-  line-height: 21px;
+  line-height: var(--h3-font);
+  font-size: var(--semi-font);
 }
 
 form .form_section label input, textarea {
@@ -30,7 +31,8 @@ form .form_section label input:focus, textarea:focus {
 }
 
 form .form_section label input::placeholder, textarea::placeholder  {
-  opacity: 0.25;
+  opacity: 0.5;
+  font-size: var(--xsmall-font);
 }
 
 form .form_section button {
@@ -38,6 +40,7 @@ form .form_section button {
   color: #fff;
   border: none;
   padding: 0.9rem;
+  font-size: var(--semi-font);
 }
 
 form .form_section button:focus {

@@ -17,7 +17,7 @@
 .intro_box h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: var(--h1-font);
   line-height: 62px;
   margin-right: 15px;
   margin-top: 0;
@@ -36,7 +36,7 @@
 .description p {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: var(--normal-font);
   line-height: 21px;
   color: #FFFFFF;
   margin: 0;
@@ -78,6 +78,7 @@ nav ul li small {
   display: flex;
   align-items: center;
   margin: 0;
+  font-size: var(--small-font);
 }
 
 nav ul li small a {
@@ -138,7 +139,7 @@ nav ul li:hover a img {
 .footer .social a {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: var(--normal-font);
   margin-right: 5px;
   color: inherit;
   text-decoration: none;
