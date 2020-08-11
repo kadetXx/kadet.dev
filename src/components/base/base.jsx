@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
-import './base.css'
+import { Link } from 'react-router-dom'
+import './Base.css'
 import avi from '../../assets/svgs/avi.svg'
 import navLine from '../../assets/svgs/menu-line.svg'
 import logo from '../../assets/svgs/kadet.svg'
 import arrow from '../../assets/svgs/arrow.svg'
 
-export class base extends Component {
+export class Base extends Component {
 
   render() {
 
     return (
-      <div className='left_container'>
+      <div className='base_container'>
         <div className="hero">
           <div className="intro_box">
             <h1>Hi there! I'm <br/> Collins Enebeli.</h1>
@@ -26,15 +27,15 @@ export class base extends Component {
         <nav>
           <ul>
             <li>
-              <small>01</small><img src={navLine} alt="menu bullet"/> <small> WORK</small>
+              <small>01</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/'> WORK</Link></small>
             </li>
 
             <li>
-              <small>02</small><img src={navLine} alt="menu bullet"/> <small> RESUME</small>
+              <small>02</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/resume'>RESUME</Link></small>
             </li>
 
             <li>
-              <small>03</small><img src={navLine} alt="menu bullet"/> <small> CONTACT</small>
+              <small>03</small><img src={navLine} alt="menu bullet"/> <small> <Link to='/contact'>CONTACT</Link> </small>
             </li>
           </ul>
         </nav>
@@ -52,4 +53,4 @@ export class base extends Component {
 
 }
 
-export default base
+export default Base

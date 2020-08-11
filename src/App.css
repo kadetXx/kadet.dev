@@ -36,25 +36,28 @@ html, body {
   padding: 0;
   font-family: 'air-regular';
   background: #101011;
+  color: #fff;
 }
 
 #root {height: 100%;}
 
 .App {
   height: 100%;
+  overflow: hidden;
 }
 
 .container {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  /* padding: 0 10%; */
 }
 
 .container .fixed {
   height: 100vh; 
   width: 50%;
   display: flex;
+  justify-content: center;
   /* overflow: hidden; */
   /* background-color: blueviolet; */
 }
@@ -62,5 +65,35 @@ html, body {
 .container .main {
   height: 100%;
   width: 50%;
+  overflow-y: auto;
   /* background-color: gold; */
+}
+
+
+
+.main::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+.main::-webkit-scrollbar-track {
+  background: #101011; 
+}
+ 
+
+.main::-webkit-scrollbar-thumb {
+  background:#101011; 
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.container .main .pages_container {
+  padding: 8% 15% 8% 5%;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

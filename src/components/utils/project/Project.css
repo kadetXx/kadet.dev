@@ -1,0 +1,40 @@
+.box_container {
+  width: 49%;
+  background-color: #16161A;
+  margin: 0.5%;
+  position: relative;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  /* height: 80%; */
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.box .project_details h3 {
+  margin: 0;
+}
+
+.box .project_details p {
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.25;
+  height: 5rem;
+  font-family: 'air-light';
+}
+
+.box .project_links a {
+  /* font-size: 14px; */
+  line-height: 21px;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 7px;
+  color: grey;
+}
+
+.box .project_links a i {
+  margin-right: 2px;
+}

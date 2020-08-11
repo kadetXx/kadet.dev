@@ -1,0 +1,10 @@
+.work {
+  display: flex;
+  width: 100%;
+}
+
+.work .portfolio_showcase {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
