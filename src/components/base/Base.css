@@ -24,6 +24,10 @@
   margin-bottom: 0;
 }
 
+.intro_box h1 .mobile_grt {
+  display: none;
+}
+
 .intro_box avi {
   padding: 10px;
 }
@@ -49,10 +53,6 @@
 
 .description p span.highlight {
   opacity: 0.7;
-}
-
-.hero .button_container {
-  display: none;
 }
 
 .hero .social_buttons {
@@ -162,4 +162,23 @@ nav ul li:hover a img {
  width: 20%;
  margin-left: 2px;
  height: 70%;
+}
+
+.base_container .go_button_container {
+  display: none !important;
+}
+
+@media(max-width: 993px) {
+
+  .intro_box h1 .desktop_grt {
+    display: none;
+  }
+
+  .intro_box h1 .mobile_grt {
+    display: inline;
+  }
+
+  .base_container .go_button_container {
+    display: flex !important;
+  }
 }
