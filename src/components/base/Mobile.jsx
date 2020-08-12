@@ -8,6 +8,7 @@ export class Mobile extends Component {
     return (
       <div id='mobile'>
         <Base menu={this.props.menu} />
+        
       </div>
     )
   }

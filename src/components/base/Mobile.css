@@ -8,7 +8,7 @@
 }
 
 #mobile .base_container {
-  padding: 10% 0;
+  padding: 0;
   height: auto;
   flex-grow: unset;
 }
@@ -71,15 +71,17 @@
   outline: none;
 }
 
-#mobile .social_buttons {
+.mobile_container .social_buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  margin: auto;
 }
 
-#mobile .social_buttons a {
-  margin: 6%;
+.mobile_container .social_buttons a {
+  margin: 3% 6%;
   color: inherit;
   font-size: 1rem;
+  text-decoration: none;
+  display: flex;
 }

@@ -49,7 +49,11 @@ export class App extends Component {
               <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
               <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
             </div>
-            
+            <div className="social_buttons">
+              <a href="https://github.com/kadetXx"><i className='fab fa-github'></i></a> 
+              <a href="https://twitter.com/kadetXx"><i className='fab fa-twitter'></i></a>
+              <a href="http"><i className="fab fa-linkedin"></i></a>
+          </div>
           </div>
 
 

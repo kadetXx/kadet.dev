@@ -168,8 +168,12 @@ body {
   .mobile_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5%;
+    height: 90%;
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
   }
 
 }
