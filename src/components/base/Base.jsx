@@ -50,7 +50,7 @@ export class Base extends Component {
           <img src={logo} alt=""/>
           <div className="social">
             <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i> Github <img src={arrow} alt="pointer"/></a>
-            <a href='https:/twitter.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
+            <a href='https://twitter.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
           </div>
         </div>
       </div>

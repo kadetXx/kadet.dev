@@ -45,7 +45,7 @@ export class Header extends Component {
                   <div className="social_icons">
                     <a href="https://github.com/kadetXx"><i className='fab fa-github'></i></a> 
                     <a href="https://twitter.com/kadetXx"><i className='fab fa-twitter'></i></a>
-                    <a href="http"><i className="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/collins-enebeli-online/"><i className="fab fa-linkedin"></i></a>
                   </div>
                 </div>
               </div>
