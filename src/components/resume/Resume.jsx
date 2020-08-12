@@ -51,7 +51,7 @@ export class Resume extends Component {
             </section>
 
             <section className="experience">
-              <p className='title'>Hotels.ng - Frontend Developer (Intern)<span> <br/> JUNE 2020 - AUG 2020</span></p>
+              <p className='title'>HNG Internships - Frontend Developer (Intern)<span> <br/> JUNE 2020 - AUG 2020</span></p>
               <article className='description'>
                 <p>I interned for hotels.ng internships as a frontend developer. I contributed in developing user interfaces for quite a number of products within three months. These projects used different backend technologies and I learnt how to work with the required template engines within a short period of time. </p>
                 <p>I was able to meet harsh deadlines and completed daily tasks in order to remain on the competitive program and eventually became a finalist. A few highlights I got during this period was being elected as team lead on multiple occasions. </p>
