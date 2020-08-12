@@ -157,6 +157,10 @@ body {
     height: auto;
   } */
 
+  .App {
+    overflow: auto;
+  }
+
   .App .container {
     display: none;
   }
