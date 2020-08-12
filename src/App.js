@@ -1,11 +1,13 @@
 // import React from 'react'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import './App.css';
+import './App.css'
 import Base from './components/base/Base'
 import Work from './components/work/Work'
 import Resume from './components/resume/Resume'
 import Contact from './components/contact/Contact'
+import Mobile from './components/base/Mobile'
+import Header from './components/utils/header/Header'
 
 
 
@@ -44,6 +46,17 @@ export class App extends Component {
     return (
       <div className="App">
         <Router>
+
+          <div className='mobile_container'>
+            <Header />
+            <div>
+              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
+            </div>
+            
+          </div>
+
+
+
           <div className="container">
             <div className="fixed">
               <Base menu={this.state.menu} />
@@ -60,6 +73,7 @@ export class App extends Component {
 
             </div>
           </div>
+
         </Router>
       </div>
     )

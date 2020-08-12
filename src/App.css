@@ -132,3 +132,40 @@ body {
     --xsmall-font: 16px;
   }
 }
+
+
+/*===== RESPONSIVE STYLING =====*/
+
+.mobile_container {
+  display: none;
+}
+
+@media (min-width: 994px) and (max-width: 1200px) {
+  .App .container .fixed .base_container {
+    padding-left: 8%;
+  }
+
+  .App .container .main .pages_container  {
+    padding-right: 8%;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 993px) {
+  body, #root, .App {
+    height: auto;
+  }
+
+  .App .container {
+    display: none;
+  }
+
+  .mobile_container {
+    display: flex;
+  }
+
+}
+

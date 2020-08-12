@@ -8,18 +8,6 @@ import arrow from '../../assets/svgs/arrow.svg'
 
 export class Base extends Component {
 
-  // activeMenu(e) {
-  //   let item = e.target.parentElement.parentElement;
-
-  //   for(let i = 0 ; i<3; i++) {
-  //     item.parentElement.children[i].classList.remove('active_menu')
-  //   }
-   
-  //   console.log()
-
-  //   item.className = 'active_menu'
-  // }
-
   render() {
 
     return (
@@ -57,7 +45,7 @@ export class Base extends Component {
           <img src={logo} alt=""/>
           <div className="social">
             <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i> Github <img src={arrow} alt="pointer"/></a>
-            <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
+            <a href='https:/twitter.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
           </div>
         </div>
       </div>
