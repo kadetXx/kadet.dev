@@ -150,11 +150,16 @@ body {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 34px !important;
   }
 }
 
 @media (max-width: 993px) {
+
+  /* body {
+    overflow: hidden;
+  } */
+
   body, #root, .App {
     height: auto;
   }
@@ -164,7 +169,8 @@ body {
   }
 
   .mobile_container {
-    display: flex;
+    display: block;
+    padding: 5%;
   }
 
 }

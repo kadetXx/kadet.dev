@@ -11,17 +11,14 @@ import Header from './components/utils/header/Header'
 
 
 
-
-
 export class App extends Component {
 
   state = {
-    menu: ['active_menu', '', '']
+    menu: ['active_menu', '', ''],
+    body: 'hidden',
   }
 
   activeMenu(id) {
-
-    console.log('here' + id)
 
     switch (id) {
       case 0:
@@ -42,15 +39,21 @@ export class App extends Component {
  
   }
 
+  async overflow(data) {
+    this.setState({body: data});
+  }
+
+
   render() {
     return (
       <div className="App">
         <Router>
 
           <div className='mobile_container'>
-            <Header />
+            <Header overflow={this.overflow.bind(this)} />
             <div>
-              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
+              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} overflow={this.overflow.bind(this)} />)} />
+              <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
             </div>
             
           </div>
@@ -66,6 +69,7 @@ export class App extends Component {
   
               <div className="pages_container">
                 <Route exact path='/' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
+                <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
                 <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                 <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
 

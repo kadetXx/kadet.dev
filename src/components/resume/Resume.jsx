@@ -13,8 +13,8 @@ export class Resume extends Component {
         <div className="top_row">
           <h2>Collins Enebeli</h2>
           <div className="buttons">
-            <a href="https://www.linkedin.com/in/collins-enebeli-online/" target='_blank' rel="noopener noreferrer"><small><i class="fab fa-linkedin"></i> Linked In </small></a> 
-            <a href="https://drive.google.com/file/d/1TgCq88QVeaeCjLV70sGmzM_tGqPvzGWI/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i class="fas fa-download"></i> Download </small></a> 
+            <a href="https://www.linkedin.com/in/collins-enebeli-online/" target='_blank' rel="noopener noreferrer"><small><i className="fab fa-linkedin"></i> Linked In </small></a> 
+            <a href="https://drive.google.com/file/d/1TgCq88QVeaeCjLV70sGmzM_tGqPvzGWI/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> Download </small></a> 
           </div>
         </div>
         
