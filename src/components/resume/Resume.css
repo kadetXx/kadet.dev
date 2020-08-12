@@ -113,6 +113,10 @@
     margin: 30px 0;
   }
 
+  .resume_container .top_row .buttons {
+    align-self: unset;
+  }
+
   .resume_container .top_row .buttons span {
    display: none;
   }
@@ -120,6 +124,12 @@
   .resume .go_button_container {
     display: flex;
     margin-bottom: 20px;
+  }
+
+  .resume_container .top_row .buttons a {
+    margin: 7px;
+    font-size: 20px;
+
   }
   
 }
