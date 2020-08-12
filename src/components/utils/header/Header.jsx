@@ -34,10 +34,10 @@ export class Header extends Component {
             <nav>
               <div className="mobile_menu_container">
                 <ul>
-                  <li><Link to='/'>Home</Link> </li>
-                  <li><Link to='/work'>Work</Link> </li>
-                  <li><Link to='/resume'>Résumé</Link> </li>
-                  <li><Link to='/contact'>Contact</Link> </li>
+                  <li><Link to='/' onClick={this.toggleMenu.bind(this)}>Home</Link> </li>
+                  <li><Link to='/work' onClick={this.toggleMenu.bind(this)}>Work</Link> </li>
+                  <li><Link to='/resume' onClick={this.toggleMenu.bind(this)}>Résumé</Link> </li>
+                  <li><Link to='/contact' onClick={this.toggleMenu.bind(this)}>Contact</Link> </li>
                 </ul>
 
                 <div className="social_box">

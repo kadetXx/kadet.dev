@@ -170,6 +170,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 5%;
+    
+  }
+
+  .mobile_container.set_height {
     height: 90%;
     height: -moz-available;
     height: -webkit-fill-available;

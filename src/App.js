@@ -48,7 +48,10 @@ export class App extends Component {
             <div>
               <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
               <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+              <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
+              <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
             </div>
+
             <div className="social_buttons">
               <a href="https://github.com/kadetXx"><i className='fab fa-github'></i></a> 
               <a href="https://twitter.com/kadetXx"><i className='fab fa-twitter'></i></a>

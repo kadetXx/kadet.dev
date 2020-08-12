@@ -1,6 +1,11 @@
 .work {
   display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.work .go_button_container {
+  display: none;
 }
 
 .work .portfolio_showcase {
@@ -12,5 +17,9 @@
 @media (max-width: 993px) {
   .work {
     margin: 30px 0;
+  }
+
+  .work .go_button_container {
+    display: flex;
   }
 }

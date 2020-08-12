@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './Work.css'
 import Project from '../utils/project/Project'
 import uuid from 'react-uuid';
 
 export class Work extends Component {
 
+ 
   state = {
     projects: [
 
@@ -99,6 +101,11 @@ export class Work extends Component {
       <div className='work'>
         <div className="portfolio_showcase">
           {this.state.projects.map((project) => ( <Project key={project.id} data={project} /> ))}
+        </div>
+
+        <div className="go_button_container">
+            <Link to='/'> <button> <b>➜ </b> Home</button></Link>
+            <Link to='/contact'> <button>Contact ➜ </button></Link>  
         </div>
       </div>
     )

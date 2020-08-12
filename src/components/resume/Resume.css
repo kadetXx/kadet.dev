@@ -75,15 +75,13 @@
   margin: 0;
   line-height: 1.5;
 }
-/* 
-.resume_container .exp_container {
 
-} */
 
 .resume_container .exp_container .experience .title {
   margin: 0;
   /* font-size: 15px; */
   font-size: var(--semi-font);
+  line-height: 2;
 }
 
 .resume_container .exp_container .experience .title span {
@@ -104,4 +102,20 @@
 .resume_container .exp_container .experience .description  p {
   margin: 10px 0;
   width: 100%;
+}
+
+@media (max-width: 993px) {
+  .resume_container {
+    margin: 30px 0;
+  }
+
+  .resume_container .top_row .buttons span {
+   display: none;
+  }
+
+  .resume .go_button_container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
 }
