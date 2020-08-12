@@ -18,7 +18,7 @@ export class Header extends Component {
       <div id='header'>
         <div className="header_wrapper">
           <div className="logo_container">
-            <a href="https://google.com"><img src={logo} alt="kadet logo"/></a>
+            <a href="https://kadet.dev"><img src={logo} alt="kadet logo"/></a>
           </div>
 
           <div className="menu_btn_wrapper">
