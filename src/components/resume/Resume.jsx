@@ -24,7 +24,7 @@ export class Resume extends Component {
           
           <div className="summary">
             <p>
-              Self taught frontend developer, passionate and dedicated in bringing ideas from pixels to live scalable products. I develop responsive applications with user experience as top priority. I’m always ready to adapt according to project specifications irrespective of stack.
+              Frontend developer, passionate and dedicated in bringing ideas from pixels to live scalable products. I develop responsive applications with user experience as top priority. I’m always ready to adapt according to project specifications irrespective of stack.
             </p>
           </div>
 
