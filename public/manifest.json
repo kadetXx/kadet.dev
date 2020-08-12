@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
+      "src": "kadet_small.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.ico",
-      "type": "image/x-icon",
+      "src": "kadet_big.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
