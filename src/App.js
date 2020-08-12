@@ -15,7 +15,6 @@ export class App extends Component {
 
   state = {
     menu: ['active_menu', '', ''],
-    body: 'hidden',
   }
 
   activeMenu(id) {
@@ -39,20 +38,15 @@ export class App extends Component {
  
   }
 
-  async overflow(data) {
-    this.setState({body: data});
-  }
-
-
   render() {
     return (
       <div className="App">
         <Router>
 
           <div className='mobile_container'>
-            <Header overflow={this.overflow.bind(this)} />
+            <Header />
             <div>
-              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} overflow={this.overflow.bind(this)} />)} />
+              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
               <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
             </div>
             

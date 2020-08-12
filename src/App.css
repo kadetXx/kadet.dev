@@ -50,7 +50,6 @@ html, body {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  /* padding: 0 10%; */
 }
 
 .container .fixed {
@@ -58,8 +57,6 @@ html, body {
   width: 50%;
   display: flex;
   justify-content: center;
-  /* overflow: hidden; */
-  /* background-color: blueviolet; */
 }
 
 .container .main {
@@ -156,20 +153,18 @@ body {
 
 @media (max-width: 993px) {
 
-  /* body {
-    overflow: hidden;
-  } */
-
-  body, #root, .App {
+  /* body, #root, .App {
     height: auto;
-  }
+  } */
 
   .App .container {
     display: none;
   }
 
   .mobile_container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 5%;
   }
 

@@ -1,9 +1,10 @@
 #mobile {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100%; */
   overflow: hidden !important;
   position: relative;
+  padding-bottom: 10%;
 }
 
 #mobile .base_container {
@@ -51,6 +52,7 @@
 #mobile .button_container {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 
 #mobile .button_container button {
@@ -72,8 +74,6 @@
 #mobile .social_buttons {
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 15%;
   width: 100%;
   margin: auto;
 }
