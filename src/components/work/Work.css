@@ -8,3 +8,9 @@
   flex-wrap: wrap;
   width: 100%;
 }
+
+@media (max-width: 993px) {
+  .work {
+    margin: 30px 0;
+  }
+}

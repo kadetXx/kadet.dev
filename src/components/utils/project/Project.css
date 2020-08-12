@@ -49,3 +49,14 @@
 .box .project_links a i {
   margin-right: 2px;
 }
+
+@media (max-width: 993px) {
+  .box_container {
+    width: 99%;
+    margin: 2% 0;
+  }
+
+  .box .project_details p {
+    height: 2rem;
+  }
+}
