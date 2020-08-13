@@ -48,11 +48,11 @@
 }
 
 .description p span {
-  opacity: 0.25;
+  color: #777778;
 }
 
 .description p span.highlight {
-  opacity: 0.7;
+  color: #fff;
 }
 
 .hero .social_buttons {
@@ -79,7 +79,7 @@ nav ul li {
   width: fit-content;
   margin: 8px 0;
   padding: 0;
-  opacity: 0.25;
+  color: #777778;
 }
 
 nav ul li small {
@@ -101,22 +101,26 @@ nav ul li a img {
   width: 30px;
   pointer-events: none;
   transition: width .3s linear;
+  opacity: 0.5;
 }
 
 nav ul li.active_menu {
   opacity: 1;
   transition: all .3s linear;
+  color: #fff;
 }
 
 nav ul li.active_menu a img {
   margin: 0 10px;
   width:50px;
   transition: width .3s linear;
+  opacity: 1;
 }
 
 nav ul li:hover {
   opacity: 1;
   transition: all .3s linear;
+  color: #fff;
 }
 
 nav ul li:hover a img {

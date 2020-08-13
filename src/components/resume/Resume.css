@@ -32,7 +32,7 @@
 
 .resume_container .subheading {
   margin: 6px 0;
-  opacity: 0.9;
+  color: #cfcfcf;
   font-size: var(--semi-font);
 }
 
@@ -44,7 +44,7 @@
 .resume_container .summary p {
   font-size: var(--normal-font);
   line-height: 1.5;
-  opacity: 0.25;
+  color: #777778;
 }
 
 .resume_container .divider {
@@ -57,20 +57,19 @@
 .resume_container .divider p {
   margin: 0 10px 0 0;
   font-size: var(--normal-font);
-  opacity: 0.9;
+  color: #e2e2e2;
 }
 
 .resume_container .divider span {
   flex-grow: 1;
   height: 1px;
-  background-color: #fff;
-  opacity: 0.25;
+  background-color: #777778;
 }
 
 .resume_container .skills p {
   font-size: var(--normal-font);
   font-family: 'air-light';
-  opacity: 0.25;
+  color: #777778;
   display: flex;
   margin: 0;
   line-height: 1.5;
@@ -86,7 +85,7 @@
 
 .resume_container .exp_container .experience .title span {
   font-size: 12px;
-  opacity: 0.25;
+  color: #777778;
   margin-left:5px;
 }
 
@@ -94,7 +93,7 @@
   display: block;
   font-size: var(--normal-font);
   line-height: 1.5;
-  opacity: 0.25;
+  color: #777778;
   margin: 10px 0;
   padding: 0;
 }
@@ -102,6 +101,7 @@
 .resume_container .exp_container .experience .description  p {
   margin: 10px 0;
   width: 100%;
+  color:  #777778;
 }
 
 .resume .go_button_container {

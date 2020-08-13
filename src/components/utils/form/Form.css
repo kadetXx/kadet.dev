@@ -31,7 +31,7 @@ form .form_section label input:focus, textarea:focus {
 }
 
 form .form_section label input::placeholder, textarea::placeholder  {
-  opacity: 0.5;
+  color: #777778;
   font-size: var(--xsmall-font);
   line-height: 2;
 }
