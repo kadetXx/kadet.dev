@@ -1,6 +1,7 @@
 // import React from 'react'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Redirect, Switch } from 'react-router';
 import './App.css'
 import Base from './components/base/Base'
 import Work from './components/work/Work'
@@ -8,6 +9,7 @@ import Resume from './components/resume/Resume'
 import Contact from './components/contact/Contact'
 import Mobile from './components/base/Mobile'
 import Header from './components/utils/header/Header'
+import Error from './components/Error404/Error'
 
 
 
@@ -46,10 +48,14 @@ export class App extends Component {
           <div className='mobile_container'>
             <Header />
             <div>
-              <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
-              <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-              <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
-              <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+              <Switch>
+                <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
+                <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
+                <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                <Route path='/error' component={Error} />
+                <Redirect from='*' to='/error' />
+              </Switch>
             </div>
 
             <div className="social_buttons">
@@ -69,11 +75,14 @@ export class App extends Component {
             <div className="main">
   
               <div className="pages_container">
-                <Route exact path='/' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
-                <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
-                <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-                <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-
+                <Switch>
+                  <Route exact path='/' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
+                  <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
+                  <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                  <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                  <Route path='/error' component={Error} />
+                  <Redirect from='*' to='/error' />
+                </Switch>
               </div>
 
             </div>

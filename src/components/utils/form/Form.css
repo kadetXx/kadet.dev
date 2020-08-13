@@ -26,7 +26,7 @@ form .form_section label input, textarea {
 }
 
 form .form_section label input:focus, textarea:focus {
-  border-bottom-color: grey;
+  border-color: rgb(75, 75, 75);
   outline: none;
 }
 
