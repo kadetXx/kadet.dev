@@ -20,7 +20,7 @@ export class Resume extends Component {
             </div>
           </div>
           
-          <p className='subheading'>Junior Frontend Developer and UX Engineer</p>
+          <p className='subheading'>Frontend Developer</p>
           
           <div className="summary">
             <p>
@@ -44,9 +44,9 @@ export class Resume extends Component {
 
           <div className="exp_container">
             <section className="experience">
-              <p className='title'>Nepa.ng - Frontend Developer & UX Engineer<span> <br/> JULY 2020 - PRESENT</span></p>
+              <p className='title'>Nepa.ng - Frontend Developer<span> <br/> JULY 2020 - PRESENT</span></p>
               <article className='description'>
-                I’m currently on a contract based frontend role at nepa.ng and we are developing a new user interface for our web application using vue js and laravel.
+                I’m currently a patner with the founders of nepa.ng and we are developing a new user interface for our web application.
               </article>
             </section>
 
