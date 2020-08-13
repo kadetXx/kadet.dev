@@ -16,7 +16,7 @@ export class Resume extends Component {
             <h2>Collins Enebeli</h2>
             <div className="buttons">
               <a href="https://www.linkedin.com/in/collins-enebeli-online/" target='_blank' rel="noopener noreferrer"><small><i className="fab fa-linkedin"></i> <span>Linked In</span> </small></a> 
-              <a href="https://drive.google.com/file/d/1h-LTJtJo_4iyXS5EGUdna2oSJ6EkPEJv/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
+              <a href="https://drive.google.com/file/d/1hIesuj33-Jr-93Ey3l0kmLwIoHwd6Lef/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
             </div>
           </div>
           
@@ -46,7 +46,7 @@ export class Resume extends Component {
             <section className="experience">
               <p className='title'>Nepa.ng - Lead Frontend Developer<span> <br/> JULY 2020 - PRESENT</span></p>
               <article className='description'>
-                I’m currently a patner with the founders of nepa.ng and we are developing a new user interface for our web application.
+              I’m currently a partner with the founder of nepa.ng and I’m leading a small team of junior developers to work on a new user interface for our web application.
               </article>
             </section>
 
