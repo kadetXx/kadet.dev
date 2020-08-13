@@ -27,7 +27,8 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.submit.bind(this)}>
+        <form name="contact" method="post" onSubmit={this.submit.bind(this)}>
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form_section">
             <label>
               <span>Your Name*</span>
