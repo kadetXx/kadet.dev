@@ -1,7 +1,7 @@
 // import React from 'react'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Redirect, Switch } from 'react-router';
+import { Switch } from 'react-router';
 import './App.css'
 import Base from './components/base/Base'
 import Work from './components/work/Work'
@@ -53,8 +53,7 @@ export class App extends Component {
                 <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                 <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
                 <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-                <Route path='/error' component={Error} />
-                <Redirect from='*' to='/error' />
+                <Route component={Error} />
               </Switch>
             </div>
 
@@ -80,8 +79,7 @@ export class App extends Component {
                   <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
                   <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                   <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-                  <Route path='/error' component={Error} />
-                  <Redirect from='*' to='/error' />
+                  <Route component={Error} />
                 </Switch>
               </div>
 

@@ -9,4 +9,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10%;
+}
+
+#error404 h1 {
+  font-size: 1000%;
+  margin: 0;
+  text-align: center;
+}
+
+#error404 p {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: -10px;
 }
