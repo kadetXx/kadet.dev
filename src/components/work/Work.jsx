@@ -42,13 +42,33 @@ export class Work extends Component {
 
       {
         id: uuid(),
-        title: 'customerPay',
-        description: 'Debt/Store management web application',
+        title: 'KadNavbar',
+        description: 'Opensourse responsive navbar component',
+        github: 'https://github.com/kadetXx/kadnavbar',
+        live: 'https://kadetxx.github.io/kadnavbar/',
+        stack: 'CSS + Javascript',
+        isPrivate: false
+      },
+
+      {
+        id: uuid(),
+        title: 'Strategex.io',
+        description: 'Static singlepage for strategy management app',
         github: '',
-        live: 'https://customerpay.me',
-        stack: 'Bootstrap + Javascript + Laravel',
+        live: 'https://strategydashboard.netlify.app/objectives/',
+        stack: 'SASS + Jquery UI',
         isPrivate: true
       },
+
+      // {
+      //   id: uuid(),
+      //   title: 'customerPay',
+      //   description: 'Debt/Store management web application',
+      //   github: '',
+      //   live: 'https://customerpay.me/dashboard',
+      //   stack: 'Bootstrap + Javascript + Laravel',
+      //   isPrivate: true
+      // },
 
       {
         id: uuid(),
@@ -56,7 +76,7 @@ export class Work extends Component {
         description: 'Real time multiplayer tic tac toe game',
         github: 'https://github.com/kadetXx/tictactoe',
         live: 'https://travertic.herokuapp.com',
-        stack: 'Node + Socket.io',
+        stack: 'Node.js + Socket.io',
         isPrivate: false
       },
 
@@ -78,17 +98,8 @@ export class Work extends Component {
         live: 'https://instathoughts.netlify.app/',
         stack: 'ES6 + Firebase',
         isPrivate: false
-      },
-
-      {
-        id: uuid(),
-        title: 'KadNavbar',
-        description: 'Responsive navbar component',
-        github: 'https://github.com/kadetXx/kadnavbar',
-        live: 'https://kadetxx.github.io/kadnavbar/',
-        stack: 'CSS + Javascript',
-        isPrivate: false
       }
+
     ]
   }
 
