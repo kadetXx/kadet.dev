@@ -1,7 +1,7 @@
 // import React from 'react'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Redirect, Switch } from 'react-router';
+import { Switch } from 'react-router';
 import './App.css'
 import Base from './components/base/Base'
 import Work from './components/work/Work'
@@ -10,7 +10,6 @@ import Contact from './components/contact/Contact'
 import Mobile from './components/base/Mobile'
 import Header from './components/utils/header/Header'
 import Error from './components/Error404/Error'
-import Success from './components/contact/Success'
 
 
 
@@ -51,11 +50,13 @@ export class App extends Component {
             <div>
               <Switch>
                 <Route exact path='/' render={props => (<Mobile menu={this.state.menu} />)} />
+
                 <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+
                 <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
+
                 <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-                <Route exact path='/success' component={Success} />
-                <Redirect from='/successmail' to='/success' />
+
                 <Route component={Error} />
               </Switch>
             </div>
@@ -79,11 +80,13 @@ export class App extends Component {
               <div className="pages_container">
                 <Switch>
                   <Route exact path='/' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
+
                   <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
+
                   <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+
                   <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
-                  <Route exact path='/success' component={Success} />
-                  <Redirect from='/successmail' to='/success' />
+
                   <Route component={Error} />
                 </Switch>
               </div>
