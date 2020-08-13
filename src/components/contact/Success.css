@@ -1,0 +1,34 @@
+#success {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #101011;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+#success h1 {
+  font-size: 700%;
+  margin: 0;
+  text-align: center;
+}
+
+#success h2 {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+#success p {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  color: #777778;
+  line-height: 1.5;
+}

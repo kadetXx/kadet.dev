@@ -10,6 +10,7 @@ import Contact from './components/contact/Contact'
 import Mobile from './components/base/Mobile'
 import Header from './components/utils/header/Header'
 import Error from './components/Error404/Error'
+import Success from './components/contact/Success'
 
 
 
@@ -53,6 +54,7 @@ export class App extends Component {
                 <Route exact path='/work' render={props => (<Work menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                 <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
                 <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                <Route exact path='/success' component={Success} />
                 <Route component={Error} />
               </Switch>
             </div>
@@ -79,6 +81,7 @@ export class App extends Component {
                   <Route exact path='/work' render={props => (<Work  menu={this.state.menu} activeMenu={this.activeMenu.bind(this)}/>)} />
                   <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                   <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
+                  <Route exact path='/success' component={Success} />
                   <Route component={Error} />
                 </Switch>
               </div>

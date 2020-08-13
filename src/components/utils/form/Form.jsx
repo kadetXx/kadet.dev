@@ -26,7 +26,7 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <form name="contact" method="post" onSubmit={this.submit.bind(this)}>
+        <form name="contact" method="post" onSubmit={this.submit.bind(this)} action='/success'>
           <input type="hidden" name="form-name" value="contact" />
           <div className="form_section">
             <label>
@@ -50,7 +50,7 @@ export class Form extends Component {
           </div>
 
           <div className="form_section">
-            <button type='submit' >Send Message</button>
+            <button type='submit' >Let's Go</button>
           </div>
         </form>
       </div>
