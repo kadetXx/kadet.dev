@@ -17,11 +17,13 @@ export class Form extends Component {
   submit (e) {
     // e.preventDefault();
 
-    this.setState({
-      name: '',
-      email: '',
-      message: ''
-    });
+    console.log('form submitted')
+
+    // this.setState({
+    //   name: '',
+    //   email: '',
+    //   message: ''
+    // });
   }
 
   render() {
