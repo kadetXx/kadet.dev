@@ -44,7 +44,7 @@ export class Resume extends Component {
 
           <div className="exp_container">
             <section className="experience">
-              <p className='title'>Nepa.ng - Frontend Developer<span> <br/> JULY 2020 - PRESENT</span></p>
+              <p className='title'>Nepa.ng - Lead Frontend Developer<span> <br/> JULY 2020 - PRESENT</span></p>
               <article className='description'>
                 I’m currently a patner with the founders of nepa.ng and we are developing a new user interface for our web application.
               </article>
