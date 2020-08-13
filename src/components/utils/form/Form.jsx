@@ -15,15 +15,12 @@ export class Form extends Component {
   }
 
   submit (e) {
-    // e.preventDefault();
+    if (this.state.name === '' || this.state.email === '' || this.state.message === '') {
+      e.preventDefault();
 
-    console.log('form submitted')
+      console.log('empty values')
+    }
 
-    // this.setState({
-    //   name: '',
-    //   email: '',
-    //   message: ''
-    // });
   }
 
   render() {
