@@ -16,7 +16,7 @@ export class Resume extends Component {
             <h2>Collins Enebeli</h2>
             <div className="buttons">
               <a href="https://www.linkedin.com/in/collins-enebeli-online/" target='_blank' rel="noopener noreferrer"><small><i className="fab fa-linkedin"></i> <span>Linked In</span> </small></a> 
-              <a href="https://drive.google.com/file/d/1Ki87eKgoZ1f9oyO7_imEsLcMFnGfl_zC/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
+              <a href="https://drive.google.com/file/d/1h-LTJtJo_4iyXS5EGUdna2oSJ6EkPEJv/view?usp=sharing"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
             </div>
           </div>
           
