@@ -15,7 +15,7 @@ export class Form extends Component {
   }
 
   submit (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     this.setState({
       name: '',
