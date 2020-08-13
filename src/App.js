@@ -1,7 +1,7 @@
 // import React from 'react'
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import { Switch } from 'react-router';
+import { Redirect, Switch } from 'react-router';
 import './App.css'
 import Base from './components/base/Base'
 import Work from './components/work/Work'
@@ -55,6 +55,7 @@ export class App extends Component {
                 <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)}/>
                 <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                 <Route exact path='/success' component={Success} />
+                <Redirect from='/successmail' to='/success' />
                 <Route component={Error} />
               </Switch>
             </div>
@@ -82,6 +83,7 @@ export class App extends Component {
                   <Route exact path='/resume' render={props => (<Resume menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                   <Route exact path='/contact' render={props => (<Contact menu={this.state.menu} activeMenu={this.activeMenu.bind(this)} />)} />
                   <Route exact path='/success' component={Success} />
+                  <Redirect from='/successmail' to='/success' />
                   <Route component={Error} />
                 </Switch>
               </div>

@@ -17,7 +17,7 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <form name="contact" method="post"  action='/success'>
+        <form name="contact" method="post"  action='/successmail'>
           <input type="hidden" name="form-name" value="contact" />
           <div className="form_section">
             <label>
@@ -29,7 +29,7 @@ export class Form extends Component {
           <div className="form_section">
             <label>
               <span>Your Email*</span>
-              <input type="email" name="email" placeholder='Enter your email' value={this.state.email} onChange={this.onChange.bind(this)}/>
+              <input required type="email" name="email" placeholder='Enter your email' value={this.state.email} onChange={this.onChange.bind(this)}/>
             </label>
           </div>
 
