@@ -47,7 +47,7 @@ export class Form extends Component {
         </form>
 
         {status === "SUCCESS" ? <Success display={this.setStatus.bind(this)} /> : ''}
-        {status === "ERROR" && <p style={{textAlign: 'center'}}>Ooops! There was an error.</p>}
+        {status === "ERROR" && <p style={{textAlign: 'center', color: 'red'}}> <b>Ooops! There was an error.</b></p>}
 
       </div>
     )
