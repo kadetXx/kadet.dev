@@ -9,7 +9,7 @@ import Resume from './components/resume/Resume'
 import Contact from './components/contact/Contact'
 import Mobile from './components/base/Mobile'
 import Header from './components/utils/header/Header'
-import Error from './components/Error404/Error'
+import Error from './components/error404/Error'
 
 
 

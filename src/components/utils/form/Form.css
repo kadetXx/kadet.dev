@@ -23,6 +23,7 @@ form .form_section label input, textarea {
   border: 1px solid transparent;
   padding: 0.9rem;
   margin-top: 7px;
+  font-family: 'air-regular';
 }
 
 form .form_section label input:focus, textarea:focus {
@@ -32,8 +33,9 @@ form .form_section label input:focus, textarea:focus {
 
 form .form_section label input::placeholder, textarea::placeholder  {
   color: #777778;
-  font-size: var(--xsmall-font);
+  font-size: var(--small-font);
   line-height: 2;
+  font-family: 'air-regular';
 }
 
 form .form_section button {
@@ -42,9 +44,20 @@ form .form_section button {
   border: none;
   padding: 0.9rem;
   font-size: var(--semi-font);
+  font-family: 'air-regular';
 }
 
 form .form_section button:focus {
   outline: none;
   border: none;
+}
+
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover, 
+form input:-webkit-autofill:focus, 
+form input:-webkit-autofill:active  {
+  border-color: rgb(75, 75, 75);
+  box-shadow: 0 0 0 30px #16161A inset !important;
+  -webkit-box-shadow: 0 0 0 30px #16161A inset !important; 
+  -webkit-text-fill-color: #777778;
 }

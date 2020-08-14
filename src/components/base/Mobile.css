@@ -81,10 +81,11 @@
   background-color: #16161A;
   color: #fff;
   padding: 0.7rem 2rem;
-  font-size: var(--semi-font);
+  font-size: var(--small-font);
   border: 1px solid transparent;
   display: flex;
   align-items: center;
+  font-family: 'air-regular';
 }
 
 .go_button_container button:hover {

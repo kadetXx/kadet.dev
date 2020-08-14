@@ -8,13 +8,14 @@ export class Form extends Component {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
-      status: ""
+      status: "",
+      loading: false
     };
   }
 
   render() {
 
-    const { status } = this.state;
+    const { status, loading } = this.state;
 
     return (
       <div>
@@ -37,12 +38,12 @@ export class Form extends Component {
           <div className="form_section">
             <label>
               <span>Your Message*</span>
-              <textarea required name="message" placeholder='Hi, we would like you to be a part of our project, can we schedule...' rows="10"  ></textarea>
+              <textarea required name="message" rows="10"  minLength="30" ></textarea>
             </label>
           </div>
 
           <div className="form_section">
-            <button type='submit' >Let's Go</button>
+            <button type='submit' > { !loading ? "Shoot" : <i class="fas fa-ellipsis-h"></i> } </button>
           </div>
         </form>
 
@@ -55,6 +56,9 @@ export class Form extends Component {
 
   submitForm(ev) {
     ev.preventDefault();
+
+    this.setState({loading: true});
+
     const form = ev.target;
     const data = new FormData(form);
     const xhr = new XMLHttpRequest();
@@ -64,9 +68,9 @@ export class Form extends Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
+        this.setState({ status: "SUCCESS", loading: false });
       } else {
-        this.setState({ status: "ERROR" });
+        this.setState({ status: "ERROR", loading: false });
       }
     };
     xhr.send(data);
