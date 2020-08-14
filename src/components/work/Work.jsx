@@ -55,7 +55,7 @@ export class Work extends Component {
         title: 'customerPay',
         description: 'Debt/Store management web application',
         github: '',
-        live: 'https://customerpay.me/dashboard',
+        live: 'https://customerpay.me/',
         stack: 'Bootstrap + Javascript + Laravel',
         isPrivate: true
       },
