@@ -16,7 +16,7 @@ export class Resume extends Component {
             <h2>Collins Enebeli</h2>
             <div className="buttons">
               <a href="https://www.linkedin.com/in/collins-enebeli-online/" target='_blank' rel="noopener noreferrer"><small><i className="fab fa-linkedin"></i> <span>Linked In</span> </small></a> 
-              <a href="https://drive.google.com/file/d/186XED2xXdQYNLyHZCEU8veRNhKYIXvEA/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
+              <a href="https://drive.google.com/file/d/14kP_9hQjxV-T22WM0VZQiEmlIf6vFeSZ/view?usp=sharing" target='_blank' rel="noopener noreferrer"><small><i className="fas fa-download"></i> <span>Download </span> </small></a> 
             </div>
           </div>
           
@@ -46,23 +46,31 @@ export class Resume extends Component {
             <section className="experience">
               <p className='title'>Nepa.ng - Lead Frontend Developer<span> <br/> JULY 2020 - PRESENT</span></p>
               <article className='description'>
-              I’m currently a partner with the founders of nepa.ng and I’m leading a small team of junior developers to work on a new user interface for our web application.
+                <p>I’m currently a partner with the founders of nepa.ng and I’m leading a small team of junior developers to work on a new user interface for our web application.</p>
               </article>
             </section>
 
             <section className="experience">
               <p className='title'>HNG Internships - Frontend Developer (Intern)<span> <br/> JUNE 2020 - AUG 2020</span></p>
               <article className='description'>
-                <p>I interned for hotels.ng internships as a frontend developer. I contributed in developing user interfaces for quite a number of products within three months. These projects used different backend technologies and I learnt how to work with the required template engines within a short period of time. </p>
-                <p>I was able to meet harsh deadlines and completed daily tasks in order to remain on the competitive program and eventually became a finalist. A few highlights I got during this period was being elected as team lead on multiple occasions. </p>
-                <p>I also made an app landing page that was voted top three spot on our final frontend challenge where over 200 frontend developers competed.</p> 
+                <p>I contributed in developing user interfaces for quite a number of products within three months. </p>
+                <p><span>■</span> Worked with node.js developers to build a certificate generator </p>
+                <p><span>■</span> Led my team to to victory multiple times in weekly coding challenges</p> 
+                <p><span>■</span> Headed the frontend department of my team to deliver responsive web templates to be sold on envato market</p> 
+                <p><span>■</span> Worked on customerPay and expenseNG web apps with laravel blade and bootstrap</p> 
+                <p><span>■</span> Built an app landing page with form capture that was voted top three on our final frontend challenge </p> 
+                <p><span>■</span> Worked with backed developers on a Django based open source project to deliver dashboard functionality and pages using Jinja</p> 
               </article>
             </section>
 
             <section className="experience">
               <p className='title'>Ansalog Digital Agency - Web Developer<span> <br/> JAN 2019 - MAY 2020 </span></p>
               <article className='description'>
-                I worked as a web developer for Ansalog digital agency in my early stages of getting into tech. I developed world class websites and eCommerce applications for both local and international SMEs using wordpress. As a job requirement, I wrote articles for ansalog blog while following the latest SEO trends.
+                <p> I worked as a web developer for Ansalog digital agency in my early stages of getting into tech.</p>
+                <p><span>■</span>Redesigned company website and improved search engine visibility</p> 
+                <p><span>■</span> Designed websites for local & international SMEs with wordpress</p> 
+                <p><span>■</span> Provided strategic eCommerce solutions for small businesses</p> 
+                <p><span>■</span> Wrote Search Engine Optimised articles for the company's blog</p> 
               </article>
             </section>
 

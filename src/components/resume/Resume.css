@@ -72,7 +72,7 @@
   color: #777778;
   display: flex;
   margin: 0;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 
@@ -99,9 +99,14 @@
 }
 
 .resume_container .exp_container .experience .description  p {
-  margin: 10px 0;
+  margin: 2px 0;
   width: 100%;
   color:  #777778;
+  display: flex;
+}
+
+.resume_container .exp_container .experience .description  p span {
+  margin-right: 5px;
 }
 
 .resume .go_button_container {
