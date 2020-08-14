@@ -42,16 +42,6 @@ export class Work extends Component {
 
       {
         id: uuid(),
-        title: 'KadNavbar',
-        description: 'Opensourse responsive navbar component',
-        github: 'https://github.com/kadetXx/kadnavbar',
-        live: 'https://kadetxx.github.io/kadnavbar/',
-        stack: 'CSS + Javascript',
-        isPrivate: false
-      },
-
-      {
-        id: uuid(),
         title: 'Strategex.io',
         description: 'Static singlepage for strategy management app',
         github: '',
@@ -60,15 +50,15 @@ export class Work extends Component {
         isPrivate: true
       },
 
-      // {
-      //   id: uuid(),
-      //   title: 'customerPay',
-      //   description: 'Debt/Store management web application',
-      //   github: '',
-      //   live: 'https://customerpay.me/dashboard',
-      //   stack: 'Bootstrap + Javascript + Laravel',
-      //   isPrivate: true
-      // },
+      {
+        id: uuid(),
+        title: 'customerPay',
+        description: 'Debt/Store management web application',
+        github: '',
+        live: 'https://customerpay.me/dashboard',
+        stack: 'Bootstrap + Javascript + Laravel',
+        isPrivate: true
+      },
 
       {
         id: uuid(),
@@ -92,13 +82,23 @@ export class Work extends Component {
 
       {
         id: uuid(),
-        title: 'Instathoughts',
-        description: 'CRUD social media app',
-        github: 'https://github.com/kadetXx/insta_thoughts',
-        live: 'https://instathoughts.netlify.app/',
-        stack: 'ES6 + Firebase',
+        title: 'KadNavbar',
+        description: 'Opensourse responsive navbar component',
+        github: 'https://github.com/kadetXx/kadnavbar',
+        live: 'https://kadetxx.github.io/kadnavbar/',
+        stack: 'CSS + Javascript',
         isPrivate: false
-      }
+      },
+
+      // {
+      //   id: uuid(),
+      //   title: 'Instathoughts',
+      //   description: 'CRUD social media app',
+      //   github: 'https://github.com/kadetXx/insta_thoughts',
+      //   live: 'https://instathoughts.netlify.app/',
+      //   stack: 'ES6 + Firebase',
+      //   isPrivate: false
+      // }
 
     ]
   }
