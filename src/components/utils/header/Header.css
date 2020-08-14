@@ -110,7 +110,7 @@
 
 .mobile_menu_container {
   width: 100%;
-  padding: 15% 5% 20%;
+  padding: 20% 5% 15%;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -160,5 +160,5 @@
   color: grey;
   text-decoration: none;
   margin: 15px 7.5px 0 7.5px;
-  font-size: 20px;
+  font-size: 24px;
 }

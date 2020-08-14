@@ -20,7 +20,7 @@ export class Base extends Component {
           </div>
 
           <div className="description">
-            <p> <span>I'm a frontend developer. I spend most of my time writing code for applications using Javascript,</span> <span className='highlight'>React js</span><span> and a little Vue js. I use CSS and </span> <span className='highlight'>SASS </span> <span> to design efficient user interfaces. I love talking about tech and will be sharing some experiences on my blog</span></p>
+            <p> <span>I'm a frontend developer. I spend most of my time writing code for applications using Javascript,</span> <span className='highlight'>React js</span><span> and a little Vue js. I use CSS and </span> <span className='highlight'>SASS </span> <span> to design efficient user interfaces. I love talking about tech and also write on my <a href="https://kadet.hashnode.dev">blog</a> ocassionally</span></p>
           </div>
 
           <div className="go_button_container">
@@ -49,8 +49,14 @@ export class Base extends Component {
         <div className="footer">
           <img src={logo} alt=""/>
           <div className="social">
-            <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i> Github <img src={arrow} alt="pointer"/></a>
-            <a href='https://twitter.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/></a>
+
+            <a href='https://github.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i> Github 
+            <img src={arrow} alt="pointer"/>
+            </a>
+
+            <a href='https://twitter.com/kadetXx' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i> Twitter <img src={arrow} alt="pointer"/>
+            </a>
+
           </div>
         </div>
       </div>
