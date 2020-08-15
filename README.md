@@ -2,7 +2,7 @@
 
 This is the repository that contains code for my personal website built with react.js
 
-### Available Scripts
+## Available Scripts
 
 In the project directory, you can run:
 
