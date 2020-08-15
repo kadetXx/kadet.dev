@@ -87,6 +87,19 @@ export class Resume extends Component {
             </section>
           </div>
 
+          <div className="divider">
+            <p>Projects</p>
+            <span></span>
+          </div>
+
+          <div className="exp_container">
+            <section className="experience">
+              <article className='description'>
+                <p>Links to my works can be found on <span> </span> <Link to='/work'>kadet.dev/work</Link> </p>
+              </article>
+            </section>
+          </div>
+
         </div>
 
         <div className="go_button_container">

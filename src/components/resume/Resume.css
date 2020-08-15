@@ -83,6 +83,10 @@
   line-height: 2;
 }
 
+.resume_container .exp_container .experience a {
+  color: #fff
+}
+
 .resume_container .exp_container .experience .title span {
   font-size: 12px;
   color: #777778;

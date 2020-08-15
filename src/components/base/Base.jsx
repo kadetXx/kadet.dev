@@ -24,7 +24,7 @@ export class Base extends Component {
           </div>
 
           <div className="go_button_container">
-            <Link to='/work'> <button>Explore ➜</button></Link>
+            <Link to='/work'> <button className='explore'>Explore ➜</button></Link>
           </div>
 
         </div>

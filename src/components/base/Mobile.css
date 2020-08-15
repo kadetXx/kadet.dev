@@ -59,7 +59,7 @@
 .mobile_container .social_buttons a {
   margin: 3% 6%;
   color: inherit;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
   display: flex;
 }
@@ -86,6 +86,10 @@
   display: flex;
   align-items: center;
   font-family: 'air-regular';
+}
+
+.go_button_container button.explore {
+  font-size: 15px;
 }
 
 .go_button_container button:hover {
