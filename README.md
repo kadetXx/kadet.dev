@@ -21,4 +21,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 Copyright © 2020 - present Collins Enebeli. All rights reserved
 
-**The code and media present in this repository remains an intellectual property of the individual metioned above and may not be copied, modified, redistributed or sublicenced without due permission from the author.**
+**The code and media present in this repository remains an intellectual property of the individual metioned above and therefore CANNOT be copied, modified, redistributed or sublicenced without due permission from the author.**
