@@ -16,3 +16,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## License
+
+Copyright © 2020 - present Collins Enebeli. All rights reserved
+
+**The code and media present in this repository remains an intellectual property of the individual metioned above and may not be copied, modified, redistributed or sublicenced without due permission from the author.**
