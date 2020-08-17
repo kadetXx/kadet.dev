@@ -18,15 +18,14 @@
   font-style: normal;
   font-weight: 700;
   font-size: var(--h1-font);
-  line-height: 62px;
   margin-right: 15px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.intro_box h1 .mobile_grt {
+/* .intro_box h1 .mobile_grt {
   display: none;
-}
+} */
 
 .intro_box avi {
   padding: 10px;
@@ -179,13 +178,13 @@ nav ul li:hover a img {
 
 @media(max-width: 993px) {
 
-  .intro_box h1 .desktop_grt {
+  /* .intro_box h1 .desktop_grt {
     display: none;
-  }
+  } */
 
-  .intro_box h1 .mobile_grt {
+  /* .intro_box h1 .mobile_grt {
     display: inline;
-  }
+  } */
 
   .base_container .go_button_container {
     display: flex !important;

@@ -15,7 +15,7 @@ export class Base extends Component {
       <div className='base_container'>
         <div className="hero">
           <div className="intro_box">
-            <h1> <span className='desktop_grt'>Hello World!</span> <span className='mobile_grt'>Hello!</span> <br/> I'm Collins Enebeli.</h1>
+            <h1> Hello! I'm  <br/>  Collins Enebeli.</h1>
             <div className='avi'><img src={avi} alt="avatar"/></div>
           </div>
 
