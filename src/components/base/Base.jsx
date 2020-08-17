@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './Base.css'
 import avi from '../../assets/svgs/avi.svg'
 import navLine from '../../assets/svgs/menu-line.svg'
-import logo from '../../assets/svgs/kadet.svg'
+import logo from '../../assets/svgs/kadet_footer.svg'
 import arrow from '../../assets/svgs/arrow.svg'
 
 export class Base extends Component {
