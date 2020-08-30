@@ -20,7 +20,7 @@ export class Base extends Component {
           </div>
 
           <div className="description">
-            <p> <span>I'm a frontend developer. I spend most of my time writing code for applications using Javascript,</span> <span className='highlight'>React js</span><span> and a little Vue js. I use CSS and </span> <span className='highlight'>SASS </span> <span> to design efficient user interfaces. I love talking about tech and also write on my <a href="https://kadet.hashnode.dev" target='_blank' rel="noopener noreferrer">blog</a> ocassionally</span></p>
+            <p> <span>I'm a <span className='highlight'>Frontend Developer</span>. I spend most of my time writing code for applications using but not limited to </span> <span className='highlight'>React js</span><span>. I use CSS and </span> <span className='highlight'>SASS </span> <span> to design efficient user interfaces. I love talking about tech and also write on my <a href="https://kadet.hashnode.dev" target='_blank' rel="noopener noreferrer">blog</a> ocassionally</span></p>
           </div>
 
           <div className="go_button_container">
