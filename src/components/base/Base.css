@@ -23,13 +23,9 @@
   margin-bottom: 0;
 }
 
-/* .intro_box h1 .mobile_grt {
+.intro_box .avi {
   display: none;
-} */
-
-/* .intro_box avi {
-  padding: 10px;
-} */
+}
 
 .description {
   display: flex;
@@ -41,7 +37,7 @@
   font-weight: normal;
   font-size: var(--normal-font);
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   line-height: 2;
 }
@@ -104,38 +100,38 @@ nav ul li a img {
   margin: 0 10px;
   width: 30px;
   pointer-events: none;
-  transition: width .3s linear;
+  transition: width 0.3s linear;
   opacity: 0.5;
 }
 
 nav ul li.active_menu {
   opacity: 1;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: #fff;
 }
 
 nav ul li.active_menu a img {
   margin: 0 10px;
-  width:50px;
-  transition: width .3s linear;
+  width: 50px;
+  transition: width 0.3s linear;
   opacity: 1;
 }
 
 nav ul li:hover {
   opacity: 1;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   color: #fff;
 }
 
 nav ul li:hover a img {
   margin: 0 10px;
   width: 50px;
-  transition: width .3s linear;
+  transition: width 0.3s linear;
 }
-
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   /* flex-direction: column; */
 }
@@ -167,24 +163,42 @@ nav ul li:hover a img {
 }
 
 .footer .social a img {
- width: 40%;
- margin-left: 2px;
- height: 80%;
+  width: 40%;
+  margin-left: 2px;
+  height: 80%;
+}
+
+.credits {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0 0;
+}
+
+.credits p {
+  font-size: var(--xsmall-font) !important;
+  color: #777778;
+}
+
+.credits p:first-child {
+  margin-right: 0.5rem;
+}
+
+.credits a {
+  text-decoration: none;
+  color: #cecece;
+  margin-left: 5px;
 }
 
 .base_container .go_button_container {
   display: none !important;
 }
 
-@media(max-width: 993px) {
-
-  /* .intro_box h1 .desktop_grt {
-    display: none;
-  } */
-
-  /* .intro_box h1 .mobile_grt {
-    display: inline;
-  } */
+@media (max-width: 993px) {
+  .intro_box .avi {
+    display: initial;
+  }
 
   .base_container .go_button_container {
     display: flex !important;

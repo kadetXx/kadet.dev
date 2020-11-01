@@ -51,6 +51,7 @@
 
 .mobile_container .social_buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -62,6 +63,35 @@
   font-size: 1.1rem;
   text-decoration: none;
   display: flex;
+}
+
+.mobile_container .social_buttons .credits {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: .5rem 0 0;
+  margin: 0;
+}
+
+.mobile_container .social_buttons .credits p {
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+  margin: .2rem 0 0;
+  padding: 0;
+  justify-content: center;
+  font-size: var(--xsmall-font) !important;
+  color: #777778;
+}
+
+.mobile_container .social_buttons .credits p  a {
+  margin: 0;
+  font-size: var(--xsmall-font) !important;
+  text-decoration: none;
+  color: #cecece;
+  margin-left: 5px;
 }
 
 /*===== BUTTON STYLE =====*/
