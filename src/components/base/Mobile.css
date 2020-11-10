@@ -91,7 +91,7 @@
   font-size: var(--xsmall-font) !important;
   text-decoration: none;
   color: #cecece;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 
 /*===== BUTTON STYLE =====*/

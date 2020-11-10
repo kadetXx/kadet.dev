@@ -116,12 +116,9 @@ export class Base extends Component {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                Sarah Dayan.
+                Sarah Dayan 
               </a>
-            </p>
-
-            <p>
-              Design by
+               and
               <a
                 href='https://dribbble.com/NicolasMzrd'
                 target='_blank'

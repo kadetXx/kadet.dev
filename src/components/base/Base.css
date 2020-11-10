@@ -188,7 +188,7 @@ nav ul li:hover a img {
 .credits a {
   text-decoration: none;
   color: #cecece;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 
 .base_container .go_button_container {

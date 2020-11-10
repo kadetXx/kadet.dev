@@ -117,12 +117,9 @@ export class App extends Component {
                     target='_blank'
                     rel='noreferrer noopener'
                   >
-                    Sarah Dayan.
-                  </a>
-                </p>
-
-                <p>
-                  Design by
+                    Sarah Dayan 
+                  </a> {''}
+                    and
                   <a
                     href='https://dribbble.com/NicolasMzrd'
                     target='_blank'
