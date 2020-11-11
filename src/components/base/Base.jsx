@@ -54,7 +54,9 @@ export class Base extends Component {
           <div className='go_button_container'>
             <Link to='/work'>
               {" "}
-              <button className='explore'>Explore ➜</button>
+              <button className='explore'>
+                Explore <span class='material-icons'>arrow_right</span>
+              </button>
             </Link>
           </div>
         </div>
