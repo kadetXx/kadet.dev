@@ -29,11 +29,11 @@ export class Base extends Component {
                 spend most of my time writing code for applications using{" "}
               </span>{" "}
               <span className='highlight'>Javascript</span>
-              <span> and react js. I use CSS and </span>{" "}
+              <span> and libraries/frameworks like React js. I use CSS and </span>{" "}
               <span className='highlight'>SASS </span>{" "}
               <span>
                 {" "}
-                to design efficient user interfaces. I love talking about tech
+                to develop efficient user interfaces. I love talking about tech
                 and also write on my{" "}
                 <a
                   href='https://kadet.hashnode.dev'
