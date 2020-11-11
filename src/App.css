@@ -169,13 +169,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 5%;
-    
+    box-sizing: border-box;
   }
 
-  .mobile_container.set_height {
-    height: 90%;
-    height: -moz-available;
-    height: -webkit-fill-available;
+  #fullscreen {
+    height: 100vh;
   }
 
 }

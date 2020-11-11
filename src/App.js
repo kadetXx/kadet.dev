@@ -35,18 +35,23 @@ export class App extends Component {
     }
   }
 
+  setFullscreen(value) {
+    this.setState({...this.state, fullScreen: value})
+  }
+
   render() {
+
     return (
       <div className='App'>
         <Router>
-          <div className='mobile_container'>
+          <div className='mobile_container' id={this.state.fullScreen ? "fullscreen" : ''}>
             <Header />
             <div>
               <Switch>
                 <Route
                   exact
                   path='/'
-                  render={(props) => <Mobile menu={this.state.menu} />}
+                  render={(props) => <Mobile menu={this.state.menu} fullScreen={this.setFullscreen.bind(this)} />}
                 />
 
                 <Route

@@ -29,7 +29,11 @@ export class Base extends Component {
                 spend most of my time writing code for applications using{" "}
               </span>{" "}
               <span className='highlight'>Javascript</span>
-              <span> and libraries/frameworks like React js. I use CSS and </span>{" "}
+              <span>
+                {" "}
+                and libraries/frameworks like{" "}
+                <span className='highlight'>React js</span>. I use CSS and{" "}
+              </span>{" "}
               <span className='highlight'>SASS </span>{" "}
               <span>
                 {" "}
@@ -116,9 +120,9 @@ export class Base extends Component {
                 target='_blank'
                 rel='noreferrer noopener'
               >
-                Sarah Dayan 
+                Sarah Dayan
               </a>
-               and
+              and
               <a
                 href='https://dribbble.com/NicolasMzrd'
                 target='_blank'

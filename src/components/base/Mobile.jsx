@@ -8,17 +8,16 @@ export class Mobile extends Component {
     return (
       <div id='mobile'>
         <Base menu={this.props.menu} />
-        
       </div>
     )
   }
 
   componentDidMount() {
-    document.querySelector('.mobile_container').classList.add('set_height');
+    this.props.fullScreen(true)
   }
 
   componentWillUnmount() {
-    document.querySelector('.mobile_container').classList.remove('set_height');
+    this.props.fullScreen(false);
   }
 }
 
