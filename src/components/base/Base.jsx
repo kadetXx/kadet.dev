@@ -23,30 +23,26 @@ export class Base extends Component {
 
           <div className='description'>
             <p>
-              {" "}
               <span>
                 I'm a <span className='highlight'>Frontend Developer</span>. I
-                spend most of my time writing code for applications using{" "}
-              </span>{" "}
-              <span className='highlight'>Javascript</span>
+                spend most of my time writing
+              </span>
+              <span className='highlight'> Javascript </span>
               <span>
-                {" "}
-                and libraries/frameworks like{" "}
-                <span className='highlight'>React js</span>. I use CSS and{" "}
-              </span>{" "}
-              <span className='highlight'>SASS </span>{" "}
+                applications. I use CSS and
+              </span>
+              <span className='highlight'> SASS </span>
               <span>
-                {" "}
-                to develop efficient user interfaces. I love talking about tech
-                and also write on my{" "}
+                to create efficient user experience. I love talking about tech
+                and also write on my {" "}
                 <a
                   href='https://kadet.hashnode.dev'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  blog
-                </a>{" "}
-                ocassionally
+                  blog{" "}
+                </a>
+                 ocassionally
               </span>
             </p>
           </div>
