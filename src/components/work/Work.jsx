@@ -77,15 +77,15 @@ export class Work extends Component {
         isPrivate: true,
       },
 
-      {
-        id: uuid(),
-        title: "Travertic",
-        description: "Real time multiplayer tic tac toe game",
-        github: "https://github.com/kadetXx/tictactoe",
-        live: "https://travertic.herokuapp.com",
-        stack: "Node.js + Socket.io",
-        isPrivate: false,
-      },
+      // {
+      //   id: uuid(),
+      //   title: "Travertic",
+      //   description: "Real time multiplayer tic tac toe game",
+      //   github: "https://github.com/kadetXx/tictactoe",
+      //   live: "https://travertic.herokuapp.com",
+      //   stack: "Node.js + Socket.io",
+      //   isPrivate: false,
+      // },
 
       {
         id: uuid(),
@@ -97,15 +97,15 @@ export class Work extends Component {
         isPrivate: false,
       },
 
-      {
-        id: uuid(),
-        title: "KadNavbar",
-        description: "Opensourse responsive navbar component",
-        github: "https://github.com/kadetXx/kadnavbar",
-        live: "https://kadetxx.github.io/kadnavbar/",
-        stack: "CSS + Javascript",
-        isPrivate: false,
-      },
+      // {
+      //   id: uuid(),
+      //   title: "KadNavbar",
+      //   description: "Opensourse responsive navbar component",
+      //   github: "https://github.com/kadetXx/kadnavbar",
+      //   live: "https://kadetxx.github.io/kadnavbar/",
+      //   stack: "CSS + Javascript",
+      //   isPrivate: false,
+      // },
 
       // {
       //   id: uuid(),
