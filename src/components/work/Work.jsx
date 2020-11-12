@@ -94,7 +94,7 @@ export class Work extends Component {
         github: "https://github.com/kadetXx/github-profile-scanner",
         live: "https://github-profile-scanner.now.sh/",
         stack: "ES6 + Github API",
-        isPrivate: false,
+        isPrivate: true,
       },
 
       // {
