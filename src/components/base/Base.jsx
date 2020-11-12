@@ -25,11 +25,11 @@ export class Base extends Component {
             <p>
               <span>
                 I'm a <span className='highlight'>Frontend Developer</span>. I
-                spend most of my time writing
+                spend most of my time writing code for application using
               </span>
               <span className='highlight'> Javascript </span>
               <span>
-                applications. I use CSS and
+                . I use CSS and
               </span>
               <span className='highlight'> SASS </span>
               <span>
