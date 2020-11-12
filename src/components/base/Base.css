@@ -138,8 +138,9 @@ nav ul li:hover a img {
 
 .footer img {
   width: fit-content;
-  max-width: 70%;
   margin-right: 15px;
+  position: relative;
+  top: 2px;
 }
 
 .footer .social {
