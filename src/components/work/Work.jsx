@@ -9,6 +9,36 @@ export class Work extends Component {
     projects: [
       {
         id: uuid(),
+        title: "Checkmate",
+        description: "Sign up portal for Checkmate Africa community",
+        github: "https://github.com/kadetXx/checkmate",
+        live: "https://checkmate.africa/",
+        stack: "React + Styled Components",
+        isPrivate: false,
+      },
+
+      {
+        id: uuid(),
+        title: "EndSars",
+        description: "Web app to support the #EndSARS campaign",
+        github: "https://github.com/kadetXx/endsars",
+        live: "https://endsarz.com/",
+        stack: "React",
+        isPrivate: false,
+      },
+
+      {
+        id: uuid(),
+        title: "Vectorly",
+        description: "Draw basic shapes with SVG",
+        github: "https://github.com/kadetXx/vectorly",
+        live: "https://vectorly.kadetxx.vercel.app/",
+        stack: "React",
+        isPrivate: false,
+      },
+
+      {
+        id: uuid(),
         title: "Kadet.dev",
         description: "My Portfolio Site",
         github: "https://github.com/kadetXx/kadet.dev",
@@ -44,16 +74,6 @@ export class Work extends Component {
         github: "",
         live: "https://strategydashboard.netlify.app/objectives/",
         stack: "SASS + Jquery UI",
-        isPrivate: true,
-      },
-
-      {
-        id: uuid(),
-        title: "customerPay",
-        description: "Debt/Store management web application",
-        github: "",
-        live: "https://customerpay.me/",
-        stack: "Bootstrap + Javascript + Laravel",
         isPrivate: true,
       },
 
@@ -96,6 +116,16 @@ export class Work extends Component {
       //   stack: 'ES6 + Firebase',
       //   isPrivate: false
       // }
+
+      // {
+      //   id: uuid(),
+      //   title: "customerPay",
+      //   description: "Debt/Store management web application",
+      //   github: "",
+      //   live: "https://customerpay.me/",
+      //   stack: "Bootstrap + Javascript + Laravel",
+      //   isPrivate: true,
+      // },
     ],
   };
 
