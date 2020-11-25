@@ -24,14 +24,14 @@ export class Form extends Component {
           <div className="form_section">
             <label>
               <span>Your Name*</span>
-              <input type="text" name="name" placeholder='Enter your name' required />
+              <input type="text" name="name" required />
             </label>
           </div>
 
           <div className="form_section">
             <label>
               <span>Your Email*</span>
-              <input required type="email" name="email" placeholder='Enter your email' />
+              <input required type="email" name="email"  />
             </label>
           </div>
 
