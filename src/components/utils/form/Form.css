@@ -24,7 +24,7 @@ form .form_section label input, textarea {
   padding: 0.9rem;
   margin-top: 7px;
   font-family: 'air-regular';
-  /* font-size: 1em; */
+  font-size: 1em;
 }
 
 form .form_section label input:focus, textarea:focus {
@@ -37,7 +37,7 @@ form .form_section label input::placeholder, textarea::placeholder  {
   font-size: var(--small-font);
   line-height: 2;
   font-family: 'air-regular';
-  /* font-size: 1em; */
+  font-size: 1em;
 }
 
 form .form_section button {
