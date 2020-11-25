@@ -105,6 +105,11 @@
 .go_button_container a {
   margin: 5px;
   text-decoration: none;
+  width: 40%;
+}
+
+.go_button_container a.explore {
+  width: fit-content;
 }
 
 .go_button_container button {
@@ -115,11 +120,14 @@
   border: 1px solid transparent;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: 'air-regular';
+  width: 100%;
 }
 
 .go_button_container button.explore {
   font-size: 15px;
+  width: fit-content;
 }
 
 .go_button_container button:hover {
