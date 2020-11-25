@@ -123,11 +123,25 @@
   justify-content: center;
   font-family: 'air-regular';
   width: 100%;
+  box-sizing: border-box;
+}
+
+.go_button_container button span {
+  position: relative;
+  top: 1px;
+  left: 2px;
+  display: none;
 }
 
 .go_button_container button.explore {
   font-size: 15px;
   width: fit-content;
+  padding: 0.6rem 2rem;
+}
+
+.go_button_container button.explore span {
+  display: initial;
+  position: relative;
 }
 
 .go_button_container button:hover {
