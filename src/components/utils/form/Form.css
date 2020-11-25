@@ -25,6 +25,8 @@ form .form_section label input, textarea {
   margin-top: 7px;
   font-family: 'air-regular';
   font-size: 1em;
+  display: flex;
+  align-items: center;
 }
 
 form .form_section label input:focus, textarea:focus {
