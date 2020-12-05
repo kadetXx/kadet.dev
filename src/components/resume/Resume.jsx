@@ -68,7 +68,7 @@ export class Resume extends Component {
                 rel='noopener noreferrer'
               >
                 <small>
-                  <i className='fab fa-linkedin'></i> <span>Linked In</span>{" "}
+                  <i className='fab fa-linkedin'></i> <span>Linked In</span>
                 </small>
               </a>
               <a
@@ -77,7 +77,7 @@ export class Resume extends Component {
                 rel='noopener noreferrer'
               >
                 <small>
-                  <i className='fas fa-download'></i> <span>Download </span>{" "}
+                  <i className='fas fa-download'></i> <span>Download </span>
                 </small>
               </a>
             </div>
@@ -147,7 +147,6 @@ export class Resume extends Component {
                 Federal University Of Petroleum Resources Effurun — JUPEB A
                 Level Certificate
                 <span>
-                  {" "}
                   <br /> 2016-2017
                 </span>
               </p>

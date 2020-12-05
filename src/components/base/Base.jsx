@@ -13,7 +13,6 @@ export class Base extends Component {
         <div className='hero'>
           <div className='intro_box'>
             <h1>
-              {" "}
               Hello! I'm <br /> Collins Enebeli.
             </h1>
             <div className='avi'>
@@ -28,9 +27,7 @@ export class Base extends Component {
                 spend most of my time writing code for application using
               </span>
               <span className='highlight'> Javascript </span>
-              <span>
-                . I use CSS and
-              </span>
+              <span>. I use CSS and</span>
               <span className='highlight'> SASS </span>
               <span>
                 to create efficient user experience. I love talking about tech
@@ -40,16 +37,15 @@ export class Base extends Component {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  blog{" "}
+                  blog {" "}
                 </a>
-                 ocassionally
+                ocassionally
               </span>
             </p>
           </div>
 
           <div className='go_button_container'>
             <Link to='/work' className='explore'>
-              {" "}
               <button className='explore'>
                 Explore <span class='material-icons'>arrow_right</span>
               </button>
@@ -61,7 +57,7 @@ export class Base extends Component {
           <ul>
             <li className={this.props.menu[0]}>
               <small>
-                00{" "}
+                00
                 <Link to='/'>
                   <img src={navLine} alt='menu bullet' /> WORK
                 </Link>
@@ -70,7 +66,7 @@ export class Base extends Component {
 
             <li className={this.props.menu[1]}>
               <small>
-                01{" "}
+                01
                 <Link to='/resume'>
                   <img src={navLine} alt='menu bullet' /> RESUME
                 </Link>
