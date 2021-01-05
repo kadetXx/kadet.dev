@@ -22,7 +22,7 @@ export class Work extends Component {
         title: "EndSars",
         description: "Web app to support the #EndSARS campaign",
         github: "https://github.com/kadetXx/endsars",
-        live: "https://endsarz.com/",
+        live: "https://endsars.vercel.app/",
         stack: "React",
         isPrivate: false,
       },
