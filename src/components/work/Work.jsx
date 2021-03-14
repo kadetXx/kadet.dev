@@ -57,14 +57,24 @@ export class Work extends Component {
         isPrivate: false,
       },
 
+//       {
+//         id: uuid(),
+//         title: "MicroAPI",
+//         description: "Opensource microservices",
+//         github: "",
+//         live: "https://microapi.dev",
+//         stack: "Sass + Javsacript + Django",
+//         isPrivate: true,
+//       },
+      
       {
         id: uuid(),
-        title: "MicroAPI",
-        description: "Opensource microservices",
-        github: "",
-        live: "https://microapi.dev",
-        stack: "Sass + Javsacript + Django",
-        isPrivate: true,
+        title: "Shoppies",
+        description: "Movie Awards Nomination App",
+        github: "https://github.com/kadetXx/shoppies",
+        live: "https://shoppiesawards.netlify.app/",
+        stack: "React + SASS,
+        isPrivate: false,
       },
 
       {
