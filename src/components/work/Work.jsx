@@ -73,7 +73,7 @@ export class Work extends Component {
         description: "Movie Awards Nomination App",
         github: "https://github.com/kadetXx/shoppies",
         live: "https://shoppiesawards.netlify.app/",
-        stack: "React + SASS,
+        stack: "React + SASS",
         isPrivate: false,
       },
 
