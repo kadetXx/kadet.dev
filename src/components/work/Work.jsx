@@ -7,6 +7,7 @@ import uuid from "react-uuid";
 export class Work extends Component {
   state = {
     projects: [
+
       {
         id: uuid(),
         title: "Checkmate",
@@ -14,6 +15,16 @@ export class Work extends Component {
         github: "https://github.com/kadetXx/checkmate",
         live: "https://checkmate.africa/",
         stack: "React + Styled Components",
+        isPrivate: false,
+      },
+
+      {
+        id: uuid(),
+        title: "Birdbox",
+        description: "Social messaging application",
+        github: "https://github.com/kadetXx/birdbox",
+        live: "https://birdbox.space/",
+        stack: "Vue + Socket.io + Express",
         isPrivate: false,
       },
 
@@ -29,20 +40,20 @@ export class Work extends Component {
 
       {
         id: uuid(),
-        title: "Vectorly",
-        description: "Draw basic shapes with SVG",
-        github: "https://github.com/kadetXx/vectorly",
-        live: "https://vectorly.kadetxx.vercel.app/",
-        stack: "React",
+        title: "Shoppies",
+        description: "Movie Awards Nomination App",
+        github: "https://github.com/kadetXx/shoppies",
+        live: "https://shoppiesawards.netlify.app/",
+        stack: "React + SASS",
         isPrivate: false,
       },
 
       {
         id: uuid(),
-        title: "Kadet.dev",
-        description: "My Portfolio Site",
-        github: "https://github.com/kadetXx/kadet.dev",
-        live: "https://kadet.dev",
+        title: "Vectorly",
+        description: "Draw basic shapes with SVG",
+        github: "https://github.com/kadetXx/vectorly",
+        live: "https://vectorly.kadetxx.vercel.app/",
         stack: "React",
         isPrivate: false,
       },
@@ -55,87 +66,7 @@ export class Work extends Component {
         live: "https://animepanda.herokuapp.com",
         stack: "Sass + Javsacript + PHP",
         isPrivate: false,
-      },
-
-//       {
-//         id: uuid(),
-//         title: "MicroAPI",
-//         description: "Opensource microservices",
-//         github: "",
-//         live: "https://microapi.dev",
-//         stack: "Sass + Javsacript + Django",
-//         isPrivate: true,
-//       },
-      
-      {
-        id: uuid(),
-        title: "Shoppies",
-        description: "Movie Awards Nomination App",
-        github: "https://github.com/kadetXx/shoppies",
-        live: "https://shoppiesawards.netlify.app/",
-        stack: "React + SASS",
-        isPrivate: false,
-      },
-
-      {
-        id: uuid(),
-        title: "Strategex.io",
-        description: "Static singlepage for strategy management app",
-        github: "",
-        live: "https://strategydashboard.netlify.app/objectives/",
-        stack: "SASS + Jquery UI",
-        isPrivate: true,
-      },
-
-      // {
-      //   id: uuid(),
-      //   title: "Travertic",
-      //   description: "Real time multiplayer tic tac toe game",
-      //   github: "https://github.com/kadetXx/tictactoe",
-      //   live: "https://travertic.herokuapp.com",
-      //   stack: "Node.js + Socket.io",
-      //   isPrivate: false,
-      // },
-
-      {
-        id: uuid(),
-        title: "Github Scanner",
-        description: "Lookup github profiles",
-        github: "https://github.com/kadetXx/github-profile-scanner",
-        live: "https://github-profile-scanner.now.sh/",
-        stack: "ES6 + Github API",
-        isPrivate: true,
-      },
-
-      // {
-      //   id: uuid(),
-      //   title: "KadNavbar",
-      //   description: "Opensourse responsive navbar component",
-      //   github: "https://github.com/kadetXx/kadnavbar",
-      //   live: "https://kadetxx.github.io/kadnavbar/",
-      //   stack: "CSS + Javascript",
-      //   isPrivate: false,
-      // },
-
-      // {
-      //   id: uuid(),
-      //   title: 'Instathoughts',
-      //   description: 'CRUD social media app',
-      //   github: 'https://github.com/kadetXx/insta_thoughts',
-      //   live: 'https://instathoughts.netlify.app/',
-      //   stack: 'ES6 + Firebase',
-      //   isPrivate: false
-      // }
-
-      // {
-      //   id: uuid(),
-      //   title: "customerPay",
-      //   description: "Debt/Store management web application",
-      //   github: "",
-      //   live: "https://customerpay.me/",
-      //   stack: "Bootstrap + Javascript + Laravel",
-      //   isPrivate: true,
-      // },
+      }, 
     ],
   };
 

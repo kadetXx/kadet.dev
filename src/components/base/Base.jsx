@@ -23,23 +23,7 @@ export class Base extends Component {
           <div className='description'>
             <p>
               <span>
-                I'm a <span className='highlight'>Frontend Developer</span>. I
-                spend most of my time writing code for application using
-              </span>
-              <span className='highlight'> Javascript </span>
-              <span>. I use CSS and</span>
-              <span className='highlight'> SASS </span>
-              <span>
-                to create efficient user experience. I love talking about tech
-                and also write on my {" "}
-                <a
-                  href='https://kadet.hashnode.dev'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  blog {" "}
-                </a>
-                ocassionally
+                I'm a <span className='highlight'>frontend developer</span>. I create interactive <span className="highlight">experiences</span> for amazing people using <span className="highlight">technology</span>. I spend time tweaking <span className="highlight">stylesheets</span> and  just to get the <span className="highlight">perfect</span> output.
               </span>
             </p>
           </div>
@@ -115,14 +99,6 @@ export class Base extends Component {
                 rel='noreferrer noopener'
               >
                 Sarah Dayan
-              </a>
-              and
-              <a
-                href='https://dribbble.com/NicolasMzrd'
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                Nicolas Meuzard.
               </a>
             </p>
           </div>
