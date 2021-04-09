@@ -23,7 +23,7 @@ export class Base extends Component {
           <div className='description'>
             <p>
               <span>
-                I'm a <span className='highlight'>frontend developer</span>. I create interactive <span className="highlight">experiences</span> for amazing people using <span className="highlight">technology</span>. I enjoy tweaking <span className="highlight">stylesheets</span> and manipulating state to achieve the <span className="highlight">desired</span> aesthetics.
+                I'm a <span className='highlight'>frontend developer</span>. I create interactive <span className="highlight">experiences</span> for amazing people using <span className="highlight">technology</span>. I enjoy tweaking <span className="highlight">stylesheets</span> and crafting <span className="highlight">layouts</span> to achieve <span className="highlight">desired</span> aesthetics.
               </span>
             </p>
           </div>
