@@ -123,15 +123,7 @@ export class App extends Component {
                     rel='noreferrer noopener'
                   >
                     Sarah Dayan 
-                  </a> {''}
-                    and
-                  <a
-                    href='https://dribbble.com/NicolasMzrd'
-                    target='_blank'
-                    rel='noreferrer noopener'
-                  >
-                    Nicolas Meuzard.
-                  </a>
+                  </a> 
                 </p>
               </div>
             </div>
