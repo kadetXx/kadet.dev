@@ -54,10 +54,10 @@
 @media (max-width: 993px) {
   .box_container {
     width: 99%;
-    margin: 4% 0;
+    margin: 4% 2%;
   }
 
   .box .project_details p {
-    height: 4rem;
+    height: 5rem;
   }
 }
