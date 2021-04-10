@@ -25,7 +25,7 @@
 }
 
 .box .project_details p {
-  font-size: var(--small-font);
+  font-size: var(--normal-font);
   line-height: 21px;
   color: #777778;
   height: 5rem;
