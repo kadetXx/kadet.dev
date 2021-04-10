@@ -48,6 +48,11 @@
 
 .description p span.highlight {
   color: #fff;
+  animation: 5s ease-in-out 0s 1 flash;
+}
+
+.description p span.highlight.two {
+  animation: 5s ease-in-out 0s 1 flashTwo;
 }
 
 .description p a {
@@ -203,5 +208,58 @@ nav ul li:hover a img {
 
   .base_container .go_button_container {
     display: flex !important;
+  }
+}
+
+
+@keyframes flash {
+  0% {
+    color: #777778;
+  }
+
+  20% {
+    color: #cecece;
+  }
+
+  30% {
+    color: #ffffff;
+  }
+
+  40% {
+    color: #b4b4b4;
+  }
+
+  45% {
+    color: #777778;
+  }
+
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes flashTwo {
+  0% {
+    color: #cecece;
+  }
+
+  20% {
+    color: #fff;
+  }
+
+  30% {
+    color: #777778;
+  }
+
+  40% {
+    color: #cecece;
+  }
+
+  45% {
+    color: #777778;
+  }
+
+  100% {
+    color: #fff;
   }
 }
