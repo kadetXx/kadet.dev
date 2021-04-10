@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Base.css";
-import avi from "../../assets/img/kadet_shaped.jpg";
+import avi from "../../assets/img/kadet_big.png";
 import navLine from "../../assets/svgs/menu-line.svg";
 import logo from "../../assets/img/smallavi.png";
 import arrow from "../../assets/svgs/arrow.svg";
