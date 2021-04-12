@@ -116,6 +116,12 @@
   /* justify-content: space-between; */
 }
 
+@media (max-width: 993px) and (orientation: landscape) {
+  .mobile_menu_container {
+    overflow: auto;
+  }
+}
+
 #header nav ul {
   list-style: none;
   display: flex;
