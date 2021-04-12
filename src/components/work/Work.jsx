@@ -21,7 +21,7 @@ export class Work extends Component {
       {
         id: uuid(),
         title: "Birdbox",
-        description: "Social messaging application",
+        description: "Social application with Real time Messaging",
         github: "https://github.com/kadetXx/birdbox",
         live: "https://birdbox.space/",
         stack: "Vue + Socket.io + Express",

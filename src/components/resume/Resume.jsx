@@ -96,8 +96,8 @@ export class Resume extends Component {
 
           <div className="skills">
             <p>
-              HTML/CSS SASS Javascript [ES6] React Js Next Js Vue Js CSS-in-JS
-              GraphQL Firebase.
+              HTML/CSS, SASS, Javascript [ES6], React Js, Next Js, Vue Js, CSS-in-JS,
+              GraphQL, Firebase.
             </p>
           </div>
 

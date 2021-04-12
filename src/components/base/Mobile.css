@@ -49,6 +49,12 @@
   display: none;
 }
 
+@media screen and (max-width: 450px) {
+  #mobile .base_container .hero .intro_box h1 br {
+    display: initial;
+  }
+}
+
 .mobile_container .social_buttons {
   display: flex;
   flex-wrap: wrap;
