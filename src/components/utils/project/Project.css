@@ -21,16 +21,16 @@
 
 .box .project_details h3 {
   margin: 0;
-  font-size: var(--project-font);
+  font-size: var(--h3-font);
 }
 
 .box .project_details p {
   font-size: var(--normal-font);
-  line-height: 21px;
+  line-height: 2;
   color: #777778;
   height: 5rem;
   font-family: 'air-light';
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .box .project_details small {
