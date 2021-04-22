@@ -17,9 +17,9 @@ export class Resume extends Component {
         description:
           "I Joined with the Playarone engineering team in building an online gaming community.",
         achievements: [
-          "Worked with React and SASS to build custom components",
+          "Worked with React and SASS to build components from scratch",
           "Handled complex state management using react hooks",
-          "Worked closely with a senior dev and learnt new technologies",
+          "Worked closely with a senior dev to integrate graphQL and typescript.",
         ],
       },
 
@@ -31,7 +31,7 @@ export class Resume extends Component {
         description:
           "I worked with the charisol product team on a contract basis to build a web application for a fintech startup",
         achievements: [
-          "Worked closely with designers to deliver pixel perfect UIs using react js",
+          "Transformed figma prototypes to functional UIs using react js, react context and sass",
           "Made use of tools like Notion & Usepastel for task management and feedback",
           "Interacted with GraphQL apis from the client side using Apollo GraphQL",
         ],
@@ -47,7 +47,7 @@ export class Resume extends Component {
         achievements: [
           "Worked with node.js developers to build a certificate generator",
           "Headed the frontend department of my team to deliver responsive web templates to be sold on envato market",
-          "Worked with backend developers on a Django based open source project to deliver dashboard functionality and UI using Jinja",
+          "Built an open source micro API project alongside python (Django) Developers using Jinja template engine on the frontend",
         ],
       },
     ];
@@ -68,7 +68,7 @@ export class Resume extends Component {
                 </small>
               </a>
               <a
-                href="https://drive.google.com/file/d/1TjgbUstRNS3uheP8u3CsA8CJA1JaBFu7/view?usp=sharing"
+                href="https://drive.google.com/file/d/1tbgKQ8dsGmNXOR5Axb7vWhbOBDBA-3uV/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -84,7 +84,7 @@ export class Resume extends Component {
           <div className="summary">
             <p>
               I’m a Frontend software developer, passionate about transforming
-              ideas from pixels to scalable products. I develop functional
+              ideas from pixels to scalable products. I create functional
               applications with user experience as top priority.
             </p>
           </div>
@@ -96,8 +96,8 @@ export class Resume extends Component {
 
           <div className="skills">
             <p>
-              HTML/CSS, SASS, Javascript [ES6], React Js, Next Js, Vue Js, CSS-in-JS,
-              GraphQL, Firebase.
+              HTML/CSS, SASS, Javascript [ES6], React Js, Next Js, Vue Js,
+              CSS-in-JS, GraphQL, Redux, Firebase.
             </p>
           </div>
 
@@ -107,7 +107,19 @@ export class Resume extends Component {
           </div>
 
           <div className="skills">
-            <p>Typescript, Express, Node Js, EJS, PWAs, Wordpress, SEO.</p>
+            <p>
+              Typescript, Flux, Node Js, Express, Web Sockets, PWAs, Wordpress,
+              SEO.
+            </p>
+          </div>
+
+          <div className="divider">
+            <p>On The Job</p>
+            <span></span>
+          </div>
+
+          <div className="skills">
+            <p>Scrum, CI/CD, Version Control, Best Practices</p>
           </div>
 
           <div className="divider">

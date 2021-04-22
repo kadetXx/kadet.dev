@@ -57,13 +57,15 @@
 .resume_container .divider p {
   margin: 0 10px 0 0;
   font-size: var(--normal-font);
+  text-transform: uppercase;
+  font-weight: 500;
   color: #e2e2e2;
 }
 
 .resume_container .divider span {
   flex-grow: 1;
   height: 1px;
-  background-color: #777778;
+  background-color: #77777859;
 }
 
 .resume_container .skills p {
