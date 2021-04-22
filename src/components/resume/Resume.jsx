@@ -15,7 +15,7 @@ export class Resume extends Component {
         started: "September 2020",
         ended: "Feburary 2021",
         description:
-          "I Joined with the Playarone engineering team in building an online gaming community.",
+          "I Joined the Playarone engineering team in building an online gaming community.",
         achievements: [
           "Worked with React and SASS to build components from scratch",
           "Handled complex state management using react hooks",
