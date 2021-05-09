@@ -7,7 +7,7 @@ import Work from '../components/work/Work'
 // markup
 const IndexPage = () => {
   return (
-    <Layout home={true}>
+    <Layout home={true} active="work">
       <Work />
     </Layout>
   );

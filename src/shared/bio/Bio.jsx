@@ -6,7 +6,7 @@ import navLine from "../../assets/svg/menu-line.svg";
 import logo from "../../assets/images/smallavi.png";
 import arrow from "../../assets/svg/arrow.svg";
 
-const Bio = () => {
+const Bio = ({ active }) => {
   return (
     <div className="base_container">
       <div className="hero">
@@ -44,7 +44,7 @@ const Bio = () => {
 
       <nav>
         <ul>
-          <li>
+          <li className={active === "work" ? "active_menu" : ""}>
             <small>
               00
               <Link to="/">
@@ -53,7 +53,7 @@ const Bio = () => {
             </small>
           </li>
 
-          <li>
+          <li className={active === "resume" ? "active_menu" : ""}>
             <small>
               01
               <Link to="/resume">
@@ -62,7 +62,7 @@ const Bio = () => {
             </small>
           </li>
 
-          <li>
+          <li className={active === 'contact' ? "active_menu" : ""}>
             <small>
               02{" "}
               <Link to="/contact">

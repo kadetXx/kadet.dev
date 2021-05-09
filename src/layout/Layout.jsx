@@ -7,7 +7,7 @@ import Bio from "../shared/bio/Bio";
 import Header from "../shared/header/Header";
 import Socials from "../shared/socials/Socials";
 
-const Layout = ({ children, title, home }) => {
+const Layout = ({ children, title, active, home }) => {
   return (
     <React.Fragment>
       <link
@@ -28,7 +28,7 @@ const Layout = ({ children, title, home }) => {
 
         <div className="container">
           <div className="fixed">
-            <Bio />
+            <Bio active={active} />
           </div>
 
           <div className="main">

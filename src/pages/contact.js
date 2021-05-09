@@ -6,7 +6,7 @@ import Contact from '../components/contact/Contact'
 // markup
 const ContactPage = () => {
   return (
-    <Layout>
+    <Layout active="contact">
       <Contact />
     </Layout>
   );
