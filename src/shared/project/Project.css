@@ -36,10 +36,6 @@
   color: grey;
 }
 
-.box .project_links {
-  margin-top: 1.5rem;
-}
-
 .box .project_links a {
   font-size: var(--small-font);
   line-height: 21px;
@@ -66,6 +62,10 @@
   .box_container_pad:hover {
     transform: translateY(1rem) scale(1.1);
   }
+
+  .box .project_links {
+    margin-top: 1.5rem;
+  }  
 }
 
 @media (max-width: 993px) {
