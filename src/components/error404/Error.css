@@ -24,3 +24,7 @@
   position: relative;
   top: -10px;
 }
+
+#error404 .go_button_container a {
+  width: 60%;
+}
