@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Project.css";
 
 const Project = ({ id, title, description, github, live, stack, isPrivate }) => {

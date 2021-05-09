@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Resume.css";
 import { Link } from "gatsby";
 

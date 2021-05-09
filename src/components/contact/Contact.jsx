@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Contact.css";
 
 import { Link } from "gatsby";
