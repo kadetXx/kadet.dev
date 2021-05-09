@@ -1,6 +1,6 @@
-# Kadet's Portfolio
+# Kadet's Portfolio - v1
 
-This is the repository that contains code for my personal website built with react.js
+Built using react class based components
 
 ## Available Scripts
 
