@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./Project.css";
 
-const Project = ({ title, description, github, live, stack, isPrivate }) => {
+const Project = ({ id, title, description, github, live, stack, isPrivate }) => {
   return (
-    <div className="box_container">
+    <div className={`box_container ${id%2 !== 0 ? 'box_container_pad' : ''}`}>
       <div className="box">
         <div className="project_details">
           <h3> {title} </h3>

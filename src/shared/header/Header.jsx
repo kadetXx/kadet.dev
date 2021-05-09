@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import logo from "../../assets/svg/kadet.svg";
-import { Link } from "react-router-dom";
 import "./Header.css";
+import { Link } from "gatsby";
+
+import Logo from "../../assets/svg/kadet.svg";
 
 const Header = () => {
   const [closed, setClosed] = useState(true);
@@ -11,7 +12,7 @@ const Header = () => {
       <div className="header_wrapper">
         <div className="logo_container">
           <a href="https://kadet.dev">
-            <img src={logo} alt="kadet logo" />
+            <img src={Logo} alt="kadet logo" />
           </a>
         </div>
 
@@ -26,27 +27,27 @@ const Header = () => {
         </div>
       </div>
 
-      {closed ? (
+      {!closed ? (
         <nav>
           <div className="mobile_menu_container">
             <ul>
               <li>
-                <Link to="/" onClick={this.toggleMenu.bind(this)}>
+                <Link to="/" onClick={() => setClosed(true)}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/work" onClick={this.toggleMenu.bind(this)}>
+                <Link to="/work" onClick={() => setClosed(true)}>
                   Work
                 </Link>
               </li>
               <li>
-                <Link to="/resume" onClick={this.toggleMenu.bind(this)}>
+                <Link to="/resume" onClick={() => setClosed(true)}>
                   Résumé
                 </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={this.toggleMenu.bind(this)}>
+                <Link to="/contact" onClick={() => setClosed(true)}>
                   Contact
                 </Link>
               </li>

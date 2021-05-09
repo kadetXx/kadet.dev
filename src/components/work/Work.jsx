@@ -4,12 +4,10 @@ import "./Work.css";
 import { Link } from "gatsby";
 
 import Project from "../../shared/project/Project";
-import uuid from "react-uuid";
 
 const Work = () => {
   const projects = [
     {
-      id: uuid(),
       title: "Checkmate",
       description: "Sign up portal for Checkmate Africa community",
       github: "https://github.com/kadetXx/checkmate",
@@ -19,7 +17,6 @@ const Work = () => {
     },
 
     {
-      id: uuid(),
       title: "Birdbox",
       description: "Social application with Real time Messaging",
       github: "https://github.com/kadetXx/birdbox",
@@ -29,7 +26,6 @@ const Work = () => {
     },
 
     {
-      id: uuid(),
       title: "EndSars",
       description: "Web app to support the #EndSARS campaign",
       github: "https://github.com/kadetXx/endsars",
@@ -39,7 +35,6 @@ const Work = () => {
     },
 
     {
-      id: uuid(),
       title: "Shoppies",
       description: "Movie Awards Nomination App",
       github: "https://github.com/kadetXx/shoppies",
@@ -49,7 +44,6 @@ const Work = () => {
     },
 
     {
-      id: uuid(),
       title: "Vectorly",
       description: "Draw basic shapes with SVG",
       github: "https://github.com/kadetXx/vectorly",
@@ -59,7 +53,6 @@ const Work = () => {
     },
 
     {
-      id: uuid(),
       title: "Animepanda",
       description: "Mobile App landing page",
       github: "https://github.com/kadetXx/animepanda",
@@ -73,8 +66,8 @@ const Work = () => {
   return (
     <div className="work">
       <div className="portfolio_showcase">
-        {projects.map((project) => (
-          <Project key={project.id} {...project} />
+        {projects.map((project, index) => (
+          <Project key={index} {...project} id={index} />
         ))}
       </div>
 

@@ -11,7 +11,12 @@
 .work .portfolio_showcase {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
+}
+
+.work .portfolio_showcase:hover .box_container {
+  opacity: 0.4;
 }
 
 .work .go_button_container {

@@ -43,7 +43,7 @@ html, body {
   color: #fff;
 }
 
-#root {height: 100%;}
+#___gatsby, #gatsby-focus-wrapper {height: 100%;}
 
 .layout {
   height: 100%;
@@ -75,15 +75,13 @@ html, body {
   width: 7px;
 }
 
-
 .main::-webkit-scrollbar-track {
   background: #101011; 
-  background: #555;
 }
  
-
 .main::-webkit-scrollbar-thumb {
   background:#101011; 
+  background: #555;
 }
 
 .main::-webkit-scrollbar-thumb:hover {
@@ -157,10 +155,6 @@ body {
 
 @media (max-width: 993px) {
 
-  /* body, #root, .layout {
-    height: auto;
-  } */
-
   .layout {
     overflow: auto;
   }
@@ -175,11 +169,13 @@ body {
     justify-content: space-between;
     padding: 5%;
     box-sizing: border-box;
-  }
 
-  #fullscreen {
     height: 100%;
   }
+
+  /* #fullscreen {
+    height: 100%;
+  } */
 
 }
 
