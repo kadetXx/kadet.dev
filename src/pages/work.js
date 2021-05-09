@@ -4,7 +4,7 @@ import Layout from "../layout/Layout";
 import Work from '../components/work/Work'
 
 // markup
-const IndexPage = () => {
+const WorkPage = () => {
   return (
     <Layout>
       <Work />
@@ -12,4 +12,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default WorkPage;

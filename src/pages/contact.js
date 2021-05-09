@@ -1,15 +1,15 @@
 import * as React from "react";
 
 import Layout from "../layout/Layout";
-import Work from '../components/work/Work'
+import Contact from '../components/contact/Contact'
 
 // markup
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
-      <Work />
+      <Contact />
     </Layout>
   );
 };
 
-export default IndexPage;
+export default ContactPage;

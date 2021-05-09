@@ -1,0 +1,14 @@
+.contact .go_button_container {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  form {
+    margin: 30px 10px;
+  }
+
+  .contact .go_button_container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}

@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "kadet.dev",
+    title: "Kadet - Collins Enebeli",
+    description: `Frontend Software Developer/Engineer`,
+    author: `@kadetXx`,
+    keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -16,7 +19,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: "Kadet",
+        short_name: "kadet",
+        start_url: "/",
+        background_color: "#000000",
+        theme_color: "#000000",
+        icon: "src/assets/images/kadet_shaped.png",
       },
     },
     "gatsby-plugin-mdx",
@@ -26,7 +34,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/images/",
       },
       __key: "images",
     },
