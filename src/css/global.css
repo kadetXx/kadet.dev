@@ -157,6 +157,11 @@ body {
 
   .layout {
     overflow: auto;
+    height: auto;
+  }
+
+  #layout_full {
+    height: 100%;
   }
 
   .layout .container {

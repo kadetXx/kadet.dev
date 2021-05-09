@@ -19,7 +19,8 @@ const Layout = ({ children, title, active, home }) => {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       />
       <Seo title={title ? title : null} />
-      <div className="layout">
+      
+      <div className="layout" id={home ? "layout_full" : ""}>
         <div className="mobile_container">
           <Header />
           <div id="mobile">{home ? <Bio /> : children}</div>
