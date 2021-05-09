@@ -2,23 +2,13 @@
 
 This is the repository that contains code for my personal website built with react.js
 
-## Available Scripts
+## Branches
 
-In the project directory, you can run:
+1. v1-react-class-based
 
-#### `npm start`
+This branch contains the first version of my portfolio build with react class based components
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. v2-gatsby-js
 
+This branch contains the latest version of my portfolio built using gatsby js
 
-#### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-## License
-
-Copyright © 2020 - present Collins Enebeli. All rights reserved
-
-**The code and media present in this repository remains an intellectual property of the individual metioned above and therefore CANNOT be copied, modified, redistributed, sublicenced or used as a template without due permission from the author.**
