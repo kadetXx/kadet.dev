@@ -4,11 +4,7 @@ This is the repository that contains code for my personal website built with rea
 
 ## Branches
 
-1. v1-react-class-based
+- v1-react-class-based: This branch contains the first version of my portfolio build with react class based components
 
-This branch contains the first version of my portfolio build with react class based components
-
-2. v2-gatsby-js
-
-This branch contains the latest version of my portfolio built using gatsby js
+- v2-gatsby-js: This branch contains the latest version of my portfolio built using gatsby js
 
