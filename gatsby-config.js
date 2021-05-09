@@ -4,6 +4,7 @@ module.exports = {
     description: `Frontend Software Developer/Engineer`,
     author: `@kadetXx`,
     keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
+    siteUrl: 'https://kadet.dev'
   },
   plugins: [
     "gatsby-plugin-image",
