@@ -6,7 +6,6 @@ module.exports = {
     keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
   },
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -22,11 +21,50 @@ module.exports = {
         name: "Kadet",
         short_name: "kadet",
         start_url: "/",
+        display: "fullscreen",
         background_color: "#000000",
         theme_color: "#000000",
         icon: "src/assets/images/kadet_shaped.png",
+        icons: [ // manually, so they go to static folder:
+          {
+            src: `/static/icons/icon-48x48.png`,
+            sizes: `48x48`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-72x72.png`,
+            sizes: `72x72`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-96x96.png`,
+            sizes: `96x96`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-144x144.png`,
+            sizes: `144x144`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-310x310.png`,
+            sizes: `310x310`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/icons/icon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          }
+        ]
       },
     },
+    "gatsby-plugin-offline",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
