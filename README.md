@@ -1,18 +1,22 @@
 # Kadet's Portfolio - v2
 
 Built using gatsby js
+## Available Scripts
 
-## Starting The project
+In the project directory, you can run:
 
-1.  **Start the dev server.**
+#### `yarn develop`
 
-    Navigate into the site directory and start it up.
+Runs the app in the development mode.<br />
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-    ```
-    npm run develop
-    ```
 
-2.  **Open the code and start customizing!**
+#### `yarn build`
 
-    Your site is now running at http://localhost:8000!
+Builds the app for production to the `public` folder.<br />
 
+## License
+
+Copyright © 2020 - present Collins Enebeli. All rights reserved
+
+**The code and media present in this repository remains an intellectual property of the individual metioned above and therefore CANNOT be copied, modified, redistributed, sublicenced or used as a template without due permission from the author.**
