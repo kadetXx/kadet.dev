@@ -6,7 +6,7 @@ import Resume from '../components/resume/Resume'
 // markup
 const ResumePage = () => {
   return (
-    <Layout active="resume">
+    <Layout active="resume" title="Resume">
       <Resume />
     </Layout>
   );

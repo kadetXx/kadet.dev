@@ -6,7 +6,7 @@ import Work from '../components/work/Work'
 // markup
 const WorkPage = () => {
   return (
-    <Layout active="work">
+    <Layout active="work" title="Work">
       <Work />
     </Layout>
   );
