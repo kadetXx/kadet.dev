@@ -13,8 +13,8 @@ const Resume = () => {
       description:
         "I Joined the Playarone engineering team in building an online gaming community.",
       achievements: [
-        "Worked with React and SASS to build components from scratch",
-        "Handled complex state management using react hooks",
+        "Built complex layouts and components with React & SASS",
+        "Managed app state with react hooks",
         "Worked closely with a senior dev to integrate graphQL and typescript.",
       ],
     },
@@ -27,7 +27,7 @@ const Resume = () => {
       description:
         "I worked with the charisol product team on a contract basis to build a web application for a fintech startup",
       achievements: [
-        "Transformed figma prototypes to functional UIs using react js, react context and sass",
+        "Transformed figma prototypes to functional UIs using react js, react context api and sass",
         "Made use of tools like Notion & Usepastel for task management and feedback",
         "Interacted with GraphQL apis from the client side using Apollo GraphQL",
       ],
@@ -64,7 +64,7 @@ const Resume = () => {
               </small>
             </a>
             <a
-              href="https://drive.google.com/file/d/1tbgKQ8dsGmNXOR5Axb7vWhbOBDBA-3uV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1nX-Lgb7nYpo0m7lKxwOCJlsEl9wA71v-/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -92,7 +92,7 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            HTML/CSS, SASS, Javascript [ES6], React Js, Next Js, Vue Js,
+            HTML/CSS/SASS, Javascript [ES6], React Js, Gatsby Js, Next Js, Vue Js,
             CSS-in-JS, GraphQL, Redux, Firebase.
           </p>
         </div>
