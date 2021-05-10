@@ -81,7 +81,7 @@ html, body {
  
 .main::-webkit-scrollbar-thumb {
   background:#101011; 
-  background: #555;
+  background: #16161A;
 }
 
 .main::-webkit-scrollbar-thumb:hover {
