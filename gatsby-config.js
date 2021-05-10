@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Kadet - Collins Enebeli",
-    description: `Frontend Software Developer/Engineer`,
+    description: `Frontend Developer`,
     author: `@kadetXx`,
     keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
     siteUrl: 'https://kadet.dev'
