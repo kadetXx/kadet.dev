@@ -110,25 +110,25 @@ p {
 
 body {
   --h1-font: 2.5rem;
-  --h2-font: 36px;
-  --h3-font: 22px;
-  --project-font: 19px;
-  --semi-font: 16px;
-  --normal-font: 14px;
-  --small-font: 13px;
-  --xsmall-font: 12px;
+  --h2-font: 2.2rem;
+  --h3-font: 1.3rem;
+  --project-font: 1.1rem;
+  --semi-font: 1rem;
+  --normal-font: 0.8rem;
+  --small-font: 0.75rem;
+  --xsmall-font: 0.7rem;
 }
 
 @media (min-width: 1440px) {
   body {
-    --h1-font: 3.2rem;
-    --h2-font: 42px;
-    --h3-font: 28px;
-    --project-font: 25px;
-    --semi-font: 22px;
-    --normal-font: 18px;
-    --small-font: 17px;
-    --xsmall-font: 16px;
+    --h1-font: 2.7rem;
+    --h2-font: 2.4rem;
+    --h3-font: 1.5rem;
+    --project-font: 1.3rem;
+    --semi-font: 1.1rem;
+    --normal-font: 0.95rem;
+    --small-font: 0.8rem;
+    --xsmall-font: 0.75rem;
   }
 }
 
