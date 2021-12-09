@@ -52,20 +52,23 @@ html, body {
 
 .container {
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: 47% 1fr;
 }
 
 .container .fixed {
   height: 100vh; 
-  width: 50%;
+  /* width: 50%; */
   display: flex;
   justify-content: center;
 }
 
 .container .main {
   height: 100vh;
-  width: 50%;
+  /* width: 50%; */
   overflow-y: auto;
   /* background-color: gold; */
 }
@@ -89,7 +92,7 @@ html, body {
 }
 
 .container .main .pages_container {
-  padding: 8% 15% 8% 5%;
+  padding: 10% 15% 10% 5%;
   flex-grow: 1;
   /* height: 100%; */
   display: flex;
