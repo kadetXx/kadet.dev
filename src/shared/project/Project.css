@@ -1,3 +1,5 @@
+/* normal box container */
+
 .box_container {
   width: 49.3%;
   background-color: #16161a;
@@ -9,7 +11,8 @@
 .box {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  /* padding: 10%; */
+  padding: 1.9rem;
   /* height: 80%; */
   flex-grow: 1;
   justify-content: space-between;
@@ -50,6 +53,24 @@
   color: #777778;
 }
 
+/* full width box container */
+
+.box_container_full {
+  width: 100%;
+}
+
+.box_container_full .box {
+  padding: 2.5rem;
+}
+
+.box_container_full .box .project_links {
+  margin-top: 0;
+}
+
+.box_container_full .box .project_details p {
+  height: auto;
+}
+
 @media (min-width: 993px) {
   .box_container_pad {
     transform: translateY(1.5rem);
@@ -66,7 +87,7 @@
 
   .box .project_links {
     margin-top: 1.5rem;
-  }  
+  }
 }
 
 @media (max-width: 993px) {

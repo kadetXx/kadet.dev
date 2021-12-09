@@ -62,10 +62,17 @@ const Work = () => {
     },
   ];
 
-
   return (
     <div className="work">
       <div className="portfolio_showcase">
+        <h3 className="title">FEATURED</h3>
+        {projects.slice(0, 2).map((project, index) => (
+          <Project key={index} {...project} id={index} fullWidth />
+        ))}
+      </div>
+
+      <div className="portfolio_showcase">
+        <h3 className="title">OTHERS</h3>
         {projects.map((project, index) => (
           <Project key={index} {...project} id={index} />
         ))}

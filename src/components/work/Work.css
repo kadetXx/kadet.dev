@@ -13,6 +13,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 3rem;
+}
+
+.work .portfolio_showcase .title {
+  width: 100%;
+  margin: 1rem 0;
+  font-size: var(--small-font);
+  color: #777778;
 }
 
 .work .portfolio_showcase:hover .box_container {
