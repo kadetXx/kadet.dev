@@ -82,7 +82,7 @@ nav ul li {
   align-items: center;
   cursor: pointer;
   width: fit-content;
-  margin: 10px 0;
+  margin: 0.9rem 0;
   padding: 0;
   color: #777778;
 }
@@ -92,6 +92,7 @@ nav ul li small {
   align-items: center;
   margin: 0;
   font-size: var(--small-font);
+  font-weight: bolder;
 }
 
 nav ul li small a {
@@ -101,12 +102,23 @@ nav ul li small a {
   color: inherit;
 }
 
-nav ul li a img {
-  margin: 0 10px;
-  width: 30px;
+/* nav ul li a img {
+  margin: 0 1rem;
+  width: 2rem;
   pointer-events: none;
   transition: width 0.2s linear;
   opacity: 0.5;
+} */
+
+nav ul li a .menu_bullet {
+  margin: 0 1rem;
+  pointer-events: none;
+  transition: all 0.2s linear;
+
+  height: 1px;
+  width: 2.5rem;
+  max-width: 2.5rem;
+  background-color: #777778;
 }
 
 nav ul li.active_menu {
@@ -115,23 +127,24 @@ nav ul li.active_menu {
   color: #fff;
 }
 
-nav ul li.active_menu a img {
-  margin: 0 10px;
-  width: 50px;
-  transition: width 0.2s linear;
-  opacity: 1;
+nav ul li.active_menu a .menu_bullet {
+  width: 4rem;
+  max-width: 4rem;
+  transition: all 0.2s linear;
+  background-color: #ffffff
 }
 
 nav ul li:hover {
   opacity: 1;
-  transition: all 0.2s linear;
   color: #fff;
+  transition: all 0.2s linear;
 }
 
-nav ul li:hover a img {
-  margin: 0 10px;
-  width: 50px;
-  transition: width 0.2s linear;
+nav ul li:hover a .menu_bullet {
+  width: 4rem;
+  max-width: 4rem;
+  transition: all 0.2s linear;
+  background-color: #ffffff
 }
 
 .footer {

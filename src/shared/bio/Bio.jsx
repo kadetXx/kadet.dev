@@ -46,27 +46,27 @@ const Bio = ({ active }) => {
         <ul>
           <li className={active === "work" ? "active_menu" : ""}>
             <small>
-              00
+              <span>00</span>
               <Link to="/">
-                <img src={navLine} alt="menu bullet" /> WORK
+                <span className="menu_bullet"></span> WORK
               </Link>
             </small>
           </li>
 
           <li className={active === "resume" ? "active_menu" : ""}>
             <small>
-              01
+              <span>01</span>
               <Link to="/resume">
-                <img src={navLine} alt="menu bullet" /> RESUME
+                <span className="menu_bullet"></span> RESUME
               </Link>
             </small>
           </li>
 
           <li className={active === 'contact' ? "active_menu" : ""}>
             <small>
-              02{" "}
+              <span>02</span>
               <Link to="/contact">
-                <img src={navLine} alt="menu bullet" /> CONTACT
+                <span className="menu_bullet"></span> CONTACT
               </Link>
             </small>
           </li>
