@@ -61,6 +61,7 @@
   .work .portfolio_showcase .title {
     grid-column-start: unset;
     grid-column-end: unset;
+    margin: 0 10px;
   }
 
   .work .go_button_container {
