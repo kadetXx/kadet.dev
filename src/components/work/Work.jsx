@@ -55,20 +55,20 @@ const Work = () => {
     },
 
     {
-      title: "EndSars",
-      description: "Web app to support the #EndSARS campaign",
-      github: "https://github.com/kadetXx/endsars",
-      live: "https://endsars.vercel.app/",
-      stack: "React",
-      isPrivate: false,
-    },
-
-    {
       title: "Seerbit Shop",
       description: "One page shop UI",
       github: "https://github.com/kadetXx/seerbit-css-test",
       live: "https://shoppiesawards.netlify.app/",
       stack: "HTML + CSS",
+      isPrivate: false,
+    },
+
+    {
+      title: "EndSars",
+      description: "Web app to support the #EndSARS campaign",
+      github: "https://github.com/kadetXx/endsars",
+      live: "https://endsars.vercel.app/",
+      stack: "React",
       isPrivate: false,
     },
 

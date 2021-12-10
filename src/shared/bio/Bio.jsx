@@ -25,10 +25,11 @@ const Bio = ({ active }) => {
               I'm a <span className="highlight">frontend developer</span>. I
               create interactive{" "}
               <span className="highlight two">experiences</span> for amazing
-              people using <span className="highlight">technology</span>. I
-              enjoy tweaking <span className="highlight two">stylesheets</span>{" "}
-              and crafting <span className="highlight">layouts</span> to achieve{" "}
-              <span className="highlight two">desired</span> aesthetics.
+              people using web <span className="highlight">technologies</span>.
+              I am currently learning how to write super interactive{" "}
+              <span className="highlight">web animations</span> and also
+              exploring the <span className="highlight">decentralized</span>{" "}
+              web. 
             </span>
           </p>
         </div>
@@ -62,7 +63,7 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === 'contact' ? "active_menu" : ""}>
+          <li className={active === "contact" ? "active_menu" : ""}>
             <small>
               <span>02</span>
               <Link to="/contact">
