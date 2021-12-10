@@ -1,6 +1,6 @@
 import React from "react";
-import './Bio.css'
-import './Bio.mobile.css'
+import "./Bio.css";
+import "./Bio.mobile.css";
 import { Link } from "gatsby";
 
 import avi from "../../assets/images/kadet_big.png";
@@ -28,11 +28,10 @@ const Bio = ({ active }) => {
               create interactive{" "}
               <span className="highlight two">experiences</span> for amazing
               people using web <span className="highlight">technologies</span>.
-              I am currently <span className="highlight two">learning</span> how to
-              write super interactive{" "}
-              <span className="highlight">web animations</span> and also
-              exploring the <span className="highlight two">decentralized</span>{" "}
-              web.
+              I am currently <span className="highlight two">learning</span> how
+              to write creative web{" "}
+              <span className="highlight">animations</span> and also exploring
+              the <span className="highlight two">decentralized</span> web.
             </span>
           </p>
         </div>

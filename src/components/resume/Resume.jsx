@@ -9,13 +9,13 @@ const Resume = () => {
       company: "Playarone",
       position: "Frontend Developer",
       started: "September 2020",
-      ended: "Feburary 2021",
+      ended: "October 2021",
       description:
         "I Joined the Playarone engineering team in building an online gaming community.",
       achievements: [
         "Built complex layouts and components with React & SASS",
         "Managed app state with react hooks",
-        "Worked closely with a senior dev to integrate graphQL and typescript.",
+        "Worked closely with a senior dev using graphQL and typescript.",
       ],
     },
 
@@ -64,7 +64,7 @@ const Resume = () => {
               </small>
             </a>
             <a
-              href="https://drive.google.com/file/d/1nX-Lgb7nYpo0m7lKxwOCJlsEl9wA71v-/view?usp=sharing"
+              href="https://drive.google.com/file/d/1CUf5i60GirwkCp2t6Xk1IXQpXBNBJYhG/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -92,7 +92,7 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            HTML/CSS/SASS, Javascript [ES6], React Js, Gatsby Js, Next Js, Vue Js,
+            HTML/CSS/SASS, Javascript [ES6], React JS, Gatsby JS, Next JS, Vue JS,
             CSS-in-JS, GraphQL, Redux, Firebase.
           </p>
         </div>
@@ -104,7 +104,7 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            Typescript, Flux, Node Js, Express, Web Sockets, PWAs, Wordpress,
+            Typescript, Nuxt JS, Flux, Node JS, Express, Web Sockets, PWAs, Wordpress,
             SEO.
           </p>
         </div>
