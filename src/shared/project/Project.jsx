@@ -24,7 +24,7 @@ const Project = ({ id, title, description, github, live, stack, isPrivate, fullW
             <small>
               <a href={github} target="_blank" rel="noopener noreferrer">
                 {" "}
-                <i className="fas fa-code-branh"></i> Code{" "}
+                <i className="fas fa-code-branch"></i> Code{" "}
               </a>
             </small>
           )}
