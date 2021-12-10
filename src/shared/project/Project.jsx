@@ -14,7 +14,7 @@ const Project = ({ id, title, description, github, live, stack, isPrivate, fullW
         <div className="project_links">
           <small>
             <a href={live} target="_blank" rel="noopener noreferrer">
-              <i className="far fa-eye"></i> Live{" "}
+              <i className="fa fa-link"></i> Live{" "}
             </a>
           </small>
 
@@ -24,7 +24,7 @@ const Project = ({ id, title, description, github, live, stack, isPrivate, fullW
             <small>
               <a href={github} target="_blank" rel="noopener noreferrer">
                 {" "}
-                <i className="fas fa-code-branch"></i> Code{" "}
+                <i className="fas fa-code-branh"></i> Code{" "}
               </a>
             </small>
           )}
