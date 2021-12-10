@@ -1,7 +1,5 @@
 import React from "react";
 import "./Layout.css";
-import "./LayoutMobile.css";
-
 import Seo from "../shared/seo/Seo";
 import Bio from "../shared/bio/Bio";
 import Header from "../shared/header/Header";
