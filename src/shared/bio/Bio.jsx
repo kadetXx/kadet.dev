@@ -40,7 +40,7 @@ const Bio = ({ active }) => {
         <div className="go_button_container">
           <Link to="/work" className="explore">
             <button className="explore">
-              Explore <span class="material-icons">arrow_right</span>
+              Explore <span className="material-icons">arrow_right</span>
             </button>
           </Link>
         </div>

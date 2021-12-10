@@ -3,7 +3,7 @@ import "./Work.css";
 
 import { Link } from "gatsby";
 
-import Project from "../../shared/project/Project";
+import Project from "../../shared/projectCard/ProjectCard";
 
 const Work = () => {
   const featuredProjects = [
@@ -137,12 +137,12 @@ const Work = () => {
       <div className="go_button_container">
         <Link to="/">
           <button>
-            <span class="material-icons">arrow_left</span> Home
+            <span className="material-icons">arrow_left</span> Home
           </button>
         </Link>
         <Link to="/contact">
           <button>
-            Contact <span class="material-icons">arrow_right</span>
+            Contact <span className="material-icons">arrow_right</span>
           </button>
         </Link>
       </div>

@@ -70,7 +70,7 @@ const Form = () => {
         <div className="form_section">
           <button type="submit">
             {" "}
-            {!loading ? "Shoot" : <i class="fas fa-ellipsis-h"></i>}{" "}
+            {!loading ? "Shoot" : <i className="fas fa-ellipsis-h"></i>}{" "}
           </button>
         </div>
       </form>

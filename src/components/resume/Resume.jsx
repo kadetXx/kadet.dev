@@ -183,12 +183,12 @@ const Resume = () => {
       <div className="go_button_container">
         <Link to="/contact">
           <button>
-            <span class="material-icons">arrow_left</span> Contact
+            <span className="material-icons">arrow_left</span> Contact
           </button>
         </Link>
         <Link to="/">
           <button>
-            Home <span class="material-icons">arrow_right</span>{" "}
+            Home <span className="material-icons">arrow_right</span>{" "}
           </button>
         </Link>
       </div>
