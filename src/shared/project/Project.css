@@ -92,7 +92,7 @@
 
 @media (max-width: 993px) {
   .box_container {
-    width: 99%;
+    width: auto;
     margin: 4% 10px;
     opacity: 1 !important;
   }

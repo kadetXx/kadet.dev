@@ -54,6 +54,15 @@
     margin: 30px 0px;
   }
 
+  .work .portfolio_showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .work .portfolio_showcase .title {
+    grid-column-start: unset;
+    grid-column-end: unset;
+  }
+
   .work .go_button_container {
     display: flex;
   }
