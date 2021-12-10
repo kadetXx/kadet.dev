@@ -1,0 +1,35 @@
+* {
+  /* cursor: none !important; */
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  mix-blend-mode: exclusion;
+  background-color: #ffffff;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 10000000;
+  position: absolute;
+
+  transition: transform 0.5s ease-out;
+}
+
+.custom-cursor-ii {
+  width: 6px;
+  height: 6px;
+  background-color: #bebebe;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 10000000;
+  position: absolute;
+  mix-blend-mode: exclusion;
+
+  transition: transform 0.1s ease-out;
+}
+
+@media screen and (max-width: 750px) {
+  .custom-cursor, .custom-cursor-ii {
+    display: none;
+  }
+}
