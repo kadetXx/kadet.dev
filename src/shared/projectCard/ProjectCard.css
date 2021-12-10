@@ -38,7 +38,7 @@
   font-size: var(--small-font);
   font-size: 0.65rem;
   letter-spacing: 1.5px;
-  font-family: 'air-semibold';
+  font-family: "air-semibold";
   color: #bebebe;
   text-transform: uppercase;
 }
@@ -55,6 +55,10 @@
 .box .project_links a i {
   margin-right: 2px;
   color: #777778;
+}
+
+.box .project_links small:hover a, .box .project_links small:hover i {
+  color: #ffffff;
 }
 
 /* full width box container */

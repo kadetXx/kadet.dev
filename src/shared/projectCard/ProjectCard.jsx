@@ -12,7 +12,7 @@ const Project = ({ id, title, description, github, live, stack, isPrivate, fullW
         </div>
 
         <div className="project_links">
-          <small>
+          <small className="hover-effect">
             <a href={live} target="_blank" rel="noopener noreferrer">
               <i className="fa fa-link"></i> Live{" "}
             </a>
@@ -21,7 +21,7 @@ const Project = ({ id, title, description, github, live, stack, isPrivate, fullW
           {isPrivate ? (
             ""
           ) : (
-            <small>
+            <small className="hover-effect">
               <a href={github} target="_blank" rel="noopener noreferrer">
                 {" "}
                 <i className="fas fa-code-branch"></i> Code{" "}

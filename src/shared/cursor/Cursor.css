@@ -1,10 +1,8 @@
-* {
-  /* cursor: none !important; */
-}
-
 .custom-cursor {
   width: 20px;
   height: 20px;
+  max-width: 20px;
+  max-height: 20px;
   mix-blend-mode: exclusion;
   background-color: #ffffff;
   border-radius: 100%;
@@ -12,7 +10,7 @@
   z-index: 10000000;
   position: absolute;
 
-  transition: transform 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .custom-cursor-ii {
@@ -25,11 +23,30 @@
   position: absolute;
   mix-blend-mode: exclusion;
 
-  transition: transform 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.hover-mode.custom-cursor-ii {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.hover-mode.custom-cursor{
+  opacity: 0.2;
+  border: 1px solid grey;
+  background: none;
+  max-width: 70px;
+  max-height: 70px;
+  width: 70px;
+  height: 70px;
+  margin-left: -25px;
+  margin-top: -25px;
+  transition: all 0.2s ease-out;
 }
 
 @media screen and (max-width: 750px) {
-  .custom-cursor, .custom-cursor-ii {
+  .custom-cursor,
+  .custom-cursor-ii {
     display: none;
   }
 }
