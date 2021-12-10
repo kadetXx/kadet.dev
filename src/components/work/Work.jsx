@@ -64,7 +64,7 @@ const Work = () => {
 
   return (
     <div className="work">
-      <div className="portfolio_showcase">
+      <div className="portfolio_showcase portfolio_showcase_full">
         <h3 className="title">FEATURED</h3>
         {projects.slice(0, 2).map((project, index) => (
           <Project key={index} {...project} id={index} fullWidth />
