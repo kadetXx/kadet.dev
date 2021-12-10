@@ -26,7 +26,14 @@
   transition: all 0.1s ease-out;
 }
 
-.hover-mode.custom-cursor-ii {
+@media screen and (max-width: 750px) {
+  .custom-cursor,
+  .custom-cursor-ii {
+    display: none;
+  }
+}
+
+/* .hover-mode.custom-cursor-ii {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
@@ -34,19 +41,13 @@
 .hover-mode.custom-cursor{
   opacity: 0.2;
   border: 1px solid grey;
+  border-radius: 0;
   background: none;
-  max-width: 70px;
-  max-height: 70px;
-  width: 70px;
-  height: 70px;
-  margin-left: -25px;
-  margin-top: -25px;
+  max-width: 80px;
+  max-height: 80px;
+  width: 80px;
+  height: 80px;
+  margin-left: -30px;
+  margin-top: -30px;
   transition: all 0.2s ease-out;
-}
-
-@media screen and (max-width: 750px) {
-  .custom-cursor,
-  .custom-cursor-ii {
-    display: none;
-  }
-}
+} */

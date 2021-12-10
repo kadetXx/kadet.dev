@@ -1,9 +1,22 @@
 import React from "react";
 import "./ProjectCard.css";
 
-const Project = ({ id, title, description, github, live, stack, isPrivate, fullWidth }) => {
+const Project = ({
+  id,
+  title,
+  description,
+  github,
+  live,
+  stack,
+  isPrivate,
+  fullWidth,
+}) => {
   return (
-    <div className={`box_container ${id%2 !== 0 && !fullWidth ? 'box_container_pad' : ''} ${fullWidth && 'box_container_full'}`}>
+    <div
+      className={`box_container ${
+        id % 2 !== 0 && !fullWidth ? "box_container_pad" : ""
+      } ${fullWidth && "box_container_full"}`}
+    >
       <div className="box">
         <div className="project_details">
           <h3> {title} </h3>

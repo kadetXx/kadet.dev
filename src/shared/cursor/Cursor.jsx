@@ -8,7 +8,7 @@ const Cursor = ({ children }) => {
   useEffect(() => {
     const cursor = cursorRef.current;
     const cursorII = cursorIIRef.current;
-    const allHoverLinks = document.querySelectorAll(".hover-effect");
+    // const allHoverLinks = document.querySelectorAll(".hover-effect");
 
     // trailing cursor function
     const trail = (ev) => {
@@ -26,22 +26,22 @@ const Cursor = ({ children }) => {
     // add event listener to activate trailing function
     document.addEventListener("mousemove", trail);
 
-    // funtion to highlight item
-    const highlight = () => {
-      cursor.classList.add("hover-mode");
-      cursorII.classList.add("hover-mode");
-    };
+    // // funtion to highlight item
+    // const highlight = () => {
+    //   cursor.classList.add("hover-mode");
+    //   cursorII.classList.add("hover-mode");
+    // };
 
-    const removeHighlight = () => {
-      cursor.classList.remove("hover-mode");
-      cursorII.classList.remove("hover-mode");
-    };
+    // const removeHighlight = () => {
+    //   cursor.classList.remove("hover-mode");
+    //   cursorII.classList.remove("hover-mode");
+    // };
 
-    // add event listener for hover effects
-    allHoverLinks.forEach((item) => {
-      item.addEventListener("mouseenter", highlight);
-      item.addEventListener("mouseleave", removeHighlight);
-    });
+    // // add event listener for hover effects
+    // allHoverLinks.forEach((item) => {
+    //   item.addEventListener("mouseenter", highlight);
+    //   item.addEventListener("mouseleave", removeHighlight);
+    // });
 
     return () => document.removeEventListener("mousemove", trail);
   }, []);
