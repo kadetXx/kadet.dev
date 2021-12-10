@@ -9,7 +9,7 @@ const Work = () => {
   const featuredProjects = [
     {
       title: "Caketools",
-      description: "Decentralised charting hub for BSC network.",
+      description: "Decentralised charting hub for BSC Network.",
       github: "",
       live: "https://caketools.io/",
       stack: "Next JS + Typescript + Web3",
