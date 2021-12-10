@@ -85,14 +85,14 @@ nav ul li {
   margin: 0.9rem 0;
   padding: 0;
   color: #777778;
+  font-family: 'air-regular';
 }
 
 nav ul li small {
   display: flex;
   align-items: center;
   margin: 0;
-  font-size: var(--small-font);
-  font-weight: bolder;
+  font-size: var(--xsmall-font);
 }
 
 nav ul li small a {
@@ -100,6 +100,7 @@ nav ul li small a {
   align-items: center;
   text-decoration: none;
   color: inherit;
+  letter-spacing: 2px;
 }
 
 /* nav ul li a img {

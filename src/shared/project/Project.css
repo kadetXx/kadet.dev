@@ -36,7 +36,10 @@
 .box .project_details small {
   margin-bottom: 13px;
   font-size: var(--small-font);
+  font-size: 0.65rem;
+  font-family: 'air-semibold';
   color: #bebebe;
+  text-transform: uppercase;
 }
 
 .box .project_links a {
