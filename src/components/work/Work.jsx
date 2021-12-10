@@ -18,7 +18,7 @@ const Work = () => {
 
     {
       title: "Playarone",
-      description: "Gaming community",
+      description: "Esports Gaming platform",
       github: "",
       live: "https://app.playarone.com/",
       stack: "React + Typescript",

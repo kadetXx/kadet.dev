@@ -75,7 +75,7 @@ const Bio = ({ active }) => {
       </nav>
 
       <div className="footer">
-        <img src={logo} alt="" />
+        <img src={avi} alt="" />
         <div className="social">
           <a
             href="https://github.com/kadetXx"

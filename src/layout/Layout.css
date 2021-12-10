@@ -160,6 +160,9 @@ nav ul li:hover a .menu_bullet {
   margin-right: 15px;
   position: relative;
   top: 2px;
+  height: 45px;
+  width: 47px;
+  border-radius: 140% 120% 140% 100%;
 }
 
 .footer .social {
