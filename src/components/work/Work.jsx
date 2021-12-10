@@ -18,7 +18,7 @@ const Work = () => {
 
     {
       title: "Playarone",
-      description: "Esports Gaming platform",
+      description: "Esports gaming platform",
       github: "",
       live: "https://app.playarone.com/",
       stack: "React + Typescript",
@@ -28,7 +28,7 @@ const Work = () => {
 
   const projects = [
     {
-      title: "Bevel Plexus",
+      title: "BevelPlexus",
       description: "UI for a fintech application",
       github: "",
       live: "https://dev-bevelplexus.netlify.app/",
@@ -74,7 +74,7 @@ const Work = () => {
 
     {
       title: "Kadet.dev",
-      description: "My portfolio",
+      description: "My persnal portfolio",
       github: "https://github.com/kadetXx/kadet.dev",
       live: "https://kadet.dev/",
       stack: "Gatsby JS",
