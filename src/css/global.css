@@ -61,6 +61,7 @@ body {
   --h1-font: 2.5rem;
   --h2-font: 2.2rem;
   --h3-font: 1.3rem;
+  --h4-font: 1.2rem;
   --project-font: 1.1rem;
   --semi-font: 1rem;
   --normal-font: 0.8rem;
@@ -73,6 +74,7 @@ body {
     --h1-font: 2.7rem;
     --h2-font: 2.4rem;
     --h3-font: 1.5rem;
+    --h4-font: 1.4rem;
     --project-font: 1.3rem;
     --semi-font: 1.1rem;
     --normal-font: 0.95rem;

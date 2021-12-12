@@ -7,45 +7,41 @@ import GoButton from "../../shared/goButton/GoButton";
 const Blog = () => {
   const posts = [
     {
-      title: "BevelPlexus",
-      description: "UI for a fintech application",
-      github: "",
-      live: "https://dev-bevelplexus.netlify.app/",
-      stack: "React + Context API",
-      isPrivate: true,
+      id: 1,
+      title:
+        "Breaking Into Web3 - I Built A DApp For The First Time With Next.js",
+      date: "November 5th, 2021",
+      tags: ["Web3", "Next js"],
+      link: "/blog/web-3",
+    },
+    {
+      id: 2,
+      title: "Setting Up Context API With React The Stress Free Way",
+      date: "November 5th, 2021",
+      tags: ["React", "Context API"],
+      link: "/blog/web-3",
     },
 
     {
-      title: "Haute Couture",
-      description: "Fashion landing page",
-      github: "https://github.com/kadetXx/haute-couture",
-      live: "http://haute-couture.vercel.app/",
-      stack: "React + Typescript",
-      isPrivate: false,
+      id: 3,
+      title: "Do You Really Need React's UseCallBack Hook?",
+      date: "November 5th, 2021",
+      tags: ["Typescript", "React"],
+      link: "/blog/web-3",
     },
 
     {
-      title: "Birdbox",
-      description: "Social application with real time Messaging",
-      github: "https://github.com/kadetXx/birdbox",
-      live: "https://birdbox.space/",
-      stack: "Vue + Socket.io + Express",
-      isPrivate: false,
-    },
-
-    {
-      title: "Seerbit Shop",
-      description: "One page shop UI",
-      github: "https://github.com/kadetXx/seerbit-css-test",
-      live: "https://shoppiesawards.netlify.app/",
-      stack: "HTML + CSS",
-      isPrivate: false,
+      id: 4,
+      title: "Why I Think CSS (Not Javascript) Gives You An Edge Over The Other Applicants",
+      date: "November 5th, 2021",
+      tags: ["GraphQL", "Apollo"],
+      link: "/blog/web-3",
     },
   ];
 
   return (
-    <div className="work">
-      <div className="portfolio_showcase">
+    <div className="blog">
+      <div className="blog_posts">
         {posts.map((project, index) => (
           <Post key={index} {...project} id={index} />
         ))}

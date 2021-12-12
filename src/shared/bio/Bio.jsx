@@ -66,7 +66,7 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === "contact" ? "active_menu" : ""}>
+          <li className={active === "blog" ? "active_menu" : ""}>
             <small>
               <span>02</span>
               <Link to="/blog">

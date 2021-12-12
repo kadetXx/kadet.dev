@@ -1,49 +1,29 @@
 import React from "react";
 import "./PostCard.css";
 
-const Post = ({
-  id,
-  title,
-  description,
-  github,
-  live,
-  stack,
-  isPrivate,
-  fullWidth,
-}) => {
+const Post = ({ id, title, date, tags, link }) => {
   return (
-    <div
-      className={`box_container ${
-        id % 2 !== 0 && !fullWidth ? "box_container_pad" : ""
-      } ${fullWidth && "box_container_full"}`}
+    <article
+      className={`box_container ${id % 2 !== 0 ? "box_container_pad" : ""} `}
     >
-      <div className="box">
-        <div className="project_details">
-          <h3> {title} </h3>
-          <small> {stack} </small>
-          <p> {description} </p>
-        </div>
-
-        <div className="project_links">
-          <small className="hover-effect">
-            <a href={live} target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-link"></i>{" "}
-              Live{" "}
-            </a>
+      <a href={link} className="post">
+        <div className="post_meta">
+          <small className="post_tags">
+            {tags.map((tag, index) =>
+              index === tags.length - 1 ? tag : `${tag}, `
+            )}
           </small>
-
-          {isPrivate ? (
-            ""
-          ) : (
-            <small className="hover-effect">
-              <a href={github} target="_blank" rel="noopener noreferrer">
-                <i className="fas fa-code-branch"></i> Code{" "}
-              </a>
-            </small>
-          )}
+          <date className="post_date"> {date} </date>
         </div>
-      </div>
-    </div>
+
+        <div className="post_title">
+          <h3>{title}</h3>
+          <small className="post_length">
+            <i class="far fa-clock"></i> 3mins read
+          </small>
+        </div>
+      </a>
+    </article>
   );
 };
 
