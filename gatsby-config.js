@@ -4,7 +4,7 @@ module.exports = {
     description: `Frontend Developer`,
     author: `@kadetXx`,
     keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
-    siteUrl: 'https://kadet.dev'
+    siteUrl: "https://kadet.dev",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -26,7 +26,8 @@ module.exports = {
         background_color: "#000000",
         theme_color: "#000000",
         icon: "src/assets/images/kadet_shaped.png",
-        icons: [ // manually, so they go to static folder:
+        icons: [
+          // manually, so they go to static folder:
           {
             src: `/static/icons/icon-48x48.png`,
             sizes: `48x48`,
@@ -61,14 +62,15 @@ module.exports = {
             src: `/static/icons/icon-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
-          }
-        ]
+          },
+        ],
       },
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -84,6 +86,14 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "markdown",
+        path: "./src/markdown/",
+      },
+      __key: "markdown",
     },
   ],
 };

@@ -114,9 +114,6 @@
   margin-right: 5px;
 }
 
-.resume .go_button_container {
-  display: none;
-}
 
 @media (max-width: 993px) {
   .resume_container {
@@ -129,11 +126,6 @@
 
   .resume_container .top_row .buttons span {
    display: none;
-  }
-
-  .resume .go_button_container {
-    display: flex;
-    margin-bottom: 20px;
   }
 
   .resume_container .top_row .buttons a {

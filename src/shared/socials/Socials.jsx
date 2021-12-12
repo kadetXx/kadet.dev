@@ -17,12 +17,19 @@ const Socials = () => {
       >
         <i className="fab fa-twitter"></i>
       </a>
-      <a
+      {/* <a
         href="https://www.linkedin.com/in/collins-enebeli-online/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <i className="fab fa-linkedin"></i>
+      </a> */}
+      <a
+        href="mailto:hello@kadet.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fas fa-at"></i>
       </a>
 
       <div className="credits">

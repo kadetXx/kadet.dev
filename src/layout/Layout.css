@@ -5,25 +5,19 @@
 
 .container {
   height: 100%;
-  /* display: flex;
-  justify-content: space-between; */
-
   display: grid;
   grid-template-columns: 47% 1fr;
 }
 
 .container .fixed {
   height: 100vh; 
-  /* width: 50%; */
   display: flex;
   justify-content: center;
 }
 
 .container .main {
   height: 100vh;
-  /* width: 50%; */
   overflow-y: auto;
-  /* background-color: gold; */
 }
 
 
@@ -47,7 +41,6 @@
 .container .main .pages_container {
   padding: 10% 15% 10% 5%;
   flex-grow: 1;
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -55,7 +48,6 @@
 
 .base_container {
   padding: 10% 5% 10% 15%;
-  /* padding-left: 15%; */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -64,6 +56,14 @@
 }
 
 /*===== RESPONSIVE STYLING =====*/
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  flex-grow: 1;
+}
 
 .mobile_container {
   display: none;
@@ -107,10 +107,29 @@
 
     height: 100%;
   }
-
-  /* #fullscreen {
-    height: 100%;
-  } */
-
 }
 
+/* STYLING FOR BLOG POST LAYOUT */
+
+.layout_article .container {
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+
+.layout_article .container .fixed {
+  display: none;
+}
+
+.layout_article .container .main .pages_container {
+  padding: 5% 5% 10%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.layout_article #mobile {
+  margin: 3rem 0;
+} 
+
+.layout_article .mobile_container .social_buttons {
+  display: none !important;
+}

@@ -11,7 +11,7 @@ const Header = () => {
     <div id="header">
       <div className="header_wrapper">
         <div className="logo_container">
-          <a href="https://kadet.dev">
+          <a href="/">
             <img src={Logo} alt="kadet logo" />
           </a>
         </div>

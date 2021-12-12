@@ -27,11 +27,12 @@ const Bio = ({ active }) => {
               I'm a <span className="highlight">frontend developer</span>. I
               create interactive{" "}
               <span className="highlight two">experiences</span> for amazing
-              people using web <span className="highlight">technologies</span>.
-              I am currently <span className="highlight two">learning</span> how
-              to write creative web{" "}
-              <span className="highlight">animations</span> and also exploring
-              the <span className="highlight two">decentralized</span> web.
+              people using modern{" "}
+              <span className="highlight">web technology</span>. I am currently{" "}
+              <span className="highlight two">learning</span> how to write
+              creative web <span className="highlight">animations</span> and
+              also exploring the{" "}
+              <span className="highlight two">decentralized</span> web.
             </span>
           </p>
         </div>
@@ -65,11 +66,11 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === "contact" ? "active_menu" : ""}>
+          <li className={active === "blog" ? "active_menu" : ""}>
             <small>
               <span>02</span>
-              <Link to="/contact">
-                <span className="menu_bullet"></span> CONTACT
+              <Link to="/blog">
+                <span className="menu_bullet"></span> ARTICLES
               </Link>
             </small>
           </li>
@@ -94,6 +95,15 @@ const Bio = ({ active }) => {
             rel="noopener noreferrer"
           >
             <i className="fab fa-twitter"></i> Twitter{" "}
+            <img src={arrow} alt="pointer" />
+          </a>
+
+          <a
+            href="mailto:hello@kadet.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-at"></i> Email{" "}
             <img src={arrow} alt="pointer" />
           </a>
         </div>

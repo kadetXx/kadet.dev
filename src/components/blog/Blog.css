@@ -1,0 +1,28 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blog .blog_posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.blog .blog_posts:hover .box_container {
+  opacity: 0.4;
+}
+
+@media (max-width: 993px) {
+  .blog {
+    margin: 30px 0px;
+  }
+
+  .blog .blog_posts {
+    grid-template-columns: 1fr;
+  }
+}
