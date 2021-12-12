@@ -27,9 +27,9 @@ const Bio = ({ active }) => {
               I'm a <span className="highlight">frontend developer</span>. I
               create interactive{" "}
               <span className="highlight two">experiences</span> for amazing
-              people using web <span className="highlight">technologies</span>.
+              people using <span className="highlight">web technology</span>.
               I am currently <span className="highlight two">learning</span> how
-              to write creative web{" "}
+              to <span className="highlight">get better</span> at writing creative web{" "}
               <span className="highlight">animations</span> and also exploring
               the <span className="highlight two">decentralized</span> web.
             </span>
@@ -68,8 +68,8 @@ const Bio = ({ active }) => {
           <li className={active === "contact" ? "active_menu" : ""}>
             <small>
               <span>02</span>
-              <Link to="/contact">
-                <span className="menu_bullet"></span> CONTACT
+              <Link to="/blog">
+                <span className="menu_bullet"></span> ARTICLES
               </Link>
             </small>
           </li>

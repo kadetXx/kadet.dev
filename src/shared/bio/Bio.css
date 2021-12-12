@@ -164,7 +164,7 @@ nav ul li:hover a .menu_bullet {
 .footer .social a {
   display: flex;
   align-items: center;
-  font-size: var(--normal-font);
+  font-size: var(--small-font);
   margin-right: 2px;
   color: inherit;
   text-decoration: none;
