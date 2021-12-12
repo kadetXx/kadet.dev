@@ -1,5 +1,11 @@
+.back-button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
 .post-meta {
-  margin: 2rem 0 4rem;
+  margin: 1.5rem 0 4rem;
 }
 
 .post-meta .post-timing {

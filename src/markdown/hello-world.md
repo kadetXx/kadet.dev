@@ -7,9 +7,9 @@ tags: ["Personal"]
 
 ## Hello Everyone 👋🏽
 
-I just learnt how to create a blog with Gatsby Js and I'm so excited to announce that I have decided to stop being lazy so, from today henceforth, I pledge to myself, that I will start write at least one article every two months (still seems like laziness but whatever lol).
+I just re-learnt how to create a blog with Gatsby Js and I'm so excited to announce that I have decided to stop being lazy sooooo, on this day, 12th December, 2021, I pledge to myself that I will write at least one article every two months (still seems like laziness but rome wasn't built in a day lol).
 
-I'll talk about a number of topics which will not limited to tech. I'll talk about tech, I'll talk about my achievements, My experiences, Life milestones, year in reviews, etc.
+I'll talk about a number of topics which will not limited to tech. I'll talk about tech, I'll talk about my achievements, experiences, milestones, life generally, year in reviews, etc.
 
 <!-- ```html
 <div>Sorry, Just had to test the code feature on this editor</div>
