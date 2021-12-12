@@ -27,7 +27,12 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout active="blog" title={title} article>
-      <Seo title={title} description={description} />
+      <Seo
+        title={title}
+        description={description}
+        isArticle
+        url={`http://kadet.dev${data.markdownRemark.fields.slug}`}
+      />
       <div className="post-meta">
         <small className="post-timing">
           <i className="far fa-calendar-alt"></i> {date}
@@ -50,7 +55,7 @@ const PostTemplate = ({ data }) => {
         itemProp="articleBody"
       />
 
-      <div className="post-footer">
+      {/* <div className="post-footer">
         {prevFields && (
           <Link to={prevFields.slug} className="posts-nav post-pre">
             <small>
@@ -70,7 +75,7 @@ const PostTemplate = ({ data }) => {
             <p>{nextMatter.title}</p>
           </Link>
         )}
-      </div>
+      </div> */}
     </Layout>
   );
 };
@@ -89,6 +94,9 @@ export const pageQuery = graphql`
       html
       wordCount {
         words
+      }
+      fields {
+        slug
       }
       frontmatter {
         title

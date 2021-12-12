@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function Seo({ description, lang, meta, title }) {
+function Seo({ description, lang, meta, title, isArticle, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -31,35 +31,39 @@ function Seo({ description, lang, meta, title }) {
         lang,
       }}
       title={title || defaultTitle}
-      titleTemplate={title ? `%s | ${defaultTitle}` : defaultTitle}
+      titleTemplate={
+        title
+          ? `%s | ${!isArticle ? defaultTitle : "Kadet Blog"}`
+          : defaultTitle
+      }
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: description || metaDescription,
         },
         {
           name: `theme-color`,
-          content: `#000000`
+          content: `#000000`,
         },
         {
           name: `viewport`,
-          content: `width=device-width, initial-scale=1 maximum-scale=1`
+          content: `width=device-width, initial-scale=1 maximum-scale=1`,
         },
         {
           property: `og:title`,
-          content: title,
+          content: title || defaultTitle,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: description || metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: isArticle ? `article` : `website`,
         },
         {
           property: `og:url`,
-          content: `http://kadet.dev`,
+          content: url || `http://kadet.dev`,
         },
         {
           property: `og:image`,
@@ -79,11 +83,11 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title || defaultTitle,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: description || metaDescription,
         },
       ].concat(meta)}
     />
