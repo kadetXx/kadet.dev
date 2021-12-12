@@ -1,6 +1,6 @@
 ---
-title: "I Decided To Start Writing Again"
-date: "2021-11-23T22:12:03.284Z"
+title: "So I Decided To Start Writing Again"
+date: "2021-12-12T18:18:03.284Z"
 description: "After a long ass yesr of lazying around, I decided to create a blog where I share content occasionally"
 tags: ["Personal"]
 ---
