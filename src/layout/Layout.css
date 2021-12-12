@@ -125,6 +125,10 @@
   padding: 5%;
 }
 
-.layout #mobile {
-  margin: 5% 0;
+.layout_article #mobile {
+  margin: 3rem 0;
 } 
+
+.layout_article .mobile_container .social_buttons {
+  display: none !important;
+}

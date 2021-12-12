@@ -16,7 +16,8 @@ const Layout = ({ children, title, active, home, article }) => {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       />
-      <Seo title={title ? title : null} />
+
+      {!article && <Seo title={title ? title : null} />}
 
       <div
         className={`layout ${article && "layout_article"}`}

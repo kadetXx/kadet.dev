@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./PostCard.css";
+
+import { Link } from "gatsby";
 
 const getMins = (words) => {
   const count = Number(words) / 200;
@@ -24,7 +26,7 @@ const Post = ({ id, fields, wordCount, frontmatter }) => {
       itemScope
       itemType="http://schema.org/Article"
     >
-      <a href={fields.slug} className="post">
+      <Link to={fields.slug} itemProp="url" className="post">
         <div className="post_meta">
           <small className="post_tags">
             {tags.map((tag, index) =>
@@ -41,7 +43,7 @@ const Post = ({ id, fields, wordCount, frontmatter }) => {
             {mins === 0 ? `${secs} seconds` : `${mins} mins`} read
           </small>
         </div>
-      </a>
+      </Link>
     </article>
   );
 };
