@@ -1,6 +1,6 @@
 import React from "react";
 import "./postTemplate.css";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 import Layout from "../layout/Layout";
 import Seo from "../shared/seo/Seo";
@@ -30,10 +30,10 @@ const PostTemplate = ({ data }) => {
       <Seo title={title} description={description} />
       <div className="post-meta">
         <small className="post-timing">
-          <i class="far fa-calendar-alt"></i> {date}
+          <i className="far fa-calendar-alt"></i> {date}
         </small>
         <small className="post-timing">
-          <i class="far fa-clock"></i>{" "}
+          <i className="far fa-clock"></i>{" "}
           {mins === 0 ? `${secs} seconds` : `${mins} mins`} read
         </small>
         <h1 className="post-title">{title}</h1>
@@ -44,25 +44,31 @@ const PostTemplate = ({ data }) => {
         </small>
       </div>
 
+      <section
+        className="post-content"
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        itemProp="articleBody"
+      />
+
       <div className="post-footer">
         {prevFields && (
-          <a className="posts-nav post-pre">
+          <Link to={prevFields.slug} className="posts-nav post-pre">
             <small>
               {" "}
               <i className="fas fa-long-arrow-alt-left"></i> PREV POST
             </small>
 
             <p>{prevMatter.title}</p>
-          </a>
+          </Link>
         )}
         {nextFields && (
-          <a className="posts-nav post-next">
+          <Link to={nextFields.slug} className="posts-nav post-next">
             <small>
               NEXT POST <i className="fas fa-long-arrow-alt-right"></i>
             </small>
 
             <p>{nextMatter.title}</p>
-          </a>
+          </Link>
         )}
       </div>
     </Layout>

@@ -47,7 +47,7 @@ html, body {
 
 
 p {
-  font-size: var(--normal-font) !important;
+  font-size: var(--normal-font);
 }
 
 @media (min-width: 1400px) {

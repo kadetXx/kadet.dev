@@ -29,6 +29,12 @@
 
 .posts-nav {
   max-width: 70%;
+  text-decoration: none;
+}
+
+.posts-nav:hover p {
+  text-decoration: underline;
+  text-decoration-color: #bebebe;
 }
 
 .posts-nav:last-child {
@@ -49,13 +55,17 @@
   margin: 0.5rem 0 0;
   display: flex;
   flex-direction: column;
-
-  font-size: 0.6rem;
+  font-size: var(--normal-font);
   line-height: 1.5;
   color: #bebebe;
 }
 
 @media screen and (max-width: 600px) {
+
+  .post-meta .post-title {
+    font-size: var(--h3-font);
+  }
+
   .post-footer {
     width: 100%;
     display: flex;
@@ -74,4 +84,14 @@
   .posts-nav.post-next {
     margin-left: 20%;
   }
+}
+
+.post-content {
+  margin-bottom: 4rem;
+}
+
+.post-content p {
+  line-height: 2;
+  font-size: var(--semi-font);
+  color: #b3b3b3;
 }

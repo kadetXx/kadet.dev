@@ -113,7 +113,6 @@
 
 .layout_article .container {
   grid-template-columns: 1fr;
-  max-width: 900px;
   margin: auto;
 }
 
@@ -122,7 +121,9 @@
 }
 
 .layout_article .container .main .pages_container {
-  padding: 5%;
+  padding: 5% 5% 10%;
+  max-width: 900px;
+  margin: auto;
 }
 
 .layout_article #mobile {
