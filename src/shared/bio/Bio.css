@@ -205,10 +205,6 @@ nav ul li:hover a .menu_bullet {
   margin: 0 5px;
 }
 
-.base_container .go_button_container {
-  display: none !important;
-}
-
 @media (max-width: 993px) {
   .intro_box .avi {
     display: initial;
@@ -219,10 +215,6 @@ nav ul li:hover a .menu_bullet {
     width: 113px;
     height: 113px;
     border-radius: 140% 120% 140% 100%;
-  }
-
-  .base_container .go_button_container {
-    display: flex !important;
   }
 }
 

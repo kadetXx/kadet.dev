@@ -1,7 +1,8 @@
 import React from "react";
 import "./Resume.css";
-import { Link } from "gatsby";
 
+import { Link } from "gatsby";
+import GoButton from "../../shared/goButton/GoButton";
 
 const Resume = () => {
   const experience = [
@@ -92,8 +93,8 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            HTML/CSS/SASS, Javascript [ES6], React JS, Gatsby JS, Next JS, Vue JS,
-            CSS-in-JS, GraphQL, Redux, Firebase.
+            HTML/CSS/SASS, Javascript [ES6], React JS, Gatsby JS, Next JS, Vue
+            JS, CSS-in-JS, GraphQL, Redux, Firebase.
           </p>
         </div>
 
@@ -104,8 +105,8 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            Typescript, Nuxt JS, Flux, Node JS, Express, Web Sockets, PWAs, Wordpress,
-            SEO.
+            Typescript, Nuxt JS, Flux, Node JS, Express, Web Sockets, PWAs,
+            Wordpress, SEO.
           </p>
         </div>
 
@@ -180,18 +181,10 @@ const Resume = () => {
         </div>
       </div>
 
-      <div className="go_button_container">
-        <Link to="/contact">
-          <button>
-            <span className="material-icons">arrow_left</span> Contact
-          </button>
-        </Link>
-        <Link to="/">
-          <button>
-            Home <span className="material-icons">arrow_right</span>{" "}
-          </button>
-        </Link>
-      </div>
+      <GoButton
+        prev={{ url: "/blog", text: "Articles" }}
+        next={{ url: "/", text: "Home" }}
+      />
     </div>
   );
 };

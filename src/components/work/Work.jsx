@@ -1,9 +1,8 @@
 import React from "react";
 import "./Work.css";
 
-import { Link } from "gatsby";
-
 import Project from "../../shared/projectCard/ProjectCard";
+import GoButton from "../../shared/goButton/GoButton";
 
 const Work = () => {
   const featuredProjects = [
@@ -134,18 +133,10 @@ const Work = () => {
         ))}
       </div>
 
-      <div className="go_button_container">
-        <Link to="/">
-          <button>
-            <span className="material-icons">arrow_left</span> Home
-          </button>
-        </Link>
-        <Link to="/contact">
-          <button>
-            Contact <span className="material-icons">arrow_right</span>
-          </button>
-        </Link>
-      </div>
+      <GoButton
+        prev={{ url: "/", text: "Home" }}
+        next={{ url: "/blog", text: "Articles" }}
+      />
     </div>
   );
 };
