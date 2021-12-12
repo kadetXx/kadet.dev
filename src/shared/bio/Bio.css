@@ -171,7 +171,7 @@ nav ul li:hover a .menu_bullet {
 }
 
 .footer .social a i {
-  margin-right: 10px;
+  margin-right: 5px;
   color: grey;
 }
 
@@ -179,7 +179,7 @@ nav ul li:hover a .menu_bullet {
   width: 40%;
   margin-left: 2px;
   height: 80%;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .credits {

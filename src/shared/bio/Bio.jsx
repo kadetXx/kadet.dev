@@ -97,6 +97,15 @@ const Bio = ({ active }) => {
             <i className="fab fa-twitter"></i> Twitter{" "}
             <img src={arrow} alt="pointer" />
           </a>
+
+          <a
+            href="mailto:hello@kadet.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-at"></i> Email{" "}
+            <img src={arrow} alt="pointer" />
+          </a>
         </div>
 
         <div className="credits">
