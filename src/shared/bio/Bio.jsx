@@ -27,11 +27,12 @@ const Bio = ({ active }) => {
               I'm a <span className="highlight">frontend developer</span>. I
               create interactive{" "}
               <span className="highlight two">experiences</span> for amazing
-              people using web <span className="highlight">technology</span>.
-              I am currently <span className="highlight two">learning</span> how
-              to write creative web{" "}
-              <span className="highlight">animations</span> and also exploring
-              the <span className="highlight two">decentralized</span> web.
+              people using modern{" "}
+              <span className="highlight">web technology</span>. I am currently{" "}
+              <span className="highlight two">learning</span> how to write
+              creative web <span className="highlight">animations</span> and
+              also exploring the{" "}
+              <span className="highlight two">decentralized</span> web.
             </span>
           </p>
         </div>
