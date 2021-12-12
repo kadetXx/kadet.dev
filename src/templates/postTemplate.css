@@ -4,6 +4,11 @@
   width: fit-content;
 }
 
+.back-button svg {
+  position: relative;
+  left: -3px;
+}
+
 .post-meta {
   margin: 1.5rem 0 4rem;
 }

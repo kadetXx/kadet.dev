@@ -55,7 +55,7 @@ const PostTemplate = ({ data }) => {
         </small>
         <small className="post-timing">
           <i className="far fa-clock"></i>{" "}
-          {mins === 0 ? `${secs} seconds` : `${mins} mins`} read
+          {mins === 0 ? `1 min` : `${mins} mins`} read
         </small>
         <h1 className="post-title">{title}</h1>
         <small className="post-tags">

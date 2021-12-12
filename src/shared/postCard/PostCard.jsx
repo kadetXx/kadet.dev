@@ -40,7 +40,7 @@ const Post = ({ id, fields, wordCount, frontmatter }) => {
           <h3>{title}</h3>
           <small className="post_length">
             <i class="far fa-clock"></i>{" "}
-            {mins === 0 ? `${secs} seconds` : `${mins} mins`} read
+            {mins === 0 ? `1 min` : `${mins} mins`} read
           </small>
         </div>
       </Link>
