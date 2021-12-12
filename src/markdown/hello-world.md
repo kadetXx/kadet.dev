@@ -1,7 +1,8 @@
 ---
 title: "I Decided To Start Writing Again"
-date: "November 21th, 2021"
+date: "November 21, 2021"
 description: "After a long ass yesr of lazying around, I decided to create a blog where I share content occasionally"
+tags: ['Personal']
 ---
 
 
