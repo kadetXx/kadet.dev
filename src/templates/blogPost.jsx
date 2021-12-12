@@ -1,19 +1,14 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Logo from "../assets/svg/kadet.svg";
+import Layout from "../layout/Layout";
 
 const PostTemplate = ({ data }) => {
+  const title = data.markdownRemark.frontmatter.title;
   return (
-    <div style={{ padding: "5% 10%", minHeight: "100vh" }}>
-      <div className="logo_container">
-        <a href="/">
-          <img src={Logo} alt="kadet logo" />
-        </a>
-      </div>
-
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
-    </div>
+    <Layout active="blog" title={title} article>
+      <h1>{title}</h1>
+    </Layout>
   );
 };
 
