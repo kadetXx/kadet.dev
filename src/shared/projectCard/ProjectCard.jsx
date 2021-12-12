@@ -27,7 +27,8 @@ const Project = ({
         <div className="project_links">
           <small className="hover-effect">
             <a href={live} target="_blank" rel="noopener noreferrer">
-              <i className="fa fa-link"></i> Live{" "}
+              <i className="fa fa-link"></i>{" "}
+              Live{" "}
             </a>
           </small>
 
@@ -36,7 +37,6 @@ const Project = ({
           ) : (
             <small className="hover-effect">
               <a href={github} target="_blank" rel="noopener noreferrer">
-                {" "}
                 <i className="fas fa-code-branch"></i> Code{" "}
               </a>
             </small>
