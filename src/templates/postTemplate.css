@@ -83,6 +83,18 @@
     font-size: var(--h3-font);
   }
 
+  .post-content h2 {
+    font-size: var(--h4-font);
+  }
+  
+  .post-content h3 {
+    font-size: var(--semi-font);
+  }
+  
+  .post-content h4 {
+    font-size: var(--normal-font);
+  }
+
   .post-footer {
     width: 100%;
     display: flex;
