@@ -3,24 +3,12 @@ import "./src/css/global.css";
 import React from "react";
 import CustomCursor from "./src/shared/cursor/Cursor";
 
-import {
-  PrismicPreviewProvider,
-  componentResolverFromMap,
-} from "gatsby-plugin-prismic-previews";
+import { PrismicPreviewProvider } from "gatsby-plugin-prismic-previews";
+import { repositoryConfig } from "./src/utils/previewConfig";
 
 export const wrapPageElement = ({ element, props }) => {
   return (
-    <PrismicPreviewProvider
-      repositoryConfigs={[
-        {
-          repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
-          linkResolver,
-          componentResolver: componentResolverFromMap({
-            blog_post: PostTemplate,
-          }),
-        },
-      ]}
-    >
+    <PrismicPreviewProvider repositoryConfigs={repositoryConfig}>
       <CustomCursor {...props}>{element}</CustomCursor>
     </PrismicPreviewProvider>
   );
