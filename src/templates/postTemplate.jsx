@@ -5,16 +5,17 @@ import { graphql, Link } from "gatsby";
 import Layout from "../layout/Layout";
 import Seo from "../shared/seo/Seo";
 
-import { getMins } from '../utils/wordCount'
+import { getMins } from "../utils/wordCount";
+import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
 
 const PostTemplate = ({ data: postData }) => {
-  const { date, tags, url, data } = postData.current.nodes[0];
-  const { title, description, content } =  data;
+  const { date, tags, url, data } = postData.current;
+  const { title, description, content } = data;
   const { mins } = getMins(content.text);
 
   // previous and next posts
-  const { url: prevUrl, data: prevData } = postData.previous.nodes[0] || {};
-  const { url: nextUrl, data: nextData } = postData.next.nodes[0] || {};
+  const { url: prevUrl, data: prevData } = postData.previous || {};
+  const { url: nextUrl, data: nextData } = postData.next || {};
 
   return (
     <Layout active="blog" title={title} article>
@@ -41,7 +42,7 @@ const PostTemplate = ({ data: postData }) => {
           ></path>
         </svg>
       </Link>
-      
+
       <div className="post-meta">
         <small className="post-timing">
           <i className="far fa-calendar-alt"></i> {date}
@@ -90,7 +91,7 @@ const PostTemplate = ({ data: postData }) => {
   );
 };
 
-export default PostTemplate;
+export default withPrismicPreview(PostTemplate);
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -98,86 +99,39 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    current: allPrismicBlogPost(filter: { id: { eq: $id } }) {
-      nodes {
-        tags
-        url
-        date: first_publication_date(formatString: "MMMM DD, YYYY")
-        data {
-          title {
-            text
-          }
-          description {
-            text
-          }
-          content {
-            html
-            text
-          }
+    current: prismicBlogPost(id: { eq: $id }) {
+      _previewable
+      tags
+      url
+      date: first_publication_date(formatString: "MMMM DD, YYYY")
+      data {
+        title {
+          text
+        }
+        description {
+          text
+        }
+        content {
+          html
+          text
         }
       }
     }
-    previous: allPrismicBlogPost(filter: { id: { eq: $previousPostId } }) {
-      nodes {
-        url
-        data {
-          title {
-            text
-          }
+    previous: prismicBlogPost(id: { eq: $previousPostId }) {
+      url
+      data {
+        title {
+          text
         }
       }
     }
-    next: allPrismicBlogPost(filter: { id: { eq: $nextPostId } }) {
-      nodes {
-        url
-        data {
-          title {
-            text
-          }
+    next: prismicBlogPost(id: { eq: $nextPostId }) {
+      url
+      data {
+        title {
+          text
         }
       }
     }
   }
 `;
-
-// export const pageQuery = graphql`
-//   query BlogPostBySlug(
-//     $id: String!
-//     $previousPostId: String
-//     $nextPostId: String
-//   ) {
-//     markdownRemark(id: { eq: $id }) {
-//       id
-//       excerpt(pruneLength: 160)
-//       html
-//       wordCount {
-//         words
-//       }
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//         date(formatString: "MMMM DD, YYYY")
-//         description
-//         tags
-//       }
-//     }
-//     previous: markdownRemark(id: { eq: $previousPostId }) {
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//       }
-//     }
-//     next: markdownRemark(id: { eq: $nextPostId }) {
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         title
-//       }
-//     }
-//   }
-// `;
