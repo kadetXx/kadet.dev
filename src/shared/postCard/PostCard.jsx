@@ -27,7 +27,7 @@ const Post = ({ id, tags, url, first_publication_date, data }) => {
         <div className="post_title">
           <h3>{title.text}</h3>
           <small className="post_length">
-            <i class="far fa-clock"></i>{" "}
+            <i className="far fa-clock"></i>{" "}
             {mins === 0 ? `1 min` : `${mins} mins`} read
           </small>
         </div>
