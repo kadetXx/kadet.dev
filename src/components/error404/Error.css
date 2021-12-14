@@ -25,6 +25,15 @@
   top: -10px;
 }
 
+#error404 .go_button_container {
+  display: block;
+}
+
 #error404 .go_button_container a {
   width: 60%;
+}
+
+#error404 .go_button_container button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
