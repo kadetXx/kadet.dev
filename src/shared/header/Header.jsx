@@ -42,13 +42,13 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/resume" onClick={() => setClosed(true)}>
-                  Résumé
+                <Link to="/blog" onClick={() => setClosed(true)}>
+                  Articles
                 </Link>
               </li>
               <li>
-                <Link to="/blog" onClick={() => setClosed(true)}>
-                  Articles
+                <Link to="/resume" onClick={() => setClosed(true)}>
+                  Résumé
                 </Link>
               </li>
             </ul>

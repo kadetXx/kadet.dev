@@ -49,7 +49,7 @@ const Blog = ({ posts }) => {
       </div>
 
       <GoButton
-        prev={{ url: "/", text: "Home" }}
+        prev={{ url: "/work", text: "Work" }}
         next={{ url: "/resume", text: "Resume" }}
       />
     </div>
