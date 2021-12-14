@@ -5,34 +5,26 @@ import { graphql, Link } from "gatsby";
 import Layout from "../layout/Layout";
 import Seo from "../shared/seo/Seo";
 
-const getMins = (words) => {
-  const count = Number(words) / 200;
-  const [mins, secs] = count.toFixed(2).toString().split(".");
+import { getMins } from '../utils/wordCount'
 
-  return {
-    mins: parseInt(mins),
-    secs: parseInt(secs),
-  };
-};
-
-const PostTemplate = ({ data }) => {
-  const { title, date, tags, description } = data.markdownRemark.frontmatter;
-  const { words } = data.markdownRemark.wordCount;
+const PostTemplate = ({ data: postData }) => {
+  const { date, tags, url, data } = postData.current.nodes[0];
+  const { title, description, content } =  data;
+  const { mins } = getMins(content.text);
 
   // previous and next posts
-  const { fields: nextFields, frontmatter: nextMatter } = data?.next || {};
-  const { fields: prevFields, frontmatter: prevMatter } = data?.next || {};
-
-  const { mins, secs } = getMins(words);
+  const { url: prevUrl, data: prevData } = postData.previous.nodes[0] || {};
+  const { url: nextUrl, data: nextData } = postData.next.nodes[0] || {};
 
   return (
     <Layout active="blog" title={title} article>
       <Seo
-        title={title}
-        description={description}
+        title={title.text}
+        description={description.text}
         isArticle
-        url={`http://kadet.dev${data.markdownRemark.fields.slug}`}
+        url={`http://kadet.dev${url}`}
       />
+
       <Link to="/blog" className="back-button">
         <svg
           width="35"
@@ -49,6 +41,7 @@ const PostTemplate = ({ data }) => {
           ></path>
         </svg>
       </Link>
+      
       <div className="post-meta">
         <small className="post-timing">
           <i className="far fa-calendar-alt"></i> {date}
@@ -57,7 +50,7 @@ const PostTemplate = ({ data }) => {
           <i className="far fa-clock"></i>{" "}
           {mins === 0 ? `1 min` : `${mins} mins`} read
         </small>
-        <h1 className="post-title">{title}</h1>
+        <h1 className="post-title">{title.text}</h1>
         <small className="post-tags">
           {tags.map((tag, index) =>
             index === tags.length - 1 ? tag : `${tag}, `
@@ -67,31 +60,32 @@ const PostTemplate = ({ data }) => {
 
       <section
         className="post-content"
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        dangerouslySetInnerHTML={{ __html: content.html }}
         itemProp="articleBody"
       />
 
-      {/* <div className="post-footer">
-        {prevFields && (
-          <Link to={prevFields.slug} className="posts-nav post-pre">
+      <div className="post-footer">
+        {prevData && (
+          <Link to={prevUrl} className="posts-nav post-pre">
             <small>
               {" "}
               <i className="fas fa-long-arrow-alt-left"></i> PREV POST
             </small>
 
-            <p>{prevMatter.title}</p>
+            <p>{prevData.title.text}</p>
           </Link>
         )}
-        {nextFields && (
-          <Link to={nextFields.slug} className="posts-nav post-next">
+
+        {nextData && (
+          <Link to={nextUrl} className="posts-nav post-next">
             <small>
               NEXT POST <i className="fas fa-long-arrow-alt-right"></i>
             </small>
 
-            <p>{nextMatter.title}</p>
+            <p>{nextData.title.text}</p>
           </Link>
         )}
-      </div> */}
+      </div>
     </Layout>
   );
 };
@@ -104,11 +98,11 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    allPrismicBlogPost(filter: { id: { eq: $id } }) {
+    current: allPrismicBlogPost(filter: { id: { eq: $id } }) {
       nodes {
-        id
         tags
-        first_publication_date(formatString: "MMMM DD, YYYY")
+        url
+        date: first_publication_date(formatString: "MMMM DD, YYYY")
         data {
           title {
             text
@@ -125,12 +119,22 @@ export const pageQuery = graphql`
     }
     previous: allPrismicBlogPost(filter: { id: { eq: $previousPostId } }) {
       nodes {
-        id
+        url
+        data {
+          title {
+            text
+          }
+        }
       }
     }
     next: allPrismicBlogPost(filter: { id: { eq: $nextPostId } }) {
       nodes {
-        id
+        url
+        data {
+          title {
+            text
+          }
+        }
       }
     }
   }

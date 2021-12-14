@@ -103,7 +103,7 @@ module.exports = {
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
-        linkResolver: (post) => `/blog/${post.uid}`,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
         schemas: {
           blog_post: require("./prismic_types/blog_post.json"),
         },
