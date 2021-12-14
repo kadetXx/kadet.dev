@@ -124,3 +124,28 @@
   font-size: var(--semi-font);
   color: #b3b3b3;
 }
+
+.post-content h2 {
+  margin-top: 2.5rem;
+}
+
+.post-content ul {
+  list-style: square;
+  margin: 1.5rem 0;
+}
+
+.post-content ul li {
+  font-size: var(--normal-font);
+  color: #b3b3b3;
+  margin-bottom: 0.7rem;
+}
+
+.post-content strong {
+  font-family: 'air-regular';
+  color: #ffffff;
+}
+
+.post-content a {
+  color: #ffffff;
+  text-decoration: #bebebe underline;
+}
