@@ -3,7 +3,7 @@
 import * as React from "react";
 import { withPrismicPreviewResolver } from "gatsby-plugin-prismic-previews";
 
-const PreviewPage = () => {
+const PreviewPage = ({ isPreview, ...props }) => {
   return (
     <div
       style={{
@@ -13,7 +13,9 @@ const PreviewPage = () => {
         placeItems: "center",
       }}
     >
-      <h3 style={{ textAlign: "center" }}>Loading preview…</h3>
+      <h3 style={{ textAlign: "center" }}>
+        {!isPreview ? "No preview found" : "Loading preview…"}
+      </h3>
     </div>
   );
 };
