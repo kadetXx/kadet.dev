@@ -7,7 +7,7 @@ import {
 } from "gatsby-plugin-prismic-previews";
 
 import { linkResolver } from "./src/utils/linkResolver";
-import PageTemplate from "./src/templates/postTemplate";
+import PostTemplate from "./src/templates/postTemplate";
 
 export const wrapRootElement = ({ element }) => (
   <PrismicPreviewProvider
@@ -16,7 +16,7 @@ export const wrapRootElement = ({ element }) => (
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         linkResolver,
         componentResolver: componentResolverFromMap({
-          page: PageTemplate,
+          blog_post: PostTemplate,
         }),
       },
     ]}
