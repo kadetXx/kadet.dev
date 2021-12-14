@@ -1,4 +1,4 @@
-import PostTemplate from "./src/templates/postTemplate";
+import PostTemplate from "../templates/postTemplate";
 import { linkResolver } from "./linkResolver";
 import { componentResolverFromMap } from "gatsby-plugin-prismic-previews";
 
