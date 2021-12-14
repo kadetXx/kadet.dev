@@ -17,6 +17,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@prismicio/helpers": "^1.0.5",
     "@prismicio/react": "^2.0.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-google-analytics": "^3.4.0",
