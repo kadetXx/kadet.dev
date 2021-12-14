@@ -26,8 +26,6 @@ function Seo({ description, lang, meta, title, isArticle, url, thumbnail }) {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
 
-  console.log(thumbnail)
-
   return (
     <Helmet
       htmlAttributes={{

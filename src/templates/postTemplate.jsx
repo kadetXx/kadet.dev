@@ -37,8 +37,8 @@ const PostTemplate = ({ data: postData }) => {
           <path
             fill="none"
             stroke="#b3b3b3"
-            stroke-width="2"
-            stroke-miterlimit="0"
+            strokeWidth="2"
+            strokeMiterlimit="0"
             d="M72.807 11.199H2.093M11.933 1.399l-9.8 9.8 9.8 9.8"
           ></path>
         </svg>

@@ -21,7 +21,7 @@ const Post = ({ id, tags, url, first_publication_date, data }) => {
               index === tags.length - 1 ? tag : `${tag}, `
             )}
           </small>
-          <date className="post_date"> {first_publication_date} </date>
+          <small className="post_date"> {first_publication_date} </small>
         </div>
 
         <div className="post_title">
