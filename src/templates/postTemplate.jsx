@@ -17,10 +17,6 @@ const PostTemplate = ({ data: postData }) => {
   const { url: prevUrl, data: prevData } = postData.previous || {};
   const { url: nextUrl, data: nextData } = postData.next || {};
 
-  useEffect(() => {
-    console.log(data)
-  }, [data])
-
   return (
     <Layout active="blog" title={title} article>
       <Seo
