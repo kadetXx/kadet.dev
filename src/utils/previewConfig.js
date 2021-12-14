@@ -1,5 +1,5 @@
 import PostTemplate from "./src/templates/postTemplate";
-import { linkResolver } from "./src/utils/linkResolver";
+import { linkResolver } from "./linkResolver";
 import { componentResolverFromMap } from "gatsby-plugin-prismic-previews";
 
 export const repositoryConfig = [
