@@ -47,8 +47,8 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" onClick={() => setClosed(true)}>
-                  Contact
+                <Link to="/blog" onClick={() => setClosed(true)}>
+                  Articles
                 </Link>
               </li>
             </ul>
@@ -64,6 +64,9 @@ const Header = () => {
                 </a>
                 <a href="https://www.linkedin.com/in/collins-enebeli-online/">
                   <i className="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:hello@kade.dev">
+                  <i className="fas fa-at"></i>
                 </a>
               </div>
             </div>
