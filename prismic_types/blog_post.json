@@ -24,6 +24,14 @@
         "placeholder": "Description"
       }
     },
+    "thumbnail": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "thumbnail"
+      }
+    },
     "content": {
       "type": "StructuredText",
       "config": {

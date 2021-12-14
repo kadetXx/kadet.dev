@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function Seo({ description, lang, meta, title, isArticle, url }) {
+function Seo({ description, lang, meta, title, isArticle, url, thumbnail }) {
+  const thumb =
+    thumbnail?.src ||
+    `https://sites.google.com/site/kadnavcdn/home/IMG_20201108_005324%20%281%29.jpg?attredirects=0&d=1`;
+
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -21,6 +25,8 @@ function Seo({ description, lang, meta, title, isArticle, url }) {
   const keywords = site.siteMetadata.keywords;
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+
+  console.log(thumbnail)
 
   return (
     <Helmet
@@ -64,7 +70,7 @@ function Seo({ description, lang, meta, title, isArticle, url }) {
         },
         {
           property: `og:image`,
-          content: `https://sites.google.com/site/kadnavcdn/home/IMG_20201108_005324%20%281%29.jpg?attredirects=0&d=1`,
+          content: thumb,
         },
         {
           name: `keywords`,

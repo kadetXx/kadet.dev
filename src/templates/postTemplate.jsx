@@ -10,7 +10,7 @@ import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
 
 const PostTemplate = ({ data: postData }) => {
   const { date, tags, url, data } = postData.current;
-  const { title, description, content } = data;
+  const { title, description, content, thumbnail } = data;
   const { mins } = getMins(content.text);
 
   // previous and next posts
@@ -24,6 +24,7 @@ const PostTemplate = ({ data: postData }) => {
         description={description.text}
         isArticle
         url={`http://kadet.dev${url}`}
+        thumbnail={thumbnail.fixed}
       />
 
       <Link to="/blog" className="back-button">
@@ -110,6 +111,11 @@ export const pageQuery = graphql`
         }
         description {
           text
+        }
+        thumbnail {
+          fixed(width: 200) {
+            src
+          }
         }
         content {
           html
