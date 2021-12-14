@@ -152,7 +152,7 @@
 #header .social_box {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 1rem 0 0;
   align-items: center;
   flex-direction: column;
 }
@@ -166,5 +166,5 @@
   color: grey;
   text-decoration: none;
   margin: 15px 7.5px 0 7.5px;
-  font-size: 24px;
+  font-size: 20px;
 }
