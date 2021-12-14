@@ -1,5 +1,5 @@
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+// const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
@@ -11,10 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        allPrismicBlogPost(sort: { order: ASC }, limit: 1000) {
           nodes {
             id
             fields {
@@ -34,7 +31,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return;
   }
 
-  const posts = result.data.allMarkdownRemark.nodes;
+  const posts = result.data.allPrismicBlogPost.nodes;
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
@@ -62,13 +59,23 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
+  const createSlug = () => {
+    const slug = node.data.title[0].text
+      .toLowerCase()
+      .replace(/ /g, "-")
+      .replace(/[^\w-]+/g, "");
+
+    return slug;
+  };
+
+  if (node.internal.type === `PrismicBlogPost`) {
+    const value = createSlug();
+    console.log(">>>>>>>>>>>>>>>>>>>>>>createslug for post", value);
 
     createNodeField({
       node,
       name: `slug`,
-      value: `/blog${value}`,
+      value: `/blog/${value}/`,
     });
   }
 };
@@ -99,6 +106,9 @@ exports.createSchemaCustomization = ({ actions }) => {
       frontmatter: Frontmatter
       fields: Fields
     }
+    type PrismicBlogPost implements Node {
+      fields: Fields
+    }
     type Frontmatter {
       title: String
       description: String
@@ -109,3 +119,15 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `);
 };
+
+// allMarkdownRemark(
+//   sort: { fields: [frontmatter___date], order: ASC }
+//   limit: 1000
+// ) {
+//   nodes {
+//     id
+//     fields {
+//       slug
+//     }
+//   }
+// }

@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Kadet - Collins Enebeli",
@@ -8,12 +12,11 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-132828013-3",
-      },
-    },
+    "gatsby-plugin-offline",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -66,11 +69,12 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-offline",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-132828013-3",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -94,6 +98,16 @@ module.exports = {
         path: "./src/markdown/",
       },
       __key: "markdown",
+    },
+    {
+      resolve: "gatsby-source-prismic",
+      options: {
+        repositoryName: "kadet",
+        linkResolver: (post) => `/blog/${post.uid}`,
+        schemas: {
+          blog_post: require("./prismic_types/blog_post.json"),
+        },
+      },
     },
   ],
 };
