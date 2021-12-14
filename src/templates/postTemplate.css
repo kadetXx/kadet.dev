@@ -135,9 +135,10 @@
 }
 
 .post-content ul li {
-  font-size: var(--normal-font);
+  font-size: var(--semi-font);
   color: #b3b3b3;
   margin-bottom: 0.7rem;
+  line-height: 1.5;
 }
 
 .post-content strong {
