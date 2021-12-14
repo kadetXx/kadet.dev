@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./postTemplate.css";
 import { graphql, Link } from "gatsby";
 
@@ -16,6 +16,10 @@ const PostTemplate = ({ data: postData }) => {
   // previous and next posts
   const { url: prevUrl, data: prevData } = postData.previous || {};
   const { url: nextUrl, data: nextData } = postData.next || {};
+
+  useEffect(() => {
+    console.log(data)
+  }, [data])
 
   return (
     <Layout active="blog" title={title} article>

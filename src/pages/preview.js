@@ -14,7 +14,7 @@ const PreviewPage = ({ isPreview, ...props }) => {
       }}
     >
       <h3 style={{ textAlign: "center" }}>
-        {!isPreview ? "No preview found" : "Loading preview…"}
+        {isPreview === false ? "No preview found" : "Loading preview…"}
       </h3>
     </div>
   );
