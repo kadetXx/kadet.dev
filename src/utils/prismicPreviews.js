@@ -1,8 +1,7 @@
 import { componentResolverFromMap } from "gatsby-plugin-prismic-previews";
 
 import Post from "../templates/postTemplate";
-
-const linkResolver = (post) => `/blog/${post.uid}`;
+import { linkResolver } from "./linkResolver";
 
 export const repositoryConfigs = [
   {
