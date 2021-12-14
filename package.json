@@ -17,20 +17,27 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@prismicio/helpers": "^1.0.5",
+    "@prismicio/react": "^2.0.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-google-analytics": "^3.4.0",
     "gatsby-plugin-image": "^1.4.1",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-mdx": "^2.4.0",
     "gatsby-plugin-offline": "^4.4.0",
+    "gatsby-plugin-prismic-previews": "^5.2.1",
     "gatsby-plugin-react-helmet": "^4.4.0",
     "gatsby-plugin-sharp": "^3.4.2",
     "gatsby-plugin-sitemap": "^4.0.0",
     "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-source-prismic": "^5.2.3",
     "gatsby-transformer-remark": "^5.3.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
   }
 }

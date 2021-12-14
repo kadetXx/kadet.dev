@@ -1,3 +1,6 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
 module.exports = {
   siteMetadata: {
     title: "Kadet - Collins Enebeli",
@@ -8,12 +11,11 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-132828013-3",
-      },
-    },
+    "gatsby-plugin-offline",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -66,11 +68,12 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-offline",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-132828013-3",
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -87,13 +90,31 @@ module.exports = {
       },
       __key: "pages",
     },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "markdown",
+    //     path: "./src/markdown/",
+    //   },
+    //   __key: "markdown",
+    // },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: "gatsby-source-prismic",
       options: {
-        name: "markdown",
-        path: "./src/markdown/",
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
+        linkResolver: require("./src/utils/linkResolver").linkResolver,
+        schemas: {
+          blog_post: require("./prismic_types/blog_post.json"),
+        },
       },
-      __key: "markdown",
+    },
+    {
+      resolve: "gatsby-plugin-prismic-previews",
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
+      },
     },
   ],
 };

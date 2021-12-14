@@ -44,14 +44,20 @@
 }
 
 .posts-nav:hover p {
-  text-decoration: underline;
-  text-decoration-color: #bebebe;
+  text-decoration: #a7a7a773 underline;
 }
 
-.posts-nav:last-child {
+.posts-nav.post-pre {
+  margin-right: auto;
+}
+
+.posts-nav.post-next {
   flex-direction: row-reverse;
   text-align: right;
+  grid-column-start: 2;
+  margin-left: auto;
 }
+
 
 .posts-nav small {
   font-size: var(--small-font);
