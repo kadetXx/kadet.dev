@@ -1,13 +1,13 @@
 // gatsby-browser.js AND gatsby-ssr.js
 
-import * as React from 'react'
+import * as React from "react";
 import {
   PrismicPreviewProvider,
   componentResolverFromMap,
-} from 'gatsby-plugin-prismic-previews'
+} from "gatsby-plugin-prismic-previews";
 
-import { linkResolver } from './src/utils/linkResolver'
-import PageTemplate from './src/templates/postTemplate'
+import { linkResolver } from "./src/utils/linkResolver";
+import PageTemplate from "./src/templates/postTemplate";
 
 export const wrapRootElement = ({ element }) => (
   <PrismicPreviewProvider
@@ -23,4 +23,4 @@ export const wrapRootElement = ({ element }) => (
   >
     {element}
   </PrismicPreviewProvider>
-)
+);
