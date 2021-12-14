@@ -24,7 +24,7 @@ const PostTemplate = ({ data: postData }) => {
         description={description.text}
         isArticle
         url={`http://kadet.dev${url}`}
-        thumbnail={thumbnail.fixed}
+        thumbnail={thumbnail?.fixed}
       />
 
       <Link to="/blog" className="back-button">
