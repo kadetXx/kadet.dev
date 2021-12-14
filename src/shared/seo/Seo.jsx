@@ -11,9 +11,6 @@ function Seo({ description, lang, meta, title, isArticle, url }) {
           siteMetadata {
             title
             description
-            author {
-              name
-            }
             keywords
           }
         }

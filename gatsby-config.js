@@ -1,6 +1,5 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+const dotenv = require("dotenv");
+dotenv.config();
 
 module.exports = {
   siteMetadata: {
@@ -102,11 +101,19 @@ module.exports = {
     {
       resolve: "gatsby-source-prismic",
       options: {
-        repositoryName: "kadet",
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
         linkResolver: (post) => `/blog/${post.uid}`,
         schemas: {
           blog_post: require("./prismic_types/blog_post.json"),
         },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-prismic-previews",
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        accessToken: process.env.GATSBY_PRISMIC_ACCESS_TOKEN,
       },
     },
   ],

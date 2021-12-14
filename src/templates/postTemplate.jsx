@@ -104,38 +104,76 @@ export const pageQuery = graphql`
     $previousPostId: String
     $nextPostId: String
   ) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      wordCount {
-        words
-      }
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
+    allPrismicBlogPost(filter: { id: { eq: $id } }) {
+      nodes {
+        id
         tags
+        first_publication_date(formatString: "MMMM DD, YYYY")
+        data {
+          title {
+            text
+          }
+          description {
+            text
+          }
+          content {
+            html
+            text
+          }
+        }
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
+    previous: allPrismicBlogPost(filter: { id: { eq: $previousPostId } }) {
+      nodes {
+        id
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
+    next: allPrismicBlogPost(filter: { id: { eq: $nextPostId } }) {
+      nodes {
+        id
       }
     }
   }
 `;
+
+// export const pageQuery = graphql`
+//   query BlogPostBySlug(
+//     $id: String!
+//     $previousPostId: String
+//     $nextPostId: String
+//   ) {
+//     markdownRemark(id: { eq: $id }) {
+//       id
+//       excerpt(pruneLength: 160)
+//       html
+//       wordCount {
+//         words
+//       }
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         title
+//         date(formatString: "MMMM DD, YYYY")
+//         description
+//         tags
+//       }
+//     }
+//     previous: markdownRemark(id: { eq: $previousPostId }) {
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         title
+//       }
+//     }
+//     next: markdownRemark(id: { eq: $nextPostId }) {
+//       fields {
+//         slug
+//       }
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// `;

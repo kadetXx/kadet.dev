@@ -19,16 +19,13 @@ export const pageQuery = graphql`
     allPrismicBlogPost {
       nodes {
         tags
+        url
         first_publication_date(formatString: "MMMM DD, YYYY")
         data {
           title {
             text
           }
-          description {
-            text
-          }
           content {
-            html
             text
           }
         }
@@ -36,28 +33,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// {
-//   site {
-//     siteMetadata {
-//       title
-//     }
-//   }
-//   allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-//     nodes {
-//       excerpt
-//       wordCount {
-//         words
-//       }
-//       fields {
-//         slug
-//       }
-//       frontmatter {
-//         date(formatString: "MMMM DD, YYYY")
-//         title
-//         description
-//         tags
-//       }
-//     }
-//   }
-// }

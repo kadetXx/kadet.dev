@@ -4,7 +4,7 @@ import "./PostCard.css";
 import { Link } from "gatsby";
 import { getMins } from '../../utils/wordCount'
 
-const Post = ({ id, tags, first_publication_date, data }) => {
+const Post = ({ id, tags, url, first_publication_date, data }) => {
   const { title, content } =  data;
   const { mins } = getMins(content.text);
 
@@ -14,7 +14,7 @@ const Post = ({ id, tags, first_publication_date, data }) => {
       itemScope
       itemType="http://schema.org/Article"
     >
-      <Link to={fields.slug} itemProp="url" className="post">
+      <Link to={url} itemProp="url" className="post">
         <div className="post_meta">
           <small className="post_tags">
             {tags.map((tag, index) =>
