@@ -24,7 +24,7 @@ const PostTemplate = ({ data: postData }) => {
         description={description.text}
         isArticle
         url={`http://kadet.dev${url}`}
-        thumbnail={thumbnail}
+        thumbnail={thumbnail?.fixed}
       />
 
       <Link to="/blog" className="back-button">
@@ -113,7 +113,9 @@ export const pageQuery = graphql`
           text
         }
         thumbnail {
-          url
+          fixed(quality: 100) {
+            src
+          }
         }
         content {
           html

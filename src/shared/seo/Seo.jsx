@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 function Seo({ description, lang, meta, title, isArticle, url, thumbnail }) {
   const thumb =
-    thumbnail?.url ||
+    thumbnail?.src ||
     `https://sites.google.com/site/kadnavcdn/home/IMG_20201108_005324%20%281%29.jpg?attredirects=0&d=1`;
 
   const { site } = useStaticQuery(
