@@ -57,7 +57,7 @@ const Work = () => {
       title: "Seerbit Shop",
       description: "One page shop UI",
       github: "https://github.com/kadetXx/seerbit-css-test",
-      live: "https://shoppiesawards.netlify.app/",
+      live: "https://seerbitshop.vercel.app/",
       stack: "HTML + CSS",
       isPrivate: false,
     },
