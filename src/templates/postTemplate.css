@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
+
 .back-button {
   display: flex;
   align-items: center;
@@ -163,4 +165,33 @@
 .post-content a {
   color: #ffffff;
   text-decoration: #bebebe underline;
+}
+
+.post-content em {
+  font-family: "Droid Sans Mono", monospace;
+  text-decoration: none;
+  font-style: normal;
+  background-color: #b3b3b34f;
+  padding: 0.1rem 0.2rem 0.2rem;
+  color: #d6d6d6;
+  font-size: var(--small-font);
+}
+
+.post-content pre {
+  padding: 2rem;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: var(--semi-font);
+  position: relative;
+}
+
+.post-content .copy-code {
+  position: absolute;
+  inset: 0.7rem 0.7rem auto auto;
+  color: #9c9c9c;
+  background-color: #b3b3b34f;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: var(--small-font);
+  border-radius: 3px;
 }

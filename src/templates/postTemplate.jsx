@@ -8,6 +8,9 @@ import Seo from "../shared/seo/Seo";
 import { getMins } from "../utils/wordCount";
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
 
+import hljs from "highlight.js";
+import "highlight.js/styles/base16/atelier-cave.css";
+
 const PostTemplate = ({ data: postData }) => {
   const { date, tags, url, data } = postData.current;
   const { title, description, content, thumbnail } = data;
@@ -16,6 +19,20 @@ const PostTemplate = ({ data: postData }) => {
   // previous and next posts
   const { url: prevUrl, data: prevData } = postData.previous || {};
   const { url: nextUrl, data: nextData } = postData.next || {};
+
+  useEffect(() => {
+    // create copy button
+    const button = document.createElement("button");
+    button.innerText = "Copy";
+    button.classList.add("copy-code");
+
+    document.querySelectorAll("pre").forEach((el) => {
+      // then highlight each
+      hljs.highlightElement(el);
+
+      el.prepend(button);
+    });
+  }, [data]);
 
   return (
     <Layout active="blog" title={title} article>
