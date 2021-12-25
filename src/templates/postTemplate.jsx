@@ -6,7 +6,11 @@ import Layout from "../layout/Layout";
 import Seo from "../shared/seo/Seo";
 
 import { getMins } from "../utils/wordCount";
+import { detectLanguage } from "../utils/detectLanguage";
 import { withPrismicPreview } from "gatsby-plugin-prismic-previews";
+
+import hljs from "highlight.js";
+import "highlight.js/styles/base16/vulcan.css";
 
 const PostTemplate = ({ data: postData }) => {
   const { date, tags, url, data } = postData.current;
@@ -16,6 +20,30 @@ const PostTemplate = ({ data: postData }) => {
   // previous and next posts
   const { url: prevUrl, data: prevData } = postData.previous || {};
   const { url: nextUrl, data: nextData } = postData.next || {};
+
+  useEffect(() => {
+    document.querySelectorAll("pre").forEach((el) => {
+      // create copy button
+      const button = document.createElement("button");
+      button.innerText = "Copy";
+      button.classList.add("copy-code");
+      button.onclick = () => {
+        button.innerText = "Copied!";
+        setTimeout(() => {
+          button.innerText = "Copy";
+        }, 2000);
+      };
+
+      const { language, string } = detectLanguage(el.innerText);
+
+      // then highlight each
+      el.innerHTML = hljs.highlight(string, {
+        language,
+      }).value;
+
+      el.prepend(button);
+    });
+  }, [data]);
 
   return (
     <Layout active="blog" title={title} article>
