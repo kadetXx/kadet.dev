@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+body .gist .gist-file {
+  margin-bottom: 0;
+  border: 1px dashed #adb5bd;
+  border-radius: 0;
+}
+
+body .gist .gist-data {
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #f1f3f5;
+}
+
+body .gist .blob-wrapper {
+  border-radius: 0;
+}
+
+body .gist .highlight {
+  background-color: transparent;
+  font-family: 'Droid Sans Mono', monospace;
+  font-size: 14px;
+}
+
+body .gist .highlight td {
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+
+body .gist .blob-num {
+  color: #ced4da;
+  background-color: #495057;
+  pointer-events: none;
+}
+
+body .gist .gist-meta {
+  display: none;
+}
+
+body em {
+  font-family: 'Droid Sans Mono', monospace;
+  text-decoration: none;
+  font-style: normal;
+  background-color: #b3b3b34f;
+  color: #b3b3b3;
+  padding: 0.1rem 0.2rem 0.2rem;
+  color: #101011;
+  color: #d6d6d6;
+  font-size: var(--small-font);
+}
