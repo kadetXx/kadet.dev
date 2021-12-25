@@ -178,10 +178,11 @@
 }
 
 .post-content pre {
-  padding: 2rem;
+  padding: 3rem;
   font-family: "Droid Sans Mono", monospace;
   font-size: var(--semi-font);
   position: relative;
+  background-color: #151519;
 }
 
 .post-content .copy-code {

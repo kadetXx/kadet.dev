@@ -1,5 +1,4 @@
 import "./src/css/global.css";
-import "./src/css/code.css"
 
 import React from "react";
 import CustomCursor from "./src/shared/cursor/Cursor";
