@@ -178,12 +178,18 @@
 }
 
 .post-content pre {
-  padding: 3rem;
-  font-family: "Droid Sans Mono", monospace;
-  font-size: var(--semi-font);
   position: relative;
   background-color: #151519;
 }
+
+.post-content pre code {
+  overflow-x: auto;
+  display: inherit;
+  padding: 3rem;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: var(--semi-font);
+}
+
 
 .post-content .copy-code {
   position: absolute;
@@ -195,4 +201,14 @@
   cursor: pointer;
   font-size: var(--small-font);
   border-radius: 3px;
+}
+
+@media screen and (max-width: 550px) {
+  .post-content pre code {
+    padding: 3.5rem 2rem;
+  }
+  
+  .post-content .copy-code {
+    padding: 0.3rem 0.5rem;
+  }
 }

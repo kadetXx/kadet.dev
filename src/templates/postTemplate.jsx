@@ -37,9 +37,11 @@ const PostTemplate = ({ data: postData }) => {
       const { language, string } = detectLanguage(el.innerText);
 
       // then highlight each
-      el.innerHTML = hljs.highlight(string, {
-        language,
-      }).value;
+      el.innerHTML = `<code>${
+        hljs.highlight(string, {
+          language,
+        }).value
+      }</code>`;
 
       el.prepend(button);
     });
