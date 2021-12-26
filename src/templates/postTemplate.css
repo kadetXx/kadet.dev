@@ -188,6 +188,8 @@
   padding: 3rem;
   font-family: "Droid Sans Mono", monospace;
   font-size: var(--semi-font);
+  font-size: 1rem;
+  line-height: 2;
 }
 
 
