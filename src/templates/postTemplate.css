@@ -208,6 +208,7 @@
 @media screen and (max-width: 550px) {
   .post-content pre code {
     padding: 3.5rem 2rem;
+    font-size: var(--normal-font);
   }
   
   .post-content .copy-code {
