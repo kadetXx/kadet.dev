@@ -23,18 +23,19 @@ const PostTemplate = ({ data: postData }) => {
 
   useEffect(() => {
     document.querySelectorAll("pre").forEach((el) => {
+      const { language, string } = detectLanguage(el.innerText);
+
       // create copy button
       const button = document.createElement("button");
       button.innerText = "Copy";
       button.classList.add("copy-code");
       button.onclick = () => {
+        navigator.clipboard.writeText(string);
         button.innerText = "Copied!";
         setTimeout(() => {
           button.innerText = "Copy";
         }, 2000);
       };
-
-      const { language, string } = detectLanguage(el.innerText);
 
       // then highlight each
       el.innerHTML = `<code>${
