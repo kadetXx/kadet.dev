@@ -167,12 +167,12 @@ const Resume = () => {
           ))}
         </div>
 
-        <div className="divider">
+        {/* <div className="divider">
           <p>Education</p>
           <span></span>
-        </div>
+        </div> */}
 
-        <div className="exp_container">
+        {/* <div className="exp_container">
           <section className="experience">
             <p className="title">
               Federal University Of Petroleum Resources Effurun — B.Eng, Marine
@@ -182,7 +182,7 @@ const Resume = () => {
               </span>
             </p>
           </section>
-        </div>
+        </div> */}
 
         <div className="divider">
           <p>Projects</p>
@@ -194,7 +194,8 @@ const Resume = () => {
             <article className="description">
               <p>
                 Links to my works can be found on <span> </span>{" "}
-                <Link to="/work">kadet.dev/work</Link>{" "}
+                <Link to="/work">kadet.dev/work</Link> and more details can be
+                provided upon request.
               </p>
             </article>
           </section>
