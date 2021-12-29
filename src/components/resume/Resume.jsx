@@ -84,7 +84,7 @@ const Resume = () => {
             </a>
             <a
               // href="https://drive.google.com/file/d/1CUf5i60GirwkCp2t6Xk1IXQpXBNBJYhG/view?usp=sharing"
-              href="/kadet-resume.pdf"
+              href="/collins-enebeli-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
