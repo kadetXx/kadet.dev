@@ -7,16 +7,34 @@ import GoButton from "../../shared/goButton/GoButton";
 const Resume = () => {
   const experience = [
     {
+      company: "Caketools",
+      position: "Frontend Engineer",
+      started: "May 2021",
+      ended: null,
+      description:
+        "I’m currently building smart solutions on the decentralised web with the team at Caketools labs",
+      achievements: [
+        "Crafted a component library from scratch using SCSS Modules to ensure consistency.",
+        "Used Next Js to deliver optimised, pre-rendered pages when necessary.",
+        "Engineered state management with Redux and Hooks.",
+        "Pulled data from the blockchain in real time to display live statistics and token prices.",
+        "Visualized blockchain data using charting libraries and custom paginated tables.",
+        "Maintained a well structured codebase and used Typescript to improve predictability. ",
+        "Integrated seamless blockchain wallet connection with support for about six different wallet providers.",
+        "Implemented api request caching on the server to save resources, improve performance and generally reduce load on the backend.",
+      ],
+    },
+    {
       company: "Playarone",
-      position: "Frontend Developer",
+      position: "Frontend Developer [Contract]",
       started: "September 2020",
       ended: "October 2021",
       description:
-        "I Joined the Playarone engineering team in building an online gaming community.",
+        "I Joined the Playarone engineering team in building an e-sports gaming platform.",
       achievements: [
         "Built complex layouts and components with React & SASS",
         "Managed app state with react hooks",
-        "Worked closely with a senior dev using graphQL and typescript.",
+        "Worked closely with a senior engineer to implement app features with a postgres database, typescript and the MVC pattern.",
       ],
     },
 
@@ -28,7 +46,7 @@ const Resume = () => {
       description:
         "I worked with the charisol product team on a contract basis to build a web application for a fintech startup",
       achievements: [
-        "Transformed figma prototypes to functional UIs using react js, react context api and sass",
+        "Transformed figma prototypes for a fintech application to a functional UI using react js combined with context api for state management and sass for styling.",
         "Made use of tools like Notion & Usepastel for task management and feedback",
         "Interacted with GraphQL apis from the client side using Apollo GraphQL",
       ],
@@ -65,7 +83,8 @@ const Resume = () => {
               </small>
             </a>
             <a
-              href="https://drive.google.com/file/d/1CUf5i60GirwkCp2t6Xk1IXQpXBNBJYhG/view?usp=sharing"
+              // href="https://drive.google.com/file/d/1CUf5i60GirwkCp2t6Xk1IXQpXBNBJYhG/view?usp=sharing"
+              href="/kadet-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,9 +99,10 @@ const Resume = () => {
 
         <div className="summary">
           <p>
-            I’m a Frontend software developer, passionate about transforming
-            ideas from pixels to scalable products. I create functional
-            applications with user experience as top priority.
+            I’m a frontend software developer, passionate about solving problems
+            with code and transforming ideas from pixels to scalable products. I
+            create usable applications with user experience as a top priority
+            using various web tools, languages and technology.
           </p>
         </div>
 
@@ -93,8 +113,8 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            HTML/CSS/SASS, Javascript [ES6], React JS, Gatsby JS, Next JS, Vue
-            JS, CSS-in-JS, GraphQL, Redux, Firebase.
+            HTML/CSS/SASS, Javascript [ES6+], React JS, Gatsby JS, Next JS, Vue
+            JS, CSS-in-JS, Typescript, GraphQL, Redux, Firebase.
           </p>
         </div>
 
@@ -105,7 +125,7 @@ const Resume = () => {
 
         <div className="skills">
           <p>
-            Typescript, Nuxt JS, Flux, Node JS, Express, Web Sockets, PWAs,
+            Node JS, Express, Nuxt JS, Unit Testing, Web Sockets, PWAs,
             Wordpress, SEO.
           </p>
         </div>
@@ -116,11 +136,11 @@ const Resume = () => {
         </div>
 
         <div className="skills">
-          <p>Scrum, CI/CD, Version Control, Best Practices</p>
+          <p>Agile/Scrum, Version Control, Best Practices, CI/CD</p>
         </div>
 
         <div className="divider">
-          <p>Experience</p>
+          <p>Work Experience</p>
           <span></span>
         </div>
 
