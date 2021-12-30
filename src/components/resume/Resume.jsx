@@ -193,7 +193,7 @@ const Resume = () => {
           <section className="experience">
             <article className="description">
               <p>
-                Links to my works can be found on <span> </span>{" "}
+                Links to my works can be found on{" "}
                 <Link to="/work">kadet.dev/work</Link> and more details can be
                 provided upon request.
               </p>
