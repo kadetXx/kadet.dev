@@ -192,7 +192,7 @@ const Resume = () => {
         <div className="exp_container">
           <section className="experience">
             <article className="description">
-              <p>
+              <p className="nospan">
                 Links to my works can be found on{" "}
                 <Link to="/work">kadet.dev/work</Link> and more details can be
                 provided upon request.
