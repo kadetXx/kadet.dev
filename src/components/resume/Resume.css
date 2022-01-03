@@ -107,7 +107,7 @@
   margin: 2px 0;
   width: 100%;
   color:  #777778;
-  display: flex;
+  /* display: flex; */
 }
 
 .resume_container .exp_container .experience .description  p span {
