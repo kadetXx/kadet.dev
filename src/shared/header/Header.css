@@ -88,6 +88,7 @@
   height: 100%;
   width: 100%;
   background-color: #16161A;
+  background-color: #1b1b1d;
   z-index: 2;
   
   animation-name: slide;
