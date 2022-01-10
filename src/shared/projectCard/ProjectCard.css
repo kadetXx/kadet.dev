@@ -2,7 +2,8 @@
 
 .box_container {
   width: 100%;
-  background-color: #16161a;
+  /* background-color: #16161a; */
+  background-color: #202022;
   margin: 0;
   position: relative;
   transition: all 0.2s;

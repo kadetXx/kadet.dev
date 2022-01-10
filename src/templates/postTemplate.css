@@ -179,7 +179,8 @@
 
 .post-content pre {
   position: relative;
-  background-color: #151519;
+  /* background-color: #151519; */
+  background-color: #202022;
 }
 
 .post-content pre code {
