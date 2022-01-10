@@ -42,5 +42,10 @@ export const detectLanguage = (string) => {
       language: "json",
       string: string.replace("//json ", ""),
     };
+  } else {
+    return {
+      language: "javascript",
+      string: string,
+    };
   }
 };

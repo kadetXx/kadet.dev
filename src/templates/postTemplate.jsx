@@ -40,7 +40,7 @@ const PostTemplate = ({ data: postData }) => {
       // then highlight each
       el.innerHTML = `<code>${
         hljs.highlight(string, {
-          language: language || "js",
+          language,
         }).value
       }</code>`;
 
