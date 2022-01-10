@@ -1,7 +1,8 @@
 .resume_container {
   display: flex;
   flex-direction: column;
-  background-color: #16161A;
+  /* background-color: #16161A; */
+  background-color: #1b1b1d;
   padding: 5%;
 }
 

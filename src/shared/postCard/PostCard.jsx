@@ -10,7 +10,7 @@ const Post = ({ id, tags, url, first_publication_date, data }) => {
 
   return (
     <article
-      className={`box_container ${id % 2 !== 0 ? "box_container_pad" : ""} `}
+      className={`post_container ${id % 2 !== 0 ? "box_container_pad" : ""} `}
       itemScope
       itemType="http://schema.org/Article"
     >
