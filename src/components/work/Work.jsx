@@ -16,23 +16,23 @@ const Work = () => {
     },
 
     {
-      title: "Playarone",
-      description: "Esports gaming platform",
-      github: "",
-      live: "https://app.playarone.com/",
-      stack: "React + Typescript",
-      isPrivate: true,
-    },
-  ];
-
-  const projects = [
-    {
       title: "BevelPlexus",
       description: "UI for a fintech application",
       github: "",
       live: "https://dev-bevelplexus.netlify.app/",
       stack: "React + Context API",
       isPrivate: true,
+    },
+  ];
+
+  const projects = [
+    {
+      title: "Jobbox",
+      description: "Landing page for Job board application",
+      github: "https://github.com/kadetXx/jobbox",
+      live: "https://jobbox.vercel.app/",
+      stack: "Next JS + Typescript + GSAP",
+      isPrivate: false,
     },
 
     {
@@ -53,14 +53,6 @@ const Work = () => {
       isPrivate: false,
     },
 
-    {
-      title: "Seerbit Shop",
-      description: "One page shop UI",
-      github: "https://github.com/kadetXx/seerbit-css-test",
-      live: "https://seerbitshop.vercel.app/",
-      stack: "HTML + CSS",
-      isPrivate: false,
-    },
 
     {
       title: "EndSars",
@@ -72,6 +64,15 @@ const Work = () => {
     },
 
     {
+      title: "Playarone",
+      description: "Esports gaming platform",
+      github: "",
+      live: "https://app.playarone.com/",
+      stack: "React + Typescript",
+      isPrivate: true,
+    },
+
+    {
       title: "Kadet.dev",
       description: "My persnal portfolio",
       github: "https://github.com/kadetXx/kadet.dev",
@@ -79,6 +80,16 @@ const Work = () => {
       stack: "Gatsby JS",
       isPrivate: false,
     },
+
+    // {
+    //   title: "Seerbit Shop",
+    //   description: "One page shop UI",
+    //   github: "https://github.com/kadetXx/seerbit-css-test",
+    //   live: "https://seerbitshop.vercel.app/",
+    //   stack: "HTML + CSS",
+    //   isPrivate: false,
+    // },
+
 
     // {
     //   title: "Animepanda",
