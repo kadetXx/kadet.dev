@@ -38,7 +38,7 @@
 
 .description p span.highlight {
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
   animation: 5s ease-in-out 0s 1 flash;
 }
 

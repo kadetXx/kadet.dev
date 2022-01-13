@@ -30,7 +30,7 @@ const Bio = ({ active }) => {
               people using modern{" "}
               <span className="highlight">web technology</span>. I am currently{" "}
               <span className="highlight two">learning</span> how to write
-              creative web <span className="highlight">animations</span> and
+              immersive web <span className="highlight">animations</span> and
               also exploring the{" "}
               <span className="highlight two">decentralized</span> web.
             </span>
