@@ -16,7 +16,7 @@ const Work = () => {
     },
 
     {
-      title: "Insect",
+      title: "React-Insect",
       description: "Highly customisable input & select field for react",
       github: "https://github.com/kadetXx/insect",
       live: "https://www.npmjs.com/package/react-insect",
