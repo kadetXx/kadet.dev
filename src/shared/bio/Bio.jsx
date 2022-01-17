@@ -4,8 +4,6 @@ import "./Bio.mobile.css";
 import { Link } from "gatsby";
 
 import avi from "../../assets/images/kadet_big.png";
-// import navLine from "../../assets/svg/menu-line.svg";
-// import logo from "../../assets/images/smallavi.png";
 import arrow from "../../assets/svg/arrow.svg";
 
 const Bio = ({ active }) => {

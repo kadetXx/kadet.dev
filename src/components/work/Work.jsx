@@ -16,6 +16,18 @@ const Work = () => {
     },
 
     {
+      title: "Insect",
+      description: "Highly customisable input & select field for react",
+      github: "https://github.com/kadetXx/insect",
+      live: "https://www.npmjs.com/package/react-insect",
+      stack: "React + Typescript",
+      isPrivate: false,
+      isPackage: true,
+    },
+  ];
+
+  const projects = [
+    {
       title: "BevelPlexus",
       description: "UI for a fintech application",
       github: "",
@@ -23,9 +35,7 @@ const Work = () => {
       stack: "React + Context API",
       isPrivate: true,
     },
-  ];
 
-  const projects = [
     {
       title: "Jobbox",
       description: "Landing page for Job board application",
@@ -53,16 +63,6 @@ const Work = () => {
       isPrivate: false,
     },
 
-
-    {
-      title: "EndSars",
-      description: "Web app to support the #EndSARS campaign",
-      github: "https://github.com/kadetXx/endsars",
-      live: "https://endsars.vercel.app/",
-      stack: "React",
-      isPrivate: false,
-    },
-
     {
       title: "Playarone",
       description: "Esports gaming platform",
@@ -81,6 +81,15 @@ const Work = () => {
       isPrivate: false,
     },
 
+    {
+      title: "EndSars",
+      description: "Web app to support the #EndSARS campaign",
+      github: "https://github.com/kadetXx/endsars",
+      live: "https://endsars.vercel.app/",
+      stack: "React",
+      isPrivate: false,
+    },
+
     // {
     //   title: "Seerbit Shop",
     //   description: "One page shop UI",
@@ -89,7 +98,6 @@ const Work = () => {
     //   stack: "HTML + CSS",
     //   isPrivate: false,
     // },
-
 
     // {
     //   title: "Animepanda",
