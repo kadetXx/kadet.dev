@@ -21,7 +21,7 @@ const Work = () => {
       github: "https://github.com/kadetXx/insect",
       live: "https://www.npmjs.com/package/react-insect",
       stack: "React + Typescript",
-      isPrivate: false,
+      isPrivate: true,
       isPackage: true,
     },
   ];
@@ -81,14 +81,14 @@ const Work = () => {
       isPrivate: false,
     },
 
-    {
-      title: "EndSars",
-      description: "Web app to support the #EndSARS campaign",
-      github: "https://github.com/kadetXx/endsars",
-      live: "https://endsars.vercel.app/",
-      stack: "React",
-      isPrivate: false,
-    },
+    // {
+    //   title: "EndSars",
+    //   description: "Web app to support the #EndSARS campaign",
+    //   github: "https://github.com/kadetXx/endsars",
+    //   live: "https://endsars.vercel.app/",
+    //   stack: "React",
+    //   isPrivate: false,
+    // },
 
     // {
     //   title: "Seerbit Shop",
