@@ -8,7 +8,7 @@ const Work = () => {
   const featuredProjects = [
     {
       title: "Caketools",
-      description: "Decentralised charting hub for BSC Network.",
+      description: "Decentralised charting hub for the BSC Network.",
       github: "",
       live: "https://caketools.io/",
       stack: "Next JS + Typescript + Web3",
@@ -16,17 +16,55 @@ const Work = () => {
     },
 
     {
+      title: "Guild Protocol",
+      description: "Landing Page for a play to earn crypto DAO",
+      github: "",
+      live: "https://guildprotocol.io/",
+      stack: "NextJS + Typescript + GSAP",
+      isPrivate: true,
+    },
+  ];
+
+  const projects = [
+    {
+      title: "Klic.gg",
+      description:
+        "Esports/VOD livestreaming platform with multiview experience",
+      github: "",
+      live: "https://klic.gg/",
+      stack: "NextJS + Typescript + AWS",
+      isPrivate: true,
+    },
+
+    {
+      title: "Birdbox",
+      description: "Social application with real time Messaging",
+      github: "https://github.com/kadetXx/birdbox",
+      live: "https://birdbox.space/",
+      stack: "Vue + Socket.io + Express",
+      isPrivate: false,
+    },
+
+    {
       title: "React Insect",
-      description: "Highly customisable input & select dropdown component for react",
+      description:
+        "Highly customisable input & select dropdown component for react",
       github: "https://github.com/kadetXx/insect",
       live: "https://www.npmjs.com/package/react-insect",
       stack: "React + Typescript",
       isPrivate: true,
       isPackage: true,
     },
-  ];
 
-  const projects = [
+    {
+      title: "Haute Couture",
+      description: "Fashion landing page",
+      github: "https://github.com/kadetXx/haute-couture",
+      live: "http://haute-couture.vercel.app/",
+      stack: "React + Typescript",
+      isPrivate: false,
+    },
+
     {
       title: "BevelPlexus",
       description: "UI for a fintech application",
@@ -46,26 +84,8 @@ const Work = () => {
     },
 
     {
-      title: "Haute Couture",
-      description: "Fashion landing page",
-      github: "https://github.com/kadetXx/haute-couture",
-      live: "http://haute-couture.vercel.app/",
-      stack: "React + Typescript",
-      isPrivate: false,
-    },
-
-    {
-      title: "Birdbox",
-      description: "Social application with real time Messaging",
-      github: "https://github.com/kadetXx/birdbox",
-      live: "https://birdbox.space/",
-      stack: "Vue + Socket.io + Express",
-      isPrivate: false,
-    },
-
-    {
       title: "Playarone",
-      description: "Esports gaming platform",
+      description: "Esports gaming/staking platform",
       github: "",
       live: "https://app.playarone.com/",
       stack: "React + Typescript",
@@ -74,7 +94,7 @@ const Work = () => {
 
     {
       title: "Kadet.dev",
-      description: "My persnal portfolio",
+      description: "My personal portfolio",
       github: "https://github.com/kadetXx/kadet.dev",
       live: "https://kadet.dev/",
       stack: "Gatsby JS",
