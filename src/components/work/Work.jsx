@@ -7,20 +7,20 @@ import GoButton from "../../shared/goButton/GoButton";
 const Work = () => {
   const featuredProjects = [
     {
-      title: "Caketools",
-      description: "Decentralised charting hub for the BSC Network.",
-      github: "",
-      live: "https://caketools.io/",
-      stack: "Next JS + Typescript + Web3",
-      isPrivate: true,
-    },
-
-    {
       title: "Guild Protocol",
       description: "Landing Page for a play to earn crypto DAO",
       github: "",
       live: "https://guildprotocol.io/",
       stack: "NextJS + Typescript + GSAP",
+      isPrivate: true,
+    },
+
+    {
+      title: "Caketools",
+      description: "Decentralised charting hub for the BSC Network.",
+      github: "",
+      live: "https://caketools.io/",
+      stack: "Next JS + Typescript + Web3",
       isPrivate: true,
     },
   ];
@@ -83,23 +83,23 @@ const Work = () => {
       isPrivate: false,
     },
 
-    {
-      title: "Playarone",
-      description: "Esports gaming/staking platform",
-      github: "",
-      live: "https://app.playarone.com/",
-      stack: "React + Typescript",
-      isPrivate: true,
-    },
+    // {
+    //   title: "Playarone",
+    //   description: "Esports gaming/staking platform",
+    //   github: "",
+    //   live: "https://app.playarone.com/",
+    //   stack: "React + Typescript",
+    //   isPrivate: true,
+    // },
 
-    {
-      title: "Kadet.dev",
-      description: "My personal portfolio",
-      github: "https://github.com/kadetXx/kadet.dev",
-      live: "https://kadet.dev/",
-      stack: "Gatsby JS",
-      isPrivate: false,
-    },
+    // {
+    //   title: "Kadet.dev",
+    //   description: "My personal portfolio",
+    //   github: "https://github.com/kadetXx/kadet.dev",
+    //   live: "https://kadet.dev/",
+    //   stack: "Gatsby JS",
+    //   isPrivate: false,
+    // },
 
     // {
     //   title: "EndSars",
