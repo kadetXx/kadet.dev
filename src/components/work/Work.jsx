@@ -27,9 +27,27 @@ const Work = () => {
 
   const projects = [
     {
-      title: "Klic.gg",
+      title: "Pickr",
+      description: "Custom a11y Compliant Datepicker.",
+      github: "https://github.com/kadetXx/pickr",
+      live: "https://620e47ad1a4db5003a4d7f8d-rqrfsrukpc.chromatic.com/?path=/story/pickr--default",
+      stack: "React + Storybook + TS",
+      isPrivate: false,
+    },
+
+    {
+      title: "Jobbox",
+      description: "Landing page for Job board.",
+      github: "https://github.com/kadetXx/jobbox",
+      live: "https://jobbox.vercel.app/",
+      stack: "Next JS + Typescript + GSAP",
+      isPrivate: false,
+    },
+
+    {
+      title: "Klic",
       description:
-        "Esports/VOD livestreaming platform with multiview experience",
+        "Esports/VOD livestreaming platform with multiview experience.",
       github: "",
       live: "https://klic.gg/",
       stack: "NextJS + Typescript + AWS",
@@ -37,18 +55,8 @@ const Work = () => {
     },
 
     {
-      title: "Birdbox",
-      description: "Social application with real time Messaging",
-      github: "https://github.com/kadetXx/birdbox",
-      live: "https://birdbox.space/",
-      stack: "Vue + Socket.io + Express",
-      isPrivate: false,
-    },
-
-    {
       title: "React Insect",
-      description:
-        "Highly customisable input & select dropdown component for react",
+      description: "Customisable input & select dropdown component for react.",
       github: "https://github.com/kadetXx/insect",
       live: "https://www.npmjs.com/package/react-insect",
       stack: "React + Typescript",
@@ -57,11 +65,11 @@ const Work = () => {
     },
 
     {
-      title: "Haute Couture",
-      description: "Fashion landing page",
-      github: "https://github.com/kadetXx/haute-couture",
-      live: "http://haute-couture.vercel.app/",
-      stack: "React + Typescript",
+      title: "Birdbox",
+      description: "Social application with real time Messaging.",
+      github: "https://github.com/kadetXx/birdbox",
+      live: "https://birdbox.vercel.app/",
+      stack: "Vue + Web Sockets + Node JS",
       isPrivate: false,
     },
 
@@ -74,14 +82,14 @@ const Work = () => {
       isPrivate: true,
     },
 
-    {
-      title: "Jobbox",
-      description: "Landing page for Job board application",
-      github: "https://github.com/kadetXx/jobbox",
-      live: "https://jobbox.vercel.app/",
-      stack: "Next JS + Typescript + GSAP",
-      isPrivate: false,
-    },
+    // {
+    //   title: "Haute Couture",
+    //   description: "Fashion landing page",
+    //   github: "https://github.com/kadetXx/haute-couture",
+    //   live: "http://haute-couture.vercel.app/",
+    //   stack: "React + Typescript",
+    //   isPrivate: false,
+    // },
 
     // {
     //   title: "Playarone",
@@ -90,15 +98,6 @@ const Work = () => {
     //   live: "https://app.playarone.com/",
     //   stack: "React + Typescript",
     //   isPrivate: true,
-    // },
-
-    // {
-    //   title: "Kadet.dev",
-    //   description: "My personal portfolio",
-    //   github: "https://github.com/kadetXx/kadet.dev",
-    //   live: "https://kadet.dev/",
-    //   stack: "Gatsby JS",
-    //   isPrivate: false,
     // },
 
     // {

@@ -22,15 +22,14 @@ const Bio = ({ active }) => {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">frontend developer</span>. I
-              create interactive{" "}
-              <span className="highlight two">experiences</span> for amazing
-              people using modern{" "}
-              <span className="highlight">web technology</span>. I am currently{" "}
-              <span className="highlight two">learning</span> how to write
-              immersive web <span className="highlight">animations</span> and
-              also exploring the{" "}
-              <span className="highlight two">decentralized</span> web.
+              I'm a <span className="highlight">software engineer</span>. I
+              create <span className="highlight">interactive </span> web
+              experiences using{" "}
+              <span className="highlight">frontend technology</span>. I am
+              interested in <span className="highlight">user experience</span>,
+              accessibility, <span className="highlight">design systems</span>,
+              gaming, <span className="highlight">web3</span> and{" "}
+              <span className="highlight">web animations.</span>{" "}
             </span>
           </p>
         </div>
@@ -55,21 +54,25 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === "resume" ? "active_menu" : ""}>
+          <li className={active === "blog" ? "active_menu" : ""}>
             <small>
               <span>01</span>
-              <Link to="/resume">
-                <span className="menu_bullet"></span> RESUME
+              <Link to="/blog">
+                <span className="menu_bullet"></span> ARTICLES
               </Link>
             </small>
           </li>
 
-          <li className={active === "blog" ? "active_menu" : ""}>
+          <li className={active === "resume" ? "active_menu" : ""}>
             <small>
               <span>02</span>
-              <Link to="/blog">
-                <span className="menu_bullet"></span> ARTICLES
-              </Link>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/collinsenebeli/"
+              >
+                <span className="menu_bullet"></span> LINKED IN
+              </a>
             </small>
           </li>
         </ul>

@@ -4,9 +4,9 @@ dotenv.config();
 module.exports = {
   siteMetadata: {
     title: "Kadet - Collins Enebeli",
-    description: `Frontend Developer`,
+    description: `Frontend Software Engineer`,
     author: `@kadetXx`,
-    keywords: `frontend developer, frontend engineer, tech, nigeria, software, software developer, portfolio, frontend developer portfolio`,
+    keywords: `frontend developer, frontend engineer, tech, software engineer, software developer, portfolio, frontend developer portfolio`,
     siteUrl: "https://kadet.dev",
   },
   plugins: [
@@ -29,7 +29,6 @@ module.exports = {
         theme_color: "#000000",
         icon: "src/assets/images/kadet_shaped.png",
         icons: [
-          // manually, so they go to static folder:
           {
             src: `/static/icons/icon-48x48.png`,
             sizes: `48x48`,

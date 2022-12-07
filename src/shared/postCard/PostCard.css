@@ -54,22 +54,22 @@
 }
 
 @media (min-width: 993px) {
-  .box_container_pad {
+  .post_container_pad {
     transform: translateY(1.5rem);
   }
 
-  .box_container:hover {
+  .post_container:hover {
     transform: scale(1.1);
     opacity: 1 !important;
   }
 
-  .box_container_pad:hover {
+  .post_container_pad:hover {
     transform: translateY(1rem) scale(1.1);
   }
 }
 
 @media (max-width: 993px) {
-  .box_container {
+  .post_container {
     width: auto;
     margin: 4% 10px;
     opacity: 1 !important;

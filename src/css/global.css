@@ -1,51 +1,54 @@
 /*===== IMPORTING FONTS =====*/
 
 @font-face {
-  font-family: 'air-regular';
-  src: url('../assets/fonts/AirbnbCereal-Book.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+  font-family: "air-regular";
+  src: url("../assets/fonts/AirbnbCereal-Book.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 @font-face {
-  font-family: 'air-semibold';
-  src: url('../assets/fonts/AirbnbCereal-Medium.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-} 
+  font-family: "air-semibold";
+  src: url("../assets/fonts/AirbnbCereal-Medium.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 @font-face {
-  font-family: 'air-light';
-  src: url('../assets/fonts/AirbnbCereal-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-} 
+  font-family: "air-light";
+  src: url("../assets/fonts/AirbnbCereal-Light.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 @font-face {
-  font-family: 'air-bold';
-  src: url('../assets/fonts/AirbnbCereal-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-} 
+  font-family: "air-bold";
+  src: url("../assets/fonts/AirbnbCereal-Bold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 @font-face {
-  font-family: 'air-extrabold';
-  src: url('../assets/fonts/AirbnbCereal-ExtraBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-} 
+  font-family: "air-extrabold";
+  src: url("../assets/fonts/AirbnbCereal-ExtraBold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 @font-face {
-  font-family: 'air-black';
-  src: url('../assets/fonts/AirbnbCereal-Black.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-} 
+  font-family: "air-black";
+  src: url("../assets/fonts/AirbnbCereal-Black.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 /* * {
   font-family: 'air-light';
 } */
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'air-light';
+  font-family: "air-light";
   /* background: #101011; */
   background-color: #151515;
   color: #fff;
 }
 
-#___gatsby, #gatsby-focus-wrapper {height: 100%;}
-
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
 
 p {
   font-size: var(--normal-font);

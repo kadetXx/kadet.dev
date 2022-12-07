@@ -48,10 +48,7 @@ const Blog = ({ posts }) => {
         ))}
       </div>
 
-      <GoButton
-        prev={{ url: "/work", text: "Work" }}
-        next={{ url: "/resume", text: "Resume" }}
-      />
+      <GoButton prev={{ url: "/work", text: "Work" }} />
     </div>
   );
 };
