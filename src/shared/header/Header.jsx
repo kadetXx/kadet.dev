@@ -47,25 +47,42 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/resume" onClick={() => setClosed(true)}>
-                  Résumé
-                </Link>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/collinsenebeli/"
+                  onClick={() => setClosed(true)}
+                >
+                  LinkedIn
+                </a>
               </li>
             </ul>
 
             <div className="social_box">
               <h3>Connect With Me</h3>
               <div className="social_icons">
-                <a href="https://github.com/kadetXx">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/kadetXx"
+                  onClick={() => setClosed(true)}
+                >
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/kadetXx">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/kadetXx"
+                  onClick={() => setClosed(true)}
+                >
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/collins-enebeli-online/">
-                  <i className="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:hello@kade.dev">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="mailto:hello@kade.dev"
+                  onClick={() => setClosed(true)}
+                >
                   <i className="fas fa-at"></i>
                 </a>
               </div>
