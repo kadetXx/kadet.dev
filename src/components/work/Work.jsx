@@ -30,7 +30,7 @@ const Work = () => {
       title: "Pickr",
       description: "Custom a11y Compliant Datepicker.",
       github: "https://github.com/kadetXx/pickr",
-      live: "https://620e47ad1a4db5003a4d7f8d-rqrfsrukpc.chromatic.com/?path=/story/pickr--default",
+      live: "https://620e47ad1a4db5003a4d7f8d-zfxvyoulnf.chromatic.com/?path=/story/pickr--default",
       stack: "React + Storybook + TS",
       isPrivate: false,
     },
