@@ -10,7 +10,7 @@ const Work = () => {
       title: "Guild Protocol",
       description: "Landing Page for a play to earn crypto DAO",
       github: "",
-      live: "https://guildprotocol.io",
+      live: "https://guildprotocol.io/",
       stack: "NextJS + Typescript + GSAP",
       isPrivate: true,
     },
