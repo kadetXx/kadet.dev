@@ -16,22 +16,22 @@ const Work = () => {
     },
 
     {
-      title: "Caketools",
-      description: "Decentralised charting hub for the BSC Network.",
+      title: "Petra Okelola",
+      description: "Product designer portfolio.",
       github: "",
-      live: "https://caketools.io/",
-      stack: "Next JS + Typescript + Web3",
+      live: "https://petraokelola.com",
+      stack: "Nuxt3 + Gsap",
       isPrivate: true,
     },
   ];
 
   const projects = [
     {
-      title: "Petra Okelola",
-      description: "Product designer portfolio.",
+      title: "Caketools",
+      description: "Decentralised charting hub for the BSC Network.",
       github: "",
-      live: "https://petraokelola.com",
-      stack: "Nuxt3 + Gsap",
+      live: "https://caketools.io/",
+      stack: "Next JS + Typescript + Web3",
       isPrivate: true,
     },
 
