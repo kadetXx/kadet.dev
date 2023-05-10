@@ -27,6 +27,15 @@ const Work = () => {
 
   const projects = [
     {
+      title: "Petra Okelola",
+      description: "Product designer portfolio.",
+      github: "",
+      live: "https://petraokelola.com",
+      stack: "Nuxt3 + Gsap",
+      isPrivate: true,
+    },
+
+    {
       title: "Pickr",
       description: "Custom a11y Compliant Datepicker.",
       github: "https://github.com/kadetXx/pickr",
@@ -55,6 +64,15 @@ const Work = () => {
     },
 
     {
+      title: "BevelPlexus",
+      description: "UI for a fintech application",
+      github: "",
+      live: "https://dev-bevelplexus.netlify.app/",
+      stack: "React + Context API",
+      isPrivate: true,
+    },
+
+    {
       title: "React Insect",
       description: "Customisable input & select dropdown component for react.",
       github: "https://github.com/kadetXx/insect",
@@ -64,23 +82,14 @@ const Work = () => {
       isPackage: true,
     },
 
-    {
-      title: "Birdbox",
-      description: "Social application with real time Messaging.",
-      github: "https://github.com/kadetXx/birdbox",
-      live: "https://birdbox.vercel.app/",
-      stack: "Vue + Web Sockets + Node JS",
-      isPrivate: false,
-    },
-
-    {
-      title: "BevelPlexus",
-      description: "UI for a fintech application",
-      github: "",
-      live: "https://dev-bevelplexus.netlify.app/",
-      stack: "React + Context API",
-      isPrivate: true,
-    },
+    // {
+    //   title: "Birdbox",
+    //   description: "Social application with real time Messaging.",
+    //   github: "https://github.com/kadetXx/birdbox",
+    //   live: "https://birdbox.vercel.app/",
+    //   stack: "Vue + Web Sockets + Node JS",
+    //   isPrivate: false,
+    // },
 
     // {
     //   title: "Haute Couture",
