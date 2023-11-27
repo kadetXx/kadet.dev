@@ -22,14 +22,18 @@ const Bio = ({ active }) => {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">software engineer</span>. I
-              create <span className="highlight">interactive </span> web
-              experiences using{" "}
+              I'm a <span className="highlight">software engineer</span> focused
+              on solving <span className="highlight">problems </span> using{" "}
               <span className="highlight">frontend technology</span>. I am
               interested in <span className="highlight">user experience</span>,
-              accessibility, <span className="highlight">design systems</span>,
-              gaming, <span className="highlight">web3</span> and{" "}
-              <span className="highlight">web animations.</span>{" "}
+              accessibility,{" "}
+              <span className="highlight">design engineering</span>, gaming,{" "}
+              <span className="highlight">web3</span>,{" "}
+              <span className="highlight">web animations, </span> cloud
+              engineering and <span className="highlight">golang.</span>
+              {/* Recently, I've been <span className="highlight">exploring</span>{" "}
+              building <span className="highlight">cloud</span> applications
+              with <span className="highlight">golang.</span> */}
             </span>
           </p>
         </div>
