@@ -12,7 +12,7 @@ export const projects = [
     description: "Accountability Slack bot.",
     github: "https://github.com/checkmate-africa/checkbot",
     live: "",
-    stack: "Golang, Aws (Lambda, Api Gateway, SAM)",
+    stack: "Golang, Aws (Lambda, Api Gateway, DynamoDB)",
     isPrivate: false,
     isRepository: true,
   },
