@@ -98,24 +98,24 @@ const PostTemplate = ({ data: postData }) => {
       />
 
       <div className="post-footer">
-        {prevData && (
-          <Link to={prevUrl} className="posts-nav post-pre">
+        {nextData && (
+          <Link to={nextUrl} className="posts-nav post-pre">
             <small>
               {" "}
               <i className="fas fa-long-arrow-alt-left"></i> PREV POST
             </small>
 
-            <p>{prevData.title.text}</p>
+            <p>{nextData.title.text}</p>
           </Link>
         )}
 
-        {nextData && (
-          <Link to={nextUrl} className="posts-nav post-next">
+        {prevData && (
+          <Link to={prevUrl} className="posts-nav post-next">
             <small>
               NEXT POST <i className="fas fa-long-arrow-alt-right"></i>
             </small>
 
-            <p>{nextData.title.text}</p>
+            <p>{prevData.title.text}</p>
           </Link>
         )}
       </div>

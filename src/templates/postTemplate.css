@@ -119,6 +119,10 @@
   margin-bottom: 4rem;
 }
 
+.post-content img {
+  max-width: 100%;
+}
+
 .post-content p {
   line-height: 2;
   font-size: var(--semi-font);
@@ -192,7 +196,6 @@
   line-height: 2;
 }
 
-
 .post-content .copy-code {
   position: absolute;
   inset: 0.7rem 0.7rem auto auto;
@@ -210,7 +213,7 @@
     padding: 3.5rem 2rem;
     font-size: var(--normal-font);
   }
-  
+
   .post-content .copy-code {
     padding: 0.3rem 0.5rem;
   }
