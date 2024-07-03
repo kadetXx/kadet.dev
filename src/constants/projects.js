@@ -1,7 +1,7 @@
 export const projects = {
   web3: [
     {
-      title: 'Flexy Bridge',
+      title: 'Flexy',
       description: 'Crosschain Crypto Asset Bridge.',
       github: '',
       live: 'https://flexy.tech',
