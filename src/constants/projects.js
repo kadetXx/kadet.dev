@@ -38,10 +38,10 @@ export const projects = {
       title: 'EIP-1193 Bridge',
       description: 'Ethers v6 Compatible EIP-1193 Bridge.',
       github: 'https://github.com/gasbot-xyz/eip1193bridge',
-      live: '',
+      live: 'https://www.npmjs.com/package/eip1193bridge',
       stack: 'Typescript, Ethers',
       isPrivate: false,
-      isRepository: true,
+      isPackage: true,
     },
     {
       title: 'Checkbot',
