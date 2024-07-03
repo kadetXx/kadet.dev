@@ -1,10 +1,10 @@
-import React from "react";
-import "./Bio.css";
-import "./Bio.mobile.css";
-import { Link } from "gatsby";
+import React from 'react';
+import './Bio.css';
+import './Bio.mobile.css';
+import { Link } from 'gatsby';
 
-import avi from "../../assets/images/kadet_big.png";
-import arrow from "../../assets/svg/arrow.svg";
+import avi from '../../assets/images/kadet_big.png';
+import arrow from '../../assets/svg/arrow.svg';
 
 const Bio = ({ active }) => {
   return (
@@ -22,15 +22,14 @@ const Bio = ({ active }) => {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">software engineer</span> focused
-              on solving <span className="highlight">problems </span> using{" "}
-              <span className="highlight">frontend technology</span>. I am
-              interested in <span className="highlight">user experience</span>,
-              accessibility,{" "}
-              <span className="highlight">design engineering</span>, gaming,{" "}
-              <span className="highlight">web3</span>,{" "}
-              <span className="highlight">web animations, </span> cloud
-              engineering and <span className="highlight">golang.</span>
+              I'm a <span className="highlight">software engineer</span> focused on
+              solving <span className="highlight">problems </span> using{' '}
+              <span className="highlight">frontend technology</span>. I am interested in{' '}
+              <span className="highlight">user experience</span>, accessibility,{' '}
+              <span className="highlight">design engineering</span>, gaming,{' '}
+              <span className="highlight">web3</span>,{' '}
+              <span className="highlight">web animations, </span> and{' '}
+              <span className="highlight">golang.</span>
               {/* Recently, I've been <span className="highlight">exploring</span>{" "}
               building <span className="highlight">cloud</span> applications
               with <span className="highlight">golang.</span> */}
@@ -49,7 +48,7 @@ const Bio = ({ active }) => {
 
       <nav>
         <ul>
-          <li className={active === "work" ? "active_menu" : ""}>
+          <li className={active === 'work' ? 'active_menu' : ''}>
             <small>
               <span>00</span>
               <Link to="/">
@@ -58,7 +57,7 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === "blog" ? "active_menu" : ""}>
+          <li className={active === 'blog' ? 'active_menu' : ''}>
             <small>
               <span>01</span>
               <Link to="/blog">
@@ -67,14 +66,13 @@ const Bio = ({ active }) => {
             </small>
           </li>
 
-          <li className={active === "resume" ? "active_menu" : ""}>
+          <li className={active === 'resume' ? 'active_menu' : ''}>
             <small>
               <span>02</span>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/collinsenebeli/"
-              >
+                href="https://www.linkedin.com/in/collinsenebeli/">
                 <span className="menu_bullet"></span> LINKED IN
               </a>
             </small>
@@ -85,42 +83,24 @@ const Bio = ({ active }) => {
       <div className="footer">
         <img src={avi} alt="" />
         <div className="social">
-          <a
-            href="https://github.com/kadetXx"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://github.com/kadetXx" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
             <img src={arrow} alt="pointer" />
           </a>
 
-          <a
-            href="https://twitter.com/kadetXx"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-twitter"></i> Twitter{" "}
-            <img src={arrow} alt="pointer" />
+          <a href="https://twitter.com/kadetXx" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter"></i> Twitter <img src={arrow} alt="pointer" />
           </a>
 
-          <a
-            href="mailto:hello@kadet.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fas fa-at"></i> Email{" "}
-            <img src={arrow} alt="pointer" />
+          <a href="mailto:hello@kadet.dev" target="_blank" rel="noopener noreferrer">
+            <i className="fas fa-at"></i> Email <img src={arrow} alt="pointer" />
           </a>
         </div>
 
         <div className="credits">
           <p>
             Inspired by
-            <a
-              href="https://sarahdayan.dev/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <a href="https://sarahdayan.dev/" target="_blank" rel="noreferrer noopener">
               Sarah Dayan
             </a>
           </p>
