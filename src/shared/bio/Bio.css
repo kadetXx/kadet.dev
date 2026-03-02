@@ -51,6 +51,51 @@
   text-decoration: none;
 }
 
+.description {
+  position: relative;
+}
+
+.description .lets_talk {
+  position: absolute;
+  bottom: -3.2rem;
+  left: 0;
+  padding: 0.25rem 1.1rem;
+  color: #bebebe;
+  font-size: 0.65rem;
+  font-family: "air-regular";
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 0;
+  transition: all 0.25s ease;
+}
+
+.description .lets_talk:hover {
+  color: #fff;
+  border-color: #555;
+}
+
+.description p a.lets_talk_cta {
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.description .lets_talk_inline {
+  color: #fff;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.description .lets_talk_inline i {
+  margin-right: 0.3rem;
+  font-size: 0.85em;
+}
+
+.description .lets_talk_inline:hover {
+  opacity: 1;
+}
+
 .hero .social_buttons {
   display: none;
 }
@@ -212,14 +257,82 @@ nav ul li:hover a .menu_bullet {
 
 @media (max-width: 993px) {
   .intro_box .avi {
-    display: initial;
-    width: fit-content;
+    display: none;
   }
 
-  .intro_box .avi img {
-    width: 113px;
-    height: 113px;
-    border-radius: 140% 120% 140% 100%;
+  .base_container .footer {
+    display: none;
+  }
+
+  .description {
+    padding-right: 5%;
+  }
+
+  .description p {
+    font-size: 1rem;
+    line-height: 2.2;
+  }
+
+  .intro_box {
+    margin-bottom: 1.5rem;
+  }
+
+  .description p span .dash {
+    display: none;
+  }
+
+  .description p span .lets_talk_cta {
+    display: block;
+    width: fit-content;
+    margin-top: 1.5rem;
+    padding: 0.3rem 1.2rem;
+    font-size: 0.7rem;
+    font-family: "air-regular";
+    letter-spacing: 0.5px;
+    color: #bebebe;
+    border: 1px solid #333;
+    border-radius: 100px;
+    text-decoration: none;
+    animation: none;
+  }
+
+  /* Nav as horizontal tab switches on mobile */
+  .base_container nav {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: -1rem;
+  }
+
+  .base_container nav ul {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .base_container nav ul li {
+    margin: 0;
+  }
+
+  .base_container nav ul li:last-child {
+    display: none;
+  }
+
+  .base_container nav ul li small span:first-child {
+    display: none;
+  }
+
+  .base_container nav ul li a .menu_bullet {
+    display: none;
+  }
+
+  .base_container nav ul li small a {
+    font-size: var(--small-font);
+    letter-spacing: 1.5px;
+    padding: 0.4rem 1rem 0.4rem 0;
+    color: #777778;
+  }
+
+  .base_container nav ul li.active_menu small a {
+    color: #fff;
   }
 }
 

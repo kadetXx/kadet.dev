@@ -32,18 +32,6 @@ const Socials = () => {
         <i className="fas fa-at"></i>
       </a>
 
-      <div className="credits">
-        <p>
-          Inspired by
-          <a
-            href="https://sarahdayan.dev/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Sarah Dayan
-          </a>
-        </p>
-      </div>
     </div>
   );
 };

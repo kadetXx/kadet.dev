@@ -62,7 +62,6 @@
 
 @media (max-width: 993px)  {
   .go_button_container {
-    display: flex;
-    margin-bottom: 20px;
+    display: none;
   }
 }

@@ -30,12 +30,26 @@ const Layout = ({ children, title, active, home, article }) => {
         </div>
 
         <div className="container">
+          <div className="mobile_header_wrap">
+            <Header />
+          </div>
+
           <div className="fixed">
             <Bio active={active} />
           </div>
 
           <div className="main">
-            <div className="pages_container">{children}</div>
+            <div className="pages_container">
+              {children}
+              <div className="mobile_footer_links">
+                <a href="https://github.com/kadetXx" target="_blank" rel="noopener noreferrer">
+                  Github <i className="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/collinsenebeli/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn <i className="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

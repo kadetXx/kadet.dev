@@ -1,32 +1,37 @@
 import React from 'react';
+import '../../shared/postCard/PostCard.css';
+import '../blog/Blog.css';
 import './Work.css';
 
-import Project from '../../shared/projectCard/ProjectCard';
 import GoButton from '../../shared/goButton/GoButton';
 
 import { projects } from '../../constants/projects';
 
 const Work = () => {
   return (
-    <div className="work">
-      <div className="portfolio_showcase portfolio_showcase">
-        <h3 className="title">WEB3</h3>
-        {projects.web3.map((project, index) => (
-          <Project key={index} {...project} id={index} />
-        ))}
-      </div>
+    <div className="blog work">
+      <div className="blog_posts">
+        {projects.map((project, index) => (
+          <article
+            key={index}
+            className={`post_container ${index % 2 !== 0 ? "post_container_pad" : ""}`}
+          >
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="post"
+            >
+              <div className="post_meta">
+                <small className="post_tags">{project.stack}</small>
+                <small className="post_date">{project.description}</small>
+              </div>
 
-      <div className="portfolio_showcase">
-        <h3 className="title">DEV TOOLS/PACKAGES</h3>
-        {projects.tools.map((project, index) => (
-          <Project key={index} {...project} id={index} />
-        ))}
-      </div>
-
-      <div className="portfolio_showcase">
-        <h3 className="title">OTHERS</h3>
-        {projects.others.map((project, index) => (
-          <Project key={index} {...project} id={index} />
+              <div className="post_title">
+                <h3>{project.title}</h3>
+              </div>
+            </a>
+          </article>
         ))}
       </div>
 

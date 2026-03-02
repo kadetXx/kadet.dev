@@ -6,6 +6,16 @@ import { Link } from 'gatsby';
 import avi from '../../assets/images/kadet_big.png';
 import arrow from '../../assets/svg/arrow.svg';
 
+const openCal = (e) => {
+  e.preventDefault();
+  if (typeof window !== 'undefined' && window.Cal) {
+    window.Cal("modal", {
+      calLink: "kadetxx/30min",
+      config: { layout: "month_view", theme: "dark" },
+    });
+  }
+};
+
 const Bio = ({ active }) => {
   return (
     <div className="base_container">
@@ -22,17 +32,11 @@ const Bio = ({ active }) => {
         <div className="description">
           <p>
             <span>
-              I'm a <span className="highlight">software engineer</span> focused on
-              solving <span className="highlight">problems </span> using{' '}
-              <span className="highlight">frontend technology</span>. I am interested in{' '}
-              <span className="highlight">user experience</span>, accessibility,{' '}
-              <span className="highlight">design engineering</span>, gaming,{' '}
-              <span className="highlight">web3</span>,{' '}
-              <span className="highlight">web animations, </span> and{' '}
-              <span className="highlight">golang.</span>
-              {/* Recently, I've been <span className="highlight">exploring</span>{" "}
-              building <span className="highlight">cloud</span> applications
-              with <span className="highlight">golang.</span> */}
+              I solve <span className="highlight">problems</span>. These days,
+              you'll find me neck-deep in{' '}
+              <span className="highlight">design</span> and{' '}
+              <span className="highlight">product engineering</span>, but
+              delivering <span className="highlight">solutions</span> transcends the field, architecture <span className="highlight">stack</span> or programming language<span className="dash"> — </span><a href="#" onClick={openCal} className="lets_talk_cta highlight">let's talk →</a>
             </span>
           </p>
         </div>
@@ -70,10 +74,9 @@ const Bio = ({ active }) => {
             <small>
               <span>02</span>
               <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/collinsenebeli/">
-                <span className="menu_bullet"></span> LINKED IN
+                href="#"
+                onClick={openCal}>
+                <span className="menu_bullet"></span> SAY HELLO
               </a>
             </small>
           </li>
@@ -88,8 +91,8 @@ const Bio = ({ active }) => {
             <img src={arrow} alt="pointer" />
           </a>
 
-          <a href="https://twitter.com/kadetXx" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-twitter"></i> Twitter <img src={arrow} alt="pointer" />
+          <a href="https://www.linkedin.com/in/collinsenebeli/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin"></i> LinkedIn <img src={arrow} alt="pointer" />
           </a>
 
           <a href="mailto:hello@kadet.dev" target="_blank" rel="noopener noreferrer">
@@ -97,14 +100,6 @@ const Bio = ({ active }) => {
           </a>
         </div>
 
-        <div className="credits">
-          <p>
-            Inspired by
-            <a href="https://sarahdayan.dev/" target="_blank" rel="noreferrer noopener">
-              Sarah Dayan
-            </a>
-          </p>
-        </div>
       </div>
     </div>
   );

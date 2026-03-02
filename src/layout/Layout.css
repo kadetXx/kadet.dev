@@ -10,7 +10,7 @@
 }
 
 .container .fixed {
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -26,16 +26,16 @@
 }
 
 .main::-webkit-scrollbar-track {
-  background: #101011; 
+  background: #101011;
 }
- 
+
 .main::-webkit-scrollbar-thumb {
-  background:#101011; 
+  background:#101011;
   background: #16161A;
 }
 
 .main::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .container .main .pages_container {
@@ -57,15 +57,11 @@
 
 /*===== RESPONSIVE STYLING =====*/
 
-#mobile {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  flex-grow: 1;
+.mobile_container {
+  display: none;
 }
 
-.mobile_container {
+.mobile_header_wrap {
   display: none;
 }
 
@@ -91,21 +87,60 @@
   }
 
   #layout_full {
-    height: 100%;
+    height: auto;
   }
 
   .layout .container {
-    display: none;
+    grid-template-columns: 1fr;
   }
 
-  .mobile_container {
+  .container .fixed {
+    height: auto;
+  }
+
+  .container .main {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .container .fixed .base_container {
+    padding: 0 calc(5% + 10px);
+  }
+
+  .container .main .pages_container {
+    padding: 0 5% 5%;
+  }
+
+  .mobile_header_wrap {
+    display: block;
+    padding: 1.5rem calc(5% + 10px) 5rem;
+  }
+}
+
+.mobile_footer_links {
+  display: none;
+}
+
+@media (max-width: 993px) {
+  .mobile_footer_links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 5%;
-    box-sizing: border-box;
+    margin-top: calc(-2% - 1.5rem);
+    padding: 0 10px 2.5rem;
+  }
 
-    height: 100%;
+  .mobile_footer_links a {
+    display: flex;
+    align-items: center;
+    color: #777778;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1.1rem 0;
+  }
+
+  .mobile_footer_links a i {
+    margin-left: 0.4rem;
+    font-size: 0.55rem;
   }
 }
 
@@ -128,7 +163,7 @@
 
 .layout_article #mobile {
   margin: 3rem 0;
-} 
+}
 
 .layout_article .mobile_container .social_buttons {
   display: none !important;

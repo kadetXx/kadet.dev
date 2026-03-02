@@ -10,22 +10,12 @@ const GoButton = ({ prev, next }) => {
           <span className="material-icons">arrow_left</span> {prev.text}
         </button>
       </Link>
-      {next ? (
+      {next && (
         <Link to={next.url}>
           <button>
             {next.text} <span className="material-icons">arrow_right</span>
           </button>
         </Link>
-      ) : (
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.linkedin.com/in/collinsenebeli/"
-        >
-          <button>
-            Linked In <span className="material-icons">arrow_right</span>
-          </button>
-        </a>
       )}
     </div>
   );
