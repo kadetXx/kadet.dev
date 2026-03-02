@@ -16,7 +16,14 @@ const openCal = e => {
   }
 };
 
-const Bio = ({ active }) => {
+const Bio = ({ active, onTabChange }) => {
+  const handleNavClick = (e, tab) => {
+    if (onTabChange && typeof window !== 'undefined' && window.innerWidth <= 993) {
+      e.preventDefault();
+      onTabChange(tab);
+    }
+  };
+
   return (
     <div className="base_container">
       <div className="hero">
@@ -60,7 +67,7 @@ const Bio = ({ active }) => {
           <li className={active === 'work' ? 'active_menu' : ''}>
             <small>
               <span>00</span>
-              <Link to="/">
+              <Link to="/" onClick={(e) => handleNavClick(e, 'work')}>
                 <span className="menu_bullet"></span> WORK
               </Link>
             </small>
@@ -69,7 +76,7 @@ const Bio = ({ active }) => {
           <li className={active === 'blog' ? 'active_menu' : ''}>
             <small>
               <span>01</span>
-              <Link to="/blog">
+              <Link to="/blog" onClick={(e) => handleNavClick(e, 'blog')}>
                 <span className="menu_bullet"></span> ARTICLES
               </Link>
             </small>

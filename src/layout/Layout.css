@@ -109,6 +109,7 @@
 
   .container .main .pages_container {
     padding: 0 5% 5%;
+    overflow-x: hidden;
   }
 
   .mobile_header_wrap {

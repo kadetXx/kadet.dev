@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Layout.css";
 import Seo from "../shared/seo/Seo";
 import Bio from "../shared/bio/Bio";
 import Header from "../shared/header/Header";
 import Socials from "../shared/socials/Socials";
+import Posts from "../components/blog/Blog";
 
-const Layout = ({ children, title, active, home, article }) => {
+const Layout = ({ children, title, active, home, article, posts }) => {
+  const [activeTab, setActiveTab] = useState("work");
+
+  const currentActive = home ? activeTab : active;
+
   return (
     <React.Fragment>
       <link
@@ -35,12 +40,16 @@ const Layout = ({ children, title, active, home, article }) => {
           </div>
 
           <div className="fixed">
-            <Bio active={active} />
+            <Bio active={currentActive} onTabChange={home ? setActiveTab : null} />
           </div>
 
           <div className="main">
             <div className="pages_container">
-              {children}
+              {home && posts ? (
+                activeTab === "work" ? children : <Posts posts={posts} />
+              ) : (
+                children
+              )}
               <div className="mobile_footer_links">
                 <a href="https://github.com/kadetXx" target="_blank" rel="noopener noreferrer">
                   Github <i className="fas fa-external-link-alt"></i>
