@@ -6,12 +6,12 @@ import { Link } from 'gatsby';
 import avi from '../../assets/images/kadet_big.png';
 import arrow from '../../assets/svg/arrow.svg';
 
-const openCal = (e) => {
+const openCal = e => {
   e.preventDefault();
   if (typeof window !== 'undefined' && window.Cal) {
-    window.Cal("modal", {
-      calLink: "kadetxx/30min",
-      config: { layout: "month_view", theme: "dark" },
+    window.Cal('modal', {
+      calLink: 'kadetxx/30min',
+      config: { layout: 'month_view', theme: 'dark' },
     });
   }
 };
@@ -32,11 +32,16 @@ const Bio = ({ active }) => {
         <div className="description">
           <p>
             <span>
-              I solve <span className="highlight">problems</span>. These days,
-              you'll find me neck-deep in{' '}
-              <span className="highlight">design</span> and{' '}
-              <span className="highlight">product engineering</span>, but
-              delivering <span className="highlight">solutions</span> transcends the field, architecture <span className="highlight">stack</span> or programming language<span className="dash"> — </span><a href="#" onClick={openCal} className="lets_talk_cta highlight">let's talk →</a>
+              I solve <span className="highlight">problems</span>. These days, you'll find
+              me neck-deep in <span className="highlight">design</span> and{' '}
+              <span className="highlight">product engineering</span>, but delivering{' '}
+              <span className="highlight">solutions</span> transcends field, architecture,{' '}
+              <span className="highlight"> stack</span> or programming language
+              <span className="dash"> — </span>
+              <a href="#" onClick={openCal} className="lets_talk_cta highlight">
+                {' '}
+                let's talk →
+              </a>
             </span>
           </p>
         </div>
@@ -73,9 +78,7 @@ const Bio = ({ active }) => {
           <li className={active === 'resume' ? 'active_menu' : ''}>
             <small>
               <span>02</span>
-              <a
-                href="#"
-                onClick={openCal}>
+              <a href="#" onClick={openCal}>
                 <span className="menu_bullet"></span> SAY HELLO
               </a>
             </small>
@@ -91,7 +94,10 @@ const Bio = ({ active }) => {
             <img src={arrow} alt="pointer" />
           </a>
 
-          <a href="https://www.linkedin.com/in/collinsenebeli/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/collinsenebeli/"
+            target="_blank"
+            rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i> LinkedIn <img src={arrow} alt="pointer" />
           </a>
 
@@ -99,7 +105,6 @@ const Bio = ({ active }) => {
             <i className="fas fa-at"></i> Email <img src={arrow} alt="pointer" />
           </a>
         </div>
-
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .work .post .post_title h3 {
-  font-size: var(--h3-font);
+  font-size: var(--h4-font);
 }
 
 @media (max-width: 993px) {

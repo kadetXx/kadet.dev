@@ -48,6 +48,9 @@ const Layout = ({ children, title, active, home, article }) => {
                 <a href="https://www.linkedin.com/in/collinsenebeli/" target="_blank" rel="noopener noreferrer">
                   LinkedIn <i className="fas fa-external-link-alt"></i>
                 </a>
+                <a href="mailto:hello@kadet.dev" target="_blank" rel="noopener noreferrer">
+                  Email <i className="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
           </div>

@@ -48,8 +48,21 @@
 
 .post .post_title .post_length {
   margin: 0;
-  font-size: var(--xsmall-font);
+  font-size: 0.9rem;
   color: #777778;
+}
+
+.post .post_title .post_length a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post .post_title .post_length i {
+  margin-right: 0.35rem;
+}
+
+.post .post_title .post_length i.fa-github {
+  font-size: 1em;
 }
 
 @media (min-width: 993px) {

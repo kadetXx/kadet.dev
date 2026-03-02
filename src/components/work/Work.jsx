@@ -16,12 +16,7 @@ const Work = () => {
             key={index}
             className={`post_container ${index % 2 !== 0 ? "post_container_pad" : ""}`}
           >
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="post"
-            >
+            <div className="post">
               <div className="post_meta">
                 <small className="post_tags">{project.stack}</small>
                 <small className="post_date">{project.description}</small>
@@ -29,8 +24,20 @@ const Work = () => {
 
               <div className="post_title">
                 <h3>{project.title}</h3>
+                <small className="post_length">
+                  {project.url && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <i className="fas fa-globe"></i> Visit
+                    </a>
+                  )}
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ marginLeft: project.url ? '1.5rem' : 0 }}>
+                      <i className="fas fa-code-branch"></i> Code
+                    </a>
+                  )}
+                </small>
               </div>
-            </a>
+            </div>
           </article>
         ))}
       </div>
