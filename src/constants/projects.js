@@ -20,7 +20,7 @@ export const projects = [
   {
     title: 'Nick Jones',
     description: 'Product designer portfolio.',
-    url: 'https://nickjones.co.uk',
-    stack: 'HTML, CSS, JavaScript',
+    url: 'https://nickjones.vercel.app',
+    stack: 'HTML/CSS/JavaScript, Maths',
   },
 ];
