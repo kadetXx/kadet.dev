@@ -160,6 +160,10 @@
   padding: 5% 5% 10%;
   max-width: 900px;
   margin: auto;
+
+  @media (max-width: 993px) {
+    padding: 5% 1.5rem 10%
+  }
 }
 
 .layout_article #mobile {
