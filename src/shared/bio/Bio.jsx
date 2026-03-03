@@ -41,9 +41,11 @@ const Bio = ({ active, onTabChange }) => {
             <span>
               I solve <span className="highlight">problems</span>. These days, you'll find
               me neck-deep in <span className="highlight">design</span> and{' '}
-              <span className="highlight">product engineering</span>, but testing and deploying{' '}
-              <span className="highlight">solutions</span> transcends field, architecture,{' '}
-              <span className="highlight"> stack,</span> or programming language.
+              <span className="highlight">product engineering</span> or tinkering with{' '}
+              <span className="highlight">llms</span>, however testing and{' '}
+              <span className="highlight">deploying solutions</span> transcends field,{' '}
+              <span className="highlight">architecture stack,</span> or programming
+              language
               <span className="dash"> — </span>
               <a href="#" onClick={openCal} className="lets_talk_cta highlight">
                 {' '}
@@ -67,7 +69,7 @@ const Bio = ({ active, onTabChange }) => {
           <li className={active === 'work' ? 'active_menu' : ''}>
             <small>
               <span>00</span>
-              <Link to="/" onClick={(e) => handleNavClick(e, 'work')}>
+              <Link to="/" onClick={e => handleNavClick(e, 'work')}>
                 <span className="menu_bullet"></span> WORK
               </Link>
             </small>
@@ -76,7 +78,7 @@ const Bio = ({ active, onTabChange }) => {
           <li className={active === 'blog' ? 'active_menu' : ''}>
             <small>
               <span>01</span>
-              <Link to="/blog" onClick={(e) => handleNavClick(e, 'blog')}>
+              <Link to="/blog" onClick={e => handleNavClick(e, 'blog')}>
                 <span className="menu_bullet"></span> ARTICLES
               </Link>
             </small>
