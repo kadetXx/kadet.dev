@@ -21,22 +21,6 @@
 }
 
 
-.main::-webkit-scrollbar {
-  width: 7px;
-}
-
-.main::-webkit-scrollbar-track {
-  background: #101011;
-}
-
-.main::-webkit-scrollbar-thumb {
-  background:#101011;
-  background: #16161A;
-}
-
-.main::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 .container .main .pages_container {
   padding: 10% 15% 10% 5%;

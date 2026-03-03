@@ -43,7 +43,7 @@ const Bio = ({ active, onTabChange }) => {
               me neck-deep in <span className="highlight">design</span> and{' '}
               <span className="highlight">product engineering</span>, but testing and deploying{' '}
               <span className="highlight">solutions</span> transcends field, architecture,{' '}
-              <span className="highlight"> stack</span> or programming language.
+              <span className="highlight"> stack,</span> or programming language.
               <span className="dash"> — </span>
               <a href="#" onClick={openCal} className="lets_talk_cta highlight">
                 {' '}
