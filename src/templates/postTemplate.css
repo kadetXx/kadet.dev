@@ -113,6 +113,14 @@
   .posts-nav.post-next {
     margin-left: 20%;
   }
+
+  .posts-nav small {
+    font-size: 0.75rem;
+  }
+
+  .posts-nav p {
+    font-size: var(--normal-font);
+  }
 }
 
 .post-content {

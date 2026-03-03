@@ -173,3 +173,7 @@
 .layout_article .mobile_container .social_buttons {
   display: none !important;
 }
+
+.layout_article .mobile_footer_links {
+  display: none !important;
+}
