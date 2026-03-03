@@ -41,7 +41,7 @@ const Bio = ({ active, onTabChange }) => {
             <span>
               I solve <span className="highlight">problems</span>. These days, you'll find
               me neck-deep in <span className="highlight">design</span> and{' '}
-              <span className="highlight">product engineering</span>, but delivering{' '}
+              <span className="highlight">product engineering</span>, but testing and deploying{' '}
               <span className="highlight">solutions</span> transcends field, architecture,{' '}
               <span className="highlight"> stack</span> or programming language.
               <span className="dash"> — </span>
