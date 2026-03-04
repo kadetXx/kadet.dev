@@ -14,11 +14,11 @@ export const projects = [
     stack: 'NextJS/TS, Strudel.js',
   },
   {
-    title: 'Nexuslabs',
-    description: 'Crypto trading & portfolio.',
-    url: 'https://www.nexuslabs.gg/app/trading/crypto',
-    github: '',
-    stack: 'React, TS, Viem + Ethers',
+    title: 'Pickr',
+    description: 'Custom datepicker for React.',
+    url: 'https://datepickr.vercel.app',
+    github: 'https://github.com/kadetXx/pickr',
+    stack: 'React, TypeScript, Vite',
   },
   {
     title: 'Nick Jones',
