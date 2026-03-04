@@ -41,7 +41,7 @@ const Bio = ({ active, onTabChange }) => {
             <span>
               I solve <span className="highlight">problems</span>. These days, you'll find
               me neck-deep in <span className="highlight">design</span> and{' '}
-              <span className="highlight">product engineering</span> or tinkering with{' '}
+              <span className="highlight">product engineering,</span> or tinkering with{' '}
               <span className="highlight">llms</span>. However, testing and{' '}
               <span className="highlight">deploying solutions</span> transcends field,{' '}
               <span className="highlight">architecture stack,</span> or programming
