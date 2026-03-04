@@ -49,6 +49,20 @@
   display: none;
 }
 
+@media (min-width: 1400px) {
+  .base_container {
+    justify-content: flex-start;
+  }
+
+  .base_container nav {
+    margin-top: 8rem;
+  }
+
+  .base_container .footer {
+    margin-top: auto;
+  }
+}
+
 @media (min-width: 994px) and (max-width: 1200px) {
   .layout .container .fixed .base_container {
     padding-left: 8%;
