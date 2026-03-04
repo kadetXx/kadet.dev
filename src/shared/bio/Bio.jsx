@@ -45,7 +45,7 @@ const Bio = ({ active, onTabChange }) => {
               <span className="highlight">llms</span>. However, testing and{' '}
               <span className="highlight">deploying solutions</span> transcends field,{' '}
               <span className="highlight">architecture stack,</span> or programming
-              language
+              language<span className="period">.</span>
               <span className="dash"> — </span>
               <a href="#" onClick={openCal} className="lets_talk_cta highlight">
                 {' '}

@@ -255,6 +255,12 @@ nav ul li:hover a .menu_bullet {
   margin: 0 5px;
 }
 
+@media (min-width: 993px) {
+  .description p span .period {
+    display: none;
+  }
+}
+
 @media (max-width: 993px) {
   .intro_box .avi {
     display: none;
