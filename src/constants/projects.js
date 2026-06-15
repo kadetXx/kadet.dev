@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: 'KeyMIDI',
+    description: 'Midi plugin for MacOS.',
+    url: 'https://keymidi.app',
+    github: 'https://github.com/kadetXx/keymidi',
+    stack: 'Electron, Typescript',
+  },
+  {
     title: 'Sheldon',
     description: 'Self Hosted Agentic Assistant.',
     url: 'https://bowerhall.ai/sheldon',
@@ -19,12 +26,5 @@ export const projects = [
     url: 'https://datepickr.vercel.app',
     github: 'https://github.com/kadetXx/pickr',
     stack: 'React, TypeScript, Vite',
-  },
-  {
-    title: 'Nick Jones',
-    description: 'Product designer portfolio.',
-    url: 'https://nickjones.vercel.app',
-    github: 'https://github.com/kadetXx/nick-jones-experimental',
-    stack: 'HTML/CSS/JavaScript, Maths',
   },
 ];
