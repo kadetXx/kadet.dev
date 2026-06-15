@@ -17,7 +17,7 @@ export const projects = [
     title: 'Algopatterns',
     description: 'Live code music.',
     url: 'https://algopatterns.cc',
-    github: 'https://github.com/orgs/algopatterns/repositories',
+    github: 'https://github.com/algopatterns/frontend',
     stack: 'NextJS/TS, Strudel.js',
   },
   {
