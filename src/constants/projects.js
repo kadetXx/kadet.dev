@@ -1,4 +1,11 @@
 export const projects = [
+   {
+    title: 'Sheldon',
+    description: 'Self Hosted Agentic Assistant.',
+    url: 'https://bowerhall.ai/sheldon',
+    github: 'https://github.com/bowerhall/sheldon',
+    stack: 'Go, Docker, Traefik',
+  },
   {
     title: 'KeyMIDI',
     description: 'Midi plugin for MacOS.',
@@ -7,17 +14,10 @@ export const projects = [
     stack: 'Electron, Typescript',
   },
   {
-    title: 'Sheldon',
-    description: 'Self Hosted Agentic Assistant.',
-    url: 'https://bowerhall.ai/sheldon',
-    github: 'https://github.com/bowerhall/sheldon',
-    stack: 'Go, Docker, Traefik',
-  },
-  {
     title: 'Algopatterns',
     description: 'Live code music.',
     url: 'https://algopatterns.cc',
-    github: 'https://github.com/algopatterns/frontend',
+    github: 'https://github.com/kadetXx/algopatterns',
     stack: 'NextJS/TS, Strudel.js',
   },
   {
