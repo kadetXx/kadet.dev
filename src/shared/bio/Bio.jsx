@@ -74,9 +74,9 @@ const Bio = ({ active, onTabChange }) => {
                 href="#"
                 onClick={openCal}
                 className="lets_talk_cta highlight"
-                aria-label="Let's talk">
-                <i className="fas fa-video lets_talk_icon" aria-hidden="true"></i>
-                <span className="lets_talk_text"> let's talk →</span>
+                aria-label="Book a call">
+                <span className="lets_talk_text_mobile"> let's talk →</span>
+                <span className="lets_talk_text_desktop">Book a call</span>
               </a>
             </span>
           </p>

@@ -54,7 +54,7 @@
 /* let's talk is always its own button now, not just on mobile -- the
    inline dash lead-in is redundant once the link breaks onto its own line.
    On mobile it's a pill button under the paragraph; on desktop (below)
-   it becomes a fixed floating icon instead. */
+   it becomes a fixed text tag stuck to the right edge instead. */
 .description p span .dash {
   display: none;
 }
@@ -74,43 +74,42 @@
   animation: none;
 }
 
-.description p span .lets_talk_cta .lets_talk_icon {
+.description p span .lets_talk_cta .lets_talk_text_desktop {
   display: none;
 }
 
 @media (min-width: 994px) {
   .description p span .lets_talk_cta {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 44px;
-    height: 44px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: fit-content;
     margin-top: 0;
-    padding: 0;
+    padding: 0.8rem 1.3rem;
     border: none;
-    border-radius: 50%;
+    border-radius: 8px 0 0 8px;
     background: #1b1b1d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
     z-index: 999;
-    transition: transform 0.2s ease, background 0.2s ease;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    color: #bebebe;
+    transition: background 0.2s ease, padding-right 0.2s ease;
   }
 
   .description p span .lets_talk_cta:hover {
     background: #262626;
-    transform: scale(1.08);
-  }
-
-  .description p span .lets_talk_cta .lets_talk_icon {
-    display: block;
-    font-size: 17px;
+    padding-right: 1.7rem;
     color: #fff;
   }
 
-  .description p span .lets_talk_cta .lets_talk_text {
+  .description p span .lets_talk_cta .lets_talk_text_mobile {
     display: none;
+  }
+
+  .description p span .lets_talk_cta .lets_talk_text_desktop {
+    display: block;
   }
 }
 
