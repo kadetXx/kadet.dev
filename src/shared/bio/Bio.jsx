@@ -76,7 +76,7 @@ const Bio = ({ active, onTabChange }) => {
                 className="lets_talk_cta highlight"
                 aria-label="Book a call">
                 <span className="lets_talk_text_mobile"> let's talk →</span>
-                <span className="lets_talk_text_desktop">Book a call</span>
+                <i className="fas fa-video lets_talk_text_desktop" aria-hidden="true"></i>
               </a>
             </span>
           </p>

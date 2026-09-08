@@ -86,21 +86,19 @@
     transform: translateY(-50%);
     width: fit-content;
     margin-top: 0;
-    padding: 0.8rem 1.3rem;
+    padding: 0.9rem 1rem;
     border: none;
     border-radius: 8px 0 0 8px;
     background: #1b1b1d;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
     z-index: 999;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
     color: #bebebe;
-    transition: background 0.2s ease, padding-right 0.2s ease;
+    transition: background 0.2s ease, padding-right 0.2s ease, color 0.2s ease;
   }
 
   .description p span .lets_talk_cta:hover {
     background: #262626;
-    padding-right: 1.7rem;
+    padding-right: 1.3rem;
     color: #fff;
   }
 
@@ -110,6 +108,7 @@
 
   .description p span .lets_talk_cta .lets_talk_text_desktop {
     display: block;
+    font-size: 16px;
   }
 }
 
