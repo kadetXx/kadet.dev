@@ -39,13 +39,11 @@ const Bio = ({ active, onTabChange }) => {
         <div className="description">
           <p>
             <span>
-              I solve <span className="highlight">problems</span>. These days, you'll find
-              me neck-deep in <span className="highlight">design</span> and{' '}
-              <span className="highlight">product engineering</span>. However, building,{' '}
-              <span className="highlight">testing</span>, and{' '}
-              <span className="highlight">deploying solutions</span> transcends field,{' '}
-              <span className="highlight">architecture stack,</span> or computer programming
-              language<span className="period">.</span>
+              I build <span className="highlight">things that work</span>. These days that
+              means teaming up with <span className="highlight">AI agents</span> to build{' '}
+              <span className="highlight">interfaces that feel alive</span>, or shipping the{' '}
+              <span className="highlight">pipeline</span> that gets the next one
+              running<span className="period">.</span>
               <span className="dash"> — </span>
               <a href="#" onClick={openCal} className="lets_talk_cta highlight">
                 {' '}
