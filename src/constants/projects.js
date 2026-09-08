@@ -4,14 +4,14 @@ export const projects = [
     description: '3D FPS weapon select HUD.',
     url: 'https://selectweapon.space',
     github: 'https://github.com/kadetXx/select-weapon',
-    stack: 'Three.js, JavaScript, Vite',
+    stack: 'Three.js, JS, Vite',
   },
   {
     title: 'KeyMIDI',
     description: 'MacOS MIDI plugin.',
     url: 'https://keymidi.app',
     github: 'https://github.com/kadetXx/keymidi',
-    stack: 'Electron, TypeScript',
+    stack: 'Electron, TS',
   },
   {
     title: 'Algopatterns',
