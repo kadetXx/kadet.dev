@@ -1,10 +1,17 @@
 export const projects = [
   {
-    title: 'Sheldon',
-    description: 'Self Hosted Agentic Assistant.',
-    url: 'https://bowerhall.ai/sheldon',
-    github: 'https://github.com/bowerhall/sheldon',
-    stack: 'Go, Docker, Traefik',
+    title: 'Select Weapon',
+    description: '3D FPS weapon select HUD.',
+    url: 'https://selectweapon.space',
+    github: 'https://github.com/kadetXx/select-weapon',
+    stack: 'Three.js, JavaScript, Vite',
+  },
+  {
+    title: 'KeyMIDI',
+    description: 'Keyboard-to-MIDI controller for macOS.',
+    url: 'https://keymidi.app',
+    github: 'https://github.com/kadetXx/keymidi',
+    stack: 'Electron, TypeScript',
   },
   {
     title: 'Algopatterns',
@@ -14,17 +21,10 @@ export const projects = [
     stack: 'NextJS/TS, Strudel.js',
   },
   {
-    title: 'Pickr',
-    description: 'Custom datepicker for React.',
-    url: 'https://datepickr.vercel.app',
-    github: 'https://github.com/kadetXx/pickr',
-    stack: 'React, TypeScript, Vite',
-  },
-  {
-    title: 'Nick Jones',
-    description: 'Product designer portfolio.',
-    url: 'https://nickjones.vercel.app',
-    github: 'https://github.com/kadetXx/nick-jones-experimental',
-    stack: 'HTML/CSS/JavaScript, Maths',
+    title: 'Sheldon',
+    description: 'Self Hosted Agentic Assistant.',
+    url: 'https://bowerhall.ai/sheldon',
+    github: 'https://github.com/bowerhall/sheldon',
+    stack: 'Go, Docker, Traefik',
   },
 ];
