@@ -75,7 +75,7 @@ const Bio = ({ active, onTabChange }) => {
                 onClick={openCal}
                 className="lets_talk_cta highlight"
                 aria-label="Let's talk">
-                <i className="fas fa-comment-dots lets_talk_icon" aria-hidden="true"></i>
+                <i className="fas fa-video lets_talk_icon" aria-hidden="true"></i>
                 <span className="lets_talk_text"> let's talk →</span>
               </a>
             </span>
@@ -122,20 +122,18 @@ const Bio = ({ active, onTabChange }) => {
         <img src={avi} alt="" />
         <div className="social">
           <a href="https://github.com/kadetXx" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i> Github
-            <i className="fas fa-external-link-alt"></i>
+            Github <i className="fas fa-external-link-alt"></i>
           </a>
 
           <a
             href="https://www.linkedin.com/in/collinsenebeli/"
             target="_blank"
             rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i> LinkedIn{' '}
-            <i className="fas fa-external-link-alt"></i>
+            LinkedIn <i className="fas fa-external-link-alt"></i>
           </a>
 
           <a href="mailto:hello@kadet.dev" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-at"></i> Email <i className="fas fa-external-link-alt"></i>
+            Email <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>
