@@ -24,5 +24,14 @@
 
   .blog .blog_posts {
     grid-template-columns: 1fr;
+    row-gap: 0;
+    /* bleed past .pages_container's own 5% side padding so cards hug
+       the true screen edge instead of sitting inset twice over -- width
+       must be auto, not the base rule's 100%, or only margin-left
+       visibly shifts the box while margin-right is a no-op (the box's
+       right edge is just left + width, not the containing block edge) */
+    width: auto;
+    margin-left: -5%;
+    margin-right: -5%;
   }
 }

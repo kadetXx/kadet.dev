@@ -83,8 +83,13 @@
 @media (max-width: 993px) {
   .post_container {
     width: auto;
-    margin: 4% 10px;
+    margin: 0;
+    border-bottom: 1px solid #262626;
     opacity: 1 !important;
+  }
+
+  .post_container:last-child {
+    border-bottom: none;
   }
 
   .post .post_title h3 {
