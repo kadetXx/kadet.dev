@@ -3,7 +3,6 @@ import "./Layout.css";
 import Seo from "../shared/seo/Seo";
 import Bio from "../shared/bio/Bio";
 import Header from "../shared/header/Header";
-import Socials from "../shared/socials/Socials";
 import Posts from "../components/blog/Blog";
 
 const Layout = ({ children, title, active, home, article, posts }) => {
@@ -28,12 +27,6 @@ const Layout = ({ children, title, active, home, article, posts }) => {
         className={`layout ${article && "layout_article"}`}
         id={home ? "layout_full" : ""}
       >
-        <div className="mobile_container">
-          <Header />
-          <div id="mobile">{home ? <Bio /> : children}</div>
-          <Socials />
-        </div>
-
         <div className="container">
           <div className="mobile_header_wrap">
             <Header />
@@ -46,7 +39,17 @@ const Layout = ({ children, title, active, home, article, posts }) => {
           <div className="main">
             <div className="pages_container">
               {home && posts ? (
-                activeTab === "work" ? children : <Posts posts={posts} />
+                <>
+                  {/* both stay mounted and just toggle visibility -- switching
+                      used to fully unmount one side and mount the other,
+                      rebuilding the whole post/project list from scratch on
+                      every tap, which is what made repeated switching get
+                      progressively laggier */}
+                  <div hidden={activeTab !== "work"}>{children}</div>
+                  <div hidden={activeTab === "work"}>
+                    <Posts posts={posts} />
+                  </div>
+                </>
               ) : (
                 children
               )}
