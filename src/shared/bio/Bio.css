@@ -51,6 +51,67 @@
   text-decoration: none;
 }
 
+/* let's talk is always its own button now, not just on mobile -- the
+   inline dash lead-in is redundant once the link breaks onto its own line.
+   On mobile it's a pill button under the paragraph; on desktop (below)
+   it becomes a fixed floating icon instead. */
+.description p span .dash {
+  display: none;
+}
+
+.description p span .lets_talk_cta {
+  display: block;
+  width: fit-content;
+  margin-top: 1.5rem;
+  padding: 0.3rem 1.2rem;
+  font-size: 0.7rem;
+  font-family: "air-regular";
+  letter-spacing: 0.5px;
+  color: #bebebe;
+  border: 1px solid #333;
+  border-radius: 100px;
+  text-decoration: none;
+  animation: none;
+}
+
+.description p span .lets_talk_cta .lets_talk_icon {
+  display: none;
+}
+
+@media (min-width: 994px) {
+  .description p span .lets_talk_cta {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    margin-top: 0;
+    padding: 0;
+    border-radius: 50%;
+    background: #1b1b1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    z-index: 999;
+    transition: border-color 0.2s ease;
+  }
+
+  .description p span .lets_talk_cta:hover {
+    border-color: #a6a6a7;
+  }
+
+  .description p span .lets_talk_cta .lets_talk_icon {
+    display: block;
+    font-size: 22px;
+    color: #fff;
+  }
+
+  .description p span .lets_talk_cta .lets_talk_text {
+    display: none;
+  }
+}
+
 .description {
   position: relative;
 }
@@ -255,15 +316,13 @@ nav ul li:hover a .menu_bullet {
   margin: 0 5px;
 }
 
-@media (min-width: 993px) {
-  .description p span .period {
-    display: none;
-  }
-}
-
 @media (max-width: 993px) {
   .intro_box .avi {
     display: none;
+  }
+
+  .intro_box h1 {
+    font-size: 2rem;
   }
 
   .base_container .footer {
@@ -281,25 +340,6 @@ nav ul li:hover a .menu_bullet {
 
   .intro_box {
     margin-bottom: 1.5rem;
-  }
-
-  .description p span .dash {
-    display: none;
-  }
-
-  .description p span .lets_talk_cta {
-    display: block;
-    width: fit-content;
-    margin-top: 1.5rem;
-    padding: 0.3rem 1.2rem;
-    font-size: 0.7rem;
-    font-family: "air-regular";
-    letter-spacing: 0.5px;
-    color: #bebebe;
-    border: 1px solid #333;
-    border-radius: 100px;
-    text-decoration: none;
-    animation: none;
   }
 
   /* Nav as horizontal tab switches on mobile */

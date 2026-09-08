@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Bio.css';
 import './Bio.mobile.css';
 import { Link } from 'gatsby';
 
 import avi from '../../assets/images/kadet_big.png';
-import arrow from '../../assets/svg/arrow.svg';
 
 const openCal = e => {
   e.preventDefault();
@@ -17,11 +16,36 @@ const openCal = e => {
 };
 
 const Bio = ({ active, onTabChange }) => {
-  const handleNavClick = (e, tab) => {
-    if (onTabChange && typeof window !== 'undefined' && window.innerWidth <= 993) {
-      e.preventDefault();
-      onTabChange(tab);
+  // reactive, not just read at click-time -- so the mobile in-place tab
+  // switch never races against gatsby Link's own click handling. Below
+  // 993px we render a plain, non-navigating element instead of a Link
+  // at all, rather than rendering a Link and fighting it with
+  // preventDefault (that fight was the likely cause of the occasional
+  // freeze: an in-flight SPA navigation getting cancelled mid-flight).
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 993px)');
+    const update = () => setIsMobile(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, []);
+
+  const renderNavLink = (to, tab, label) => {
+    if (isMobile && onTabChange) {
+      return (
+        <a href={to} onClick={e => { e.preventDefault(); onTabChange(tab); }}>
+          <span className="menu_bullet"></span> {label}
+        </a>
+      );
     }
+
+    return (
+      <Link to={to}>
+        <span className="menu_bullet"></span> {label}
+      </Link>
+    );
   };
 
   return (
@@ -39,15 +63,20 @@ const Bio = ({ active, onTabChange }) => {
         <div className="description">
           <p>
             <span>
-              I build <span className="highlight">things that work</span>. These days that
-              means teaming up with <span className="highlight">AI agents</span> to build{' '}
+              I spec, design, build, and maintain{' '}
+              <span className="highlight">software</span>. These days, that involves
+              teaming up with <span className="highlight">AI agents</span> to build{' '}
               <span className="highlight">interfaces that feel alive</span>, or shipping the{' '}
               <span className="highlight">pipeline</span> that gets the next one
               running<span className="period">.</span>
               <span className="dash"> — </span>
-              <a href="#" onClick={openCal} className="lets_talk_cta highlight">
-                {' '}
-                let's talk →
+              <a
+                href="#"
+                onClick={openCal}
+                className="lets_talk_cta highlight"
+                aria-label="Let's talk">
+                <i className="fas fa-comment-dots lets_talk_icon" aria-hidden="true"></i>
+                <span className="lets_talk_text"> let's talk →</span>
               </a>
             </span>
           </p>
@@ -67,18 +96,14 @@ const Bio = ({ active, onTabChange }) => {
           <li className={active === 'work' ? 'active_menu' : ''}>
             <small>
               <span>00</span>
-              <Link to="/" onClick={e => handleNavClick(e, 'work')}>
-                <span className="menu_bullet"></span> WORK
-              </Link>
+              {renderNavLink('/', 'work', 'WORK')}
             </small>
           </li>
 
           <li className={active === 'blog' ? 'active_menu' : ''}>
             <small>
               <span>01</span>
-              <Link to="/blog" onClick={e => handleNavClick(e, 'blog')}>
-                <span className="menu_bullet"></span> ARTICLES
-              </Link>
+              {renderNavLink('/blog', 'blog', 'ARTICLES')}
             </small>
           </li>
 
@@ -98,18 +123,19 @@ const Bio = ({ active, onTabChange }) => {
         <div className="social">
           <a href="https://github.com/kadetXx" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> Github
-            <img src={arrow} alt="pointer" />
+            <i className="fas fa-external-link-alt"></i>
           </a>
 
           <a
             href="https://www.linkedin.com/in/collinsenebeli/"
             target="_blank"
             rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i> LinkedIn <img src={arrow} alt="pointer" />
+            <i className="fab fa-linkedin"></i> LinkedIn{' '}
+            <i className="fas fa-external-link-alt"></i>
           </a>
 
           <a href="mailto:hello@kadet.dev" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-at"></i> Email <img src={arrow} alt="pointer" />
+            <i className="fas fa-at"></i> Email <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>

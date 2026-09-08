@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     title: 'KeyMIDI',
-    description: 'Keyboard-to-MIDI controller for macOS.',
+    description: 'MacOS MIDI plugin.',
     url: 'https://keymidi.app',
     github: 'https://github.com/kadetXx/keymidi',
     stack: 'Electron, TypeScript',
