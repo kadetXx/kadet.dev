@@ -88,7 +88,7 @@
     margin-top: 0;
     padding: 0.9rem 1rem;
     border: none;
-    border-radius: 8px 0 0 8px;
+    border-radius: 6px 0 0 6px;
     background: #1b1b1d;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
     z-index: 999;
@@ -272,7 +272,7 @@ nav ul li:hover a .menu_bullet {
   display: flex;
   align-items: center;
   font-size: var(--small-font);
-  margin-right: 1rem;
+  margin-right: 1.3rem;
   color: inherit;
   text-decoration: none;
 }
