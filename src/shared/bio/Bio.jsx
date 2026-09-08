@@ -64,8 +64,8 @@ const Bio = ({ active, onTabChange }) => {
           <p>
             <span>
               I spec, design, build, and maintain{' '}
-              <span className="highlight">software</span>. These days, that involves
-              teaming up with <span className="highlight">AI agents</span> to build{' '}
+              <span className="highlight">software</span>. These days, that mostly involves
+              teaming up with <span className="highlight">AI agents</span> to craft{' '}
               <span className="highlight">interfaces that feel alive</span>, or shipping the{' '}
               <span className="highlight">pipeline</span> that gets the next one
               running<span className="period">.</span>
