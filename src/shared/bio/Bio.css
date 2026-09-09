@@ -25,7 +25,7 @@
 .description p {
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: var(--semi-font);
   line-height: 21px;
   color: #ffffff;
   margin: 0;
