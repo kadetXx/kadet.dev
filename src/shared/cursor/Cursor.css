@@ -32,7 +32,10 @@
 @media screen and (max-width: 750px) {
   .custom-cursor,
   .custom-cursor-ii {
-    display: none;
+    /* !important because trail() sets display:block inline on every
+       mousemove -- a touch/hybrid device that fires mouse events needs
+       this to still win over that inline style */
+    display: none !important;
   }
 }
 
