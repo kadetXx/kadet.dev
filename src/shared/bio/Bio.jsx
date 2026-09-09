@@ -63,7 +63,7 @@ const Bio = ({ active, onTabChange }) => {
         <div className="description">
           <p>
             <span>
-              I spec, design, build, maintain and scale{' '}
+              I spec, design, <span className="highlight">build</span>, maintain and scale{' '}
               <span className="highlight">software</span>. These days, that mostly involves
               teaming up with <span className="highlight">AI agents</span> to craft{' '}
               <span className="highlight">interfaces that feel alive</span>, or shipping the{' '}
