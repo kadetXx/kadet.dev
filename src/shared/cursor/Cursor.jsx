@@ -28,7 +28,7 @@ const Cursor = ({ children }) => {
 
       cursorII.setAttribute(
         "style",
-        `transform: translate3d(${ev.pageX - 3}px, ${ev.pageY - 3}px, 0px)`
+        `display: block; transform: translate3d(${ev.pageX - 3}px, ${ev.pageY - 3}px, 0px)`
       );
       // }
     };

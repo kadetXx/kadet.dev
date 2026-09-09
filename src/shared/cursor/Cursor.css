@@ -22,6 +22,9 @@
   z-index: 10000000;
   position: absolute;
   mix-blend-mode: exclusion;
+  /* hidden until the first real mousemove positions it -- otherwise it
+     sits at its default top-left DOM position until the cursor moves */
+  display: none;
 
   transition: all 0.1s ease-out;
 }
