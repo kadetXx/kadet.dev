@@ -23,7 +23,12 @@
 
 
 .container .main .pages_container {
-  padding: 10% 15% 10% 5%;
+  /* was 10% 15% 10% 5% -- percentage padding is based on width even for
+     top/bottom, so bottom alone added ~10% of the viewport's width in
+     extra height. With only 4 projects now (down from a longer list),
+     that padding alone was enough to overflow the 100vh .main and
+     force a scrollbar even though the actual content fit on screen */
+  padding: 10% 15% 0 5%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
