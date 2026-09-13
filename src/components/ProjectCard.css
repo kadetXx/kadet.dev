@@ -96,6 +96,17 @@
       hsl(calc(var(--panel-hue) + 18) 38% 12%)
     );
 
+  /* Monochrome. Done as a filter rather than baked into the gradient so it
+     carries over to real footage untouched -- a <video class="project__fill">
+     picks it up for free. Flip --mono to 0 on .project to see colour again.
+     One shade across all three cards -- which means one hue too. grayscale()
+     weights channels by perceived luminance (green ~10x blue), so identical
+     saturation and lightness on different hues lands on greys up to 28% apart:
+     hue 190 renders at 167, hue 232 at 95. Brightness cannot even that out
+     without fighting the gradient, so all three share the middle card's hue. */
+  filter: grayscale(var(--mono, 1)) brightness(var(--mono-lift, 0.9))
+    contrast(1.06);
+
   /* Paints in rather than appearing: an oversized soft-edged mask is swept
      across the card, so the colour washes on from the right. Same duration as
      the column slide, but eased out rather than elastic -- an overshoot on a
@@ -128,17 +139,11 @@
   );
 }
 
-/* one hue of the same treatment per project */
-.project:nth-child(1) {
-  --panel-hue: 190;
-}
-
-.project:nth-child(2) {
+/* Set --panel-hue per card to bring back colour identity, but only alongside
+   a lower --mono: under full grayscale differing hues read as differing
+   brightness, which is the thing this is avoiding. */
+.project {
   --panel-hue: 232;
-}
-
-.project:nth-child(3) {
-  --panel-hue: 295;
 }
 
 /* Only where the card actually expands -- below this the grid stacks. */
