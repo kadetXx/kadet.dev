@@ -6,11 +6,12 @@ import "./ProjectCard.css";
 
 type Props = Project & { featured?: boolean };
 
-/* CC0, from MDN's shared assets. A placeholder: self-host the real thing in
-   public/ before this ships -- hotlinking someone else's bucket is fragile and
-   rude, and the licence of whatever replaces it needs checking. Wants a slow,
-   wide, low-contrast clip; anything fast-cut fights the curtain. */
-const BACKDROP = "https://mdn.github.io/shared-assets/videos/flower.mp4";
+/* Local test asset, transcoded down from the 169MB/120fps/3K screen capture in
+   Downloads -- the card is at most 665x366, so the original was decoding ~20x
+   the pixels it could ever show. Kept out of git for now (see .gitignore);
+   decide on LFS or a CDN before this ships. Currently shared by all three
+   cards, though it is really Select Weapon's demo. */
+const BACKDROP = "/select-weapon-demo.mp4";
 
 const ProjectCard = ({
   title,

@@ -33,3 +33,6 @@ Collins Enebeli - Resume.pdf
 
 # stray gatsby cache from the v2 build
 /.cache
+
+# local test video -- decide on LFS or a CDN before committing
+/public/select-weapon-demo.mp4
