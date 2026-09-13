@@ -1,6 +1,8 @@
 /* Card geometry is transcribed from the workspace frames: 366px tall,
    meta pinned top, title + links pinned bottom, deliberate void between. */
 
+/* No hover styling on the card itself -- the only hover response is the
+   grid handing it the wide slot, which lives in home.css. */
 .project {
   display: flex;
   flex-direction: column;
@@ -12,23 +14,38 @@
   border: 1px solid transparent;
   border-radius: var(--card-radius);
   background-color: var(--surface);
-  transition: opacity 0.2s ease,
-    transform var(--ease-duration) var(--ease-elastic);
 }
 
-/* The v2 hover, carried over from .post_container in PostCard.css: the grid
-   dims every card and the hovered one comes back to full opacity and scales.
-   No border or background change -- that was mine, and it's gone. */
-@media (min-width: 993px) {
-  .projects__grid:hover .project {
-    opacity: 0.4;
-  }
+/* Hover bridges across the gutters. Each card grows a strip on either side
+   that reaches into the gap, so neighbouring hit areas overlap by ~6px and
+   sweeping sideways hands the wide slot straight from one card to the next
+   with no seam to fall through.
 
-  .project:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    z-index: 1;
-  }
+   These cover ONLY the gutter, never the card itself, which is what keeps
+   them off the Visit/Code links -- so they need no z-index. An earlier
+   version spanned the whole card and used z-index: -1 to clear the links;
+   that silently broke everything, because a negative z-index drops the
+   pseudo below in-flow block boxes and .projects__grid then intercepted
+   every gutter hover itself.
+
+   Width is half the gap plus 4px: `right/left: 100%` is measured from the
+   padding box, so the card's 1px transparent border eats 1px of reach, and
+   landing exactly on half the gap would leave a dead strip down the middle. */
+.project::before,
+.project::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(var(--card-gap) / 2 + 4px);
+}
+
+.project::before {
+  right: 100%;
+}
+
+.project::after {
+  left: 100%;
 }
 
 .project__meta {

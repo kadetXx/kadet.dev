@@ -13,7 +13,7 @@
 
   --page-pad-block: 80px;
   --page-pad-inline: 96px;
-  --section-gap: 64px;
+  --section-gap: 48px;
 
   --label-size: 13px;
   --label-lh: 16px;
@@ -40,8 +40,32 @@
   :root {
     --page-pad-block: 64px;
     --page-pad-inline: 56px;
-    --section-gap: 56px;
+    --section-gap: 44px;
     --hero-size: 48px;
+  }
+}
+
+/* The card is what pushes the homepage past one screen on a laptop, so on
+   short viewports it gives up height rather than handing over a scrollbar.
+   Width-gated so it never fires on the stacked mobile layout. */
+@media (min-width: 769px) and (max-height: 920px) {
+  :root {
+    --card-height: 312px;
+  }
+}
+
+@media (min-width: 769px) and (max-height: 820px) {
+  :root {
+    --card-height: 268px;
+    --page-pad-block: 56px;
+  }
+}
+
+@media (min-width: 769px) and (max-height: 720px) {
+  :root {
+    --card-height: 228px;
+    --page-pad-block: 44px;
+    --hero-size: 44px;
   }
 }
 
@@ -49,7 +73,7 @@
   :root {
     --page-pad-block: 48px;
     --page-pad-inline: 28px;
-    --section-gap: 48px;
+    --section-gap: 40px;
     --hero-size: 40px;
     --card-pad-block: 26px;
     --card-pad-inline: 26px;
@@ -61,7 +85,7 @@
   :root {
     --page-pad-block: 40px;
     --page-pad-inline: 20px;
-    --section-gap: 40px;
+    --section-gap: 36px;
     --hero-size: 34px;
     --card-height: 272px;
   }

@@ -1,9 +1,17 @@
+/* A real 100vh layout: the page is exactly one viewport tall and
+   space-between shares whatever is left over between the three sections.
+   That is what keeps the space above the social links equal to the space
+   below them -- it falls out of the distribution rather than being two
+   numbers kept in sync. --section-gap is only the floor for short
+   viewports, where the box grows instead of clipping. */
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: var(--section-gap);
   max-width: 1546px;
   min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
   padding: var(--page-pad-block) var(--page-pad-inline);
 }
@@ -94,8 +102,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .projects__grid,
-  .project {
+  .projects__grid {
     transition-duration: 0.01ms;
   }
 }
