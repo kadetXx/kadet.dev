@@ -11,7 +11,6 @@
   gap: 32px;
   min-height: var(--card-height);
   padding: var(--card-pad-block) var(--card-pad-inline);
-  border: 1px solid transparent;
   border-radius: var(--card-radius);
   background-color: var(--surface);
 }
@@ -28,9 +27,9 @@
    pseudo below in-flow block boxes and .projects__grid then intercepted
    every gutter hover itself.
 
-   Width is half the gap plus 4px: `right/left: 100%` is measured from the
-   padding box, so the card's 1px transparent border eats 1px of reach, and
-   landing exactly on half the gap would leave a dead strip down the middle. */
+   Width is half the gap plus 4px, giving 8px of overlap. Landing exactly on
+   half the gap is not enough: it leaves the two strips merely touching, and
+   any rounding puts a dead pixel down the middle of the gutter. */
 .project::before,
 .project::after {
   content: "";
@@ -48,9 +47,119 @@
   left: 100%;
 }
 
+/*===== BACKDROP =====*/
+
+/* The card's flat surface is the resting state; on hover this paints over the
+   whole card. Built to be thrown away -- drop a <video class="project__fill">
+   in its place and the reveal, clipping and text treatment all still apply. */
+
+/* Clips to the rounded corners. Has to be its own box: overflow on .project
+   would also clip the ::before/::after gutter bridges and break the handoff. */
+.project__media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.project__fill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* The CRT treatment from the video wall, held still: three radial blooms
+     over a linear base, then scanlines. Each card is one hue of it -- the
+     two supporting blooms are offset from --panel-hue so the panel keeps
+     the mosaic depth instead of flattening into a single wash. */
+  background-color: hsl(var(--panel-hue) 38% 7%);
+  background-image: radial-gradient(
+      62% 120% at 14% 26%,
+      hsl(var(--panel-hue) 64% 56% / 0.58),
+      transparent 70%
+    ),
+    radial-gradient(
+      54% 112% at 46% 78%,
+      hsl(calc(var(--panel-hue) + 26) 56% 48% / 0.5),
+      transparent 72%
+    ),
+    radial-gradient(
+      56% 120% at 84% 22%,
+      hsl(calc(var(--panel-hue) - 24) 60% 54% / 0.44),
+      transparent 70%
+    ),
+    linear-gradient(
+      100deg,
+      hsl(var(--panel-hue) 44% 9%),
+      hsl(calc(var(--panel-hue) + 18) 38% 12%)
+    );
+
+  /* Paints in rather than appearing: an oversized soft-edged mask is swept
+     across the card, so the colour washes on from the right. Same duration as
+     the column slide, but eased out rather than elastic -- an overshoot on a
+     wipe reads as a flicker at the leading edge, since past 100% there is
+     nothing left to reveal. */
+  --paint: linear-gradient(to right, transparent 0%, #000 55%);
+  -webkit-mask-image: var(--paint);
+  mask-image: var(--paint);
+  -webkit-mask-size: 220% 100%;
+  mask-size: 220% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 0% 0;
+  mask-position: 0% 0;
+  opacity: 0;
+  transition: mask-position var(--ease-duration) ease-out,
+    -webkit-mask-position var(--ease-duration) ease-out,
+    opacity calc(var(--ease-duration) * 0.7) ease;
+}
+
+/* scanlines */
+.project__fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.26) 0 1px,
+    transparent 1px 3px
+  );
+}
+
+/* one hue of the same treatment per project */
+.project:nth-child(1) {
+  --panel-hue: 190;
+}
+
+.project:nth-child(2) {
+  --panel-hue: 232;
+}
+
+.project:nth-child(3) {
+  --panel-hue: 295;
+}
+
+/* Only where the card actually expands -- below this the grid stacks. */
+@media (min-width: 1201px) {
+  .project:hover .project__fill {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project__fill {
+    transition-duration: 0.01ms;
+  }
+}
+
 .project__meta {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 6px;
 }
 
@@ -68,11 +177,13 @@
   line-height: var(--body-lh);
   font-weight: 400;
   color: var(--muted);
+  transition: color var(--ease-duration) ease;
 }
 
 .project__foot {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 10px;
 }
 
@@ -98,5 +209,32 @@
 
 .project__link:hover,
 .project__link:focus-visible {
+  color: var(--text);
+}
+
+/*===== TEXT OVER THE BACKDROP =====*/
+
+/* Both blocks already paint above the media layer -- they come after it in the
+   DOM and are positioned. This is purely about legibility once colour is
+   underneath: a drop shadow to lift the type off the backdrop, and the muted
+   grey brought up, because #777778 against a lit bloom is close to unreadable. */
+.project__meta,
+.project__foot {
+  transition: text-shadow var(--ease-duration) ease;
+}
+
+.project:hover .project__meta,
+.project:hover .project__foot {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.project:hover .project__description,
+.project:hover .project__link {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* direct hover on a link still takes it all the way to white */
+.project:hover .project__link:hover,
+.project:hover .project__link:focus-visible {
   color: var(--text);
 }
