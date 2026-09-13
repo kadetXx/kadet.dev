@@ -1,0 +1,37 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.blog .blog_posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.blog .blog_posts:hover .post_container {
+  opacity: 0.4;
+}
+
+@media (max-width: 993px) {
+  .blog {
+    margin: 30px 0px;
+  }
+
+  .blog .blog_posts {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+    /* bleed past .pages_container's own 5% side padding so cards hug
+       the true screen edge instead of sitting inset twice over -- width
+       must be auto, not the base rule's 100%, or only margin-left
+       visibly shifts the box while margin-right is a no-op (the box's
+       right edge is just left + width, not the containing block edge) */
+    width: auto;
+    margin-left: -5%;
+    margin-right: -5%;
+  }
+}

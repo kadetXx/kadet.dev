@@ -1,0 +1,26 @@
+/* Stands in for v2's .pages_container. The 5% side padding is load-bearing:
+   Blog.css bleeds the mobile post list past it with margin: 0 -5% so cards
+   hug the screen edge, and that only lines up against 5%. */
+
+.blog-shell {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--page-pad-block) 5% 5%;
+  /* v2 set "air-light" on body, so everything in the blog that doesn't name
+     a face inherited Light. The new global default is Book (400). */
+  font-weight: 300;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.back-button svg {
+  position: relative;
+  left: -2px;
+}

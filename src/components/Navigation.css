@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* baseline, not center -- the index and the label are different sizes and
+   the design sits them on a shared baseline */
+.nav__item {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.nav__index {
+  flex-shrink: 0;
+  width: 24px;
+  font-size: var(--label-size);
+  line-height: var(--label-lh);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.nav__link {
+  font-size: var(--link-size);
+  line-height: var(--link-lh);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+  color: var(--muted);
+}

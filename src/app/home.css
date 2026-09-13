@@ -1,0 +1,107 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  max-width: 1546px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--page-pad-block) var(--page-pad-inline);
+}
+
+/*===== HERO =====*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+}
+
+.hero__title {
+  font-size: var(--hero-size);
+  line-height: 110%;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/*===== SOCIALS =====*/
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.socials__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__link {
+  font-size: var(--link-size);
+  line-height: var(--link-lh);
+  font-weight: 500;
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+.socials__link:hover,
+.socials__link:focus-visible {
+  color: var(--muted);
+}
+
+/*===== PROJECTS =====*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 83/40/40 is the frame's 664:320:320 card ratio expressed as fr, so the
+   asymmetry survives at any container width instead of being pinned to
+   the 1546px artboard. */
+.projects__grid {
+  display: grid;
+  grid-template-columns: 83fr 40fr 40fr;
+  gap: var(--card-gap);
+  transition: grid-template-columns var(--ease-duration) var(--ease-elastic);
+}
+
+/* The wide slot follows the pointer: card one owns it at rest, and hovering
+   two or three hands it over. Scoped above the 2-up breakpoint so it can't
+   fight the stacked layouts, and driven by :has() so it stays pure CSS. */
+@media (min-width: 1201px) {
+  .projects__grid:has(.project:nth-child(2):hover) {
+    grid-template-columns: 40fr 83fr 40fr;
+  }
+
+  .projects__grid:has(.project:nth-child(3):hover) {
+    grid-template-columns: 40fr 40fr 83fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects__grid,
+  .project {
+    transition-duration: 0.01ms;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}

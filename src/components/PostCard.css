@@ -1,0 +1,114 @@
+.post_container {
+  width: 100%;
+  /* background-color: #16161a; */
+  background-color: #1b1b1d;
+  margin: 0;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  flex-grow: 1;
+  justify-content: space-between;
+  text-decoration: none;
+  min-height: 300px;
+}
+
+.post .post_meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.post .post_meta .post_tags {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  color: #bebebe;
+  text-transform: uppercase;
+}
+
+.post .post_meta .post_date {
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #777778;
+  /* was font-family: "air-light" + a no-op font-weight: 500 in v2 --
+     the single-weight face meant Light won; 300 preserves that */
+  font-weight: 300;
+}
+
+.post .post_title h3 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-size: var(--h4-font);
+  max-width: 85%;
+}
+
+.post .post_title .post_length {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777778;
+}
+
+.post .post_title .post_length a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post .post_title .post_length i,
+.post .post_title .post_length svg {
+  margin-right: 0.35rem;
+}
+
+.post .post_title .post_length i.fa-github {
+  font-size: 1em;
+}
+
+@media (min-width: 993px) {
+  .post_container_pad {
+    transform: translateY(1.5rem);
+  }
+
+  .post_container:hover {
+    transform: scale(1.1);
+    opacity: 1 !important;
+  }
+
+  .post_container_pad:hover {
+    transform: translateY(1rem) scale(1.1);
+  }
+}
+
+@media (max-width: 993px) {
+  .post_container {
+    width: auto;
+    margin: 0;
+    border-bottom: 1px solid #262626;
+    opacity: 1 !important;
+  }
+
+  .post_container:last-child {
+    border-bottom: none;
+  }
+
+  .post .post_title h3 {
+    line-height: 1.5;
+    font-size: var(--h3-font);
+  }
+
+  .post .post_meta .post_tags {
+    font-size: 0.75rem;
+  }
+
+  .post .post_meta .post_date {
+    font-size: 0.85rem;
+  }
+}
+
+/* inline SVG replacements for the old FontAwesome glyphs */
+.post .post_title .post_length svg {
+  vertical-align: -0.1em;
+}

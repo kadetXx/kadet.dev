@@ -1,12 +1,35 @@
-# Kadet's Portfolio
+# kadet.dev — v3
 
-This is the repository that contains code for my personal website built with react.js
+Next.js (App Router) + Prismic. Replaces the v2 Gatsby build, which lives on
+the `v2-gatsby-js` branch.
 
-## Branches
+## Running it
 
-- ```v1-react-class-based```: This branch contains the first version of my portfolio build with react class based components
+```
+npm install
+npm run dev      # http://localhost:3000
+npm run build
+npm run start
+```
 
-- ```v2-gatsby-js```: This branch contains the latest version of my portfolio built using gatsby js
+`.env.local` needs:
+
+```
+PRISMIC_REPO_NAME=
+PRISMIC_ACCESS_TOKEN=
+```
+
+## Layout
+
+- `src/app/page.tsx` — the homepage, built from the "workspace" Paper frames.
+- `src/app/blog/` — post index and `[uid]` post pages, ported from v2.
+- `src/lib/posts.ts` — Prismic queries and the shape the blog renders against.
+- `src/components/PostBody.tsx` — highlights code blocks and adds copy buttons.
+- `src/components/Navigation.tsx` — built from a hidden layer in the design,
+  deliberately not rendered yet.
+
+Posts are statically generated and revalidate hourly, so publishing in Prismic
+doesn't need a redeploy. Prismic previews run through `/api/preview`.
 
 ## License
 

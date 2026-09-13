@@ -1,0 +1,85 @@
+/* Card geometry is transcribed from the workspace frames: 366px tall,
+   meta pinned top, title + links pinned bottom, deliberate void between. */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 32px;
+  min-height: var(--card-height);
+  padding: var(--card-pad-block) var(--card-pad-inline);
+  border: 1px solid transparent;
+  border-radius: var(--card-radius);
+  background-color: var(--surface);
+  transition: opacity 0.2s ease,
+    transform var(--ease-duration) var(--ease-elastic);
+}
+
+/* The v2 hover, carried over from .post_container in PostCard.css: the grid
+   dims every card and the hovered one comes back to full opacity and scales.
+   No border or background change -- that was mine, and it's gone. */
+@media (min-width: 993px) {
+  .projects__grid:hover .project {
+    opacity: 0.4;
+  }
+
+  .project:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+}
+
+.project__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project__stack {
+  font-size: var(--label-size);
+  line-height: var(--label-lh);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.project__description {
+  font-size: var(--body-size);
+  line-height: var(--body-lh);
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.project__foot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project__title {
+  font-size: var(--card-title-size);
+  line-height: var(--card-title-lh);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.project__links {
+  display: flex;
+  gap: 20px;
+}
+
+.project__link {
+  font-size: var(--body-size);
+  line-height: var(--body-lh);
+  font-weight: 400;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.project__link:hover,
+.project__link:focus-visible {
+  color: var(--text);
+}

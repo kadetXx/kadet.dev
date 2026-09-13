@@ -5,21 +5,31 @@
 /.pnp
 .pnp.js
 
-# testing
-/coverage
+# next.js
+/.next/
+/out/
+next-env.d.ts
 
 # production
 /build
 
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.pem
 
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# env
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
 Collins Enebeli - Resume.pdf
+
+# stray gatsby cache from the v2 build
+/.cache
