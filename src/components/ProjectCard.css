@@ -49,69 +49,28 @@
 
 /*===== BACKDROP =====*/
 
-/* The card's flat surface is the resting state; on hover this paints over the
-   whole card. Built to be thrown away -- drop a <video class="project__fill">
-   in its place and the reveal, clipping and text treatment all still apply. */
+/* The card's flat surface is the resting state. On hover a video fades up
+   underneath a curtain: the curtain is what keeps the type readable, the video
+   is what makes the card worth clicking. */
 
-/* Clips to the rounded corners. Has to be its own box: overflow on .project
-   would also clip the ::before/::after gutter bridges and break the handoff. */
+/* Clips to the rounded corners and carries the reveal. Has to be its own box:
+   overflow on .project would also clip the ::before/::after gutter bridges and
+   break the handoff. The filter sits here so video and curtain are graded
+   together -- grading only one would pull them apart tonally. */
 .project__media {
   position: absolute;
   inset: 0;
   overflow: hidden;
   border-radius: inherit;
   pointer-events: none;
-}
-
-.project__fill {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  /* The CRT treatment from the video wall, held still: three radial blooms
-     over a linear base, then scanlines. Each card is one hue of it -- the
-     two supporting blooms are offset from --panel-hue so the panel keeps
-     the mosaic depth instead of flattening into a single wash. */
-  background-color: hsl(var(--panel-hue) 38% 7%);
-  background-image: radial-gradient(
-      62% 120% at 14% 26%,
-      hsl(var(--panel-hue) 64% 56% / 0.58),
-      transparent 70%
-    ),
-    radial-gradient(
-      54% 112% at 46% 78%,
-      hsl(calc(var(--panel-hue) + 26) 56% 48% / 0.5),
-      transparent 72%
-    ),
-    radial-gradient(
-      56% 120% at 84% 22%,
-      hsl(calc(var(--panel-hue) - 24) 60% 54% / 0.44),
-      transparent 70%
-    ),
-    linear-gradient(
-      100deg,
-      hsl(var(--panel-hue) 44% 9%),
-      hsl(calc(var(--panel-hue) + 18) 38% 12%)
-    );
-
-  /* Monochrome. Done as a filter rather than baked into the gradient so it
-     carries over to real footage untouched -- a <video class="project__fill">
-     picks it up for free. Flip --mono to 0 on .project to see colour again.
-     One shade across all three cards -- which means one hue too. grayscale()
-     weights channels by perceived luminance (green ~10x blue), so identical
-     saturation and lightness on different hues lands on greys up to 28% apart:
-     hue 190 renders at 167, hue 232 at 95. Brightness cannot even that out
-     without fighting the gradient, so all three share the middle card's hue. */
-  filter: grayscale(var(--mono, 1)) brightness(var(--mono-lift, 0.9))
+  filter: grayscale(var(--mono, 1)) brightness(var(--mono-lift, 0.7))
     contrast(1.06);
 
   /* Paints in rather than appearing: an oversized soft-edged mask is swept
-     across the card, so the colour washes on from the right. Same duration as
-     the column slide, but eased out rather than elastic -- an overshoot on a
-     wipe reads as a flicker at the leading edge, since past 100% there is
-     nothing left to reveal. */
+     across the card, so it washes on from the right. Same duration as the
+     column slide, but eased out rather than elastic -- an overshoot on a wipe
+     reads as a flicker at the leading edge, since past 100% there is nothing
+     left to reveal. */
   --paint: linear-gradient(to right, transparent 0%, #000 55%);
   -webkit-mask-image: var(--paint);
   mask-image: var(--paint);
@@ -127,8 +86,51 @@
     opacity calc(var(--ease-duration) * 0.7) ease;
 }
 
+.project__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The curtain. Three radial blooms give it the CRT mosaic, then a vertical
+   scrim does the readability work -- the way a video player does it. Dense at
+   the top and bottom bands where the meta and the title sit, thin through the
+   middle, which is exactly where the design already leaves the card empty. So
+   the video plays right across the card, including behind the type, and the
+   text rides on top of it.
+   No background-color -- an opaque base would hide the video entirely. */
+.project__curtain {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+      62% 120% at 14% 26%,
+      hsl(var(--panel-hue) 64% 56% / 0.4),
+      transparent 70%
+    ),
+    radial-gradient(
+      54% 112% at 46% 78%,
+      hsl(calc(var(--panel-hue) + 26) 56% 48% / 0.34),
+      transparent 72%
+    ),
+    radial-gradient(
+      56% 120% at 84% 22%,
+      hsl(calc(var(--panel-hue) - 24) 60% 54% / 0.28),
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      hsl(var(--panel-hue) 42% 8% / 0.88) 0%,
+      hsl(var(--panel-hue) 42% 8% / 0.62) 22%,
+      hsl(var(--panel-hue) 40% 9% / 0.42) 46%,
+      hsl(var(--panel-hue) 42% 8% / 0.66) 76%,
+      hsl(var(--panel-hue) 42% 8% / 0.9) 100%
+    );
+}
+
 /* scanlines */
-.project__fill::before {
+.project__curtain::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -148,7 +150,7 @@
 
 /* Only where the card actually expands -- below this the grid stacks. */
 @media (min-width: 1201px) {
-  .project:hover .project__fill {
+  .project:hover .project__media {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
     opacity: 1;
@@ -156,8 +158,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project__fill {
+  .project__media {
     transition-duration: 0.01ms;
+  }
+
+  /* a looping clip is exactly what this setting is asking us not to run */
+  .project__video {
+    display: none;
   }
 }
 
@@ -230,7 +237,8 @@
 
 .project:hover .project__meta,
 .project:hover .project__foot {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.7),
+    0 6px 24px rgba(0, 0, 0, 0.55);
 }
 
 .project:hover .project__description,
