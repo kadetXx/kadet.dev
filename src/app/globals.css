@@ -34,6 +34,18 @@
   /* overshoots then settles -- the "elastic" feel on the card swap */
   --ease-elastic: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-duration: 0.55s;
+
+  /* The projects row, derived the way .home derives its content box. The card
+     backdrop needs a size that does NOT track the card -- a percentage there
+     would resolve against the one thing that is animating, and the picture
+     would rescale with it. */
+  --row-width: calc(min(100vw, 1546px) - 2 * var(--page-pad-inline));
+  --row-avail: calc(var(--row-width) - 2 * var(--card-gap));
+
+  /* A wide card is 83/163 of the row (0.509). The elastic overshoot carries it
+     ~10% further, to about 0.535, so the video is sized to 0.56 -- always
+     larger than the card, at every moment of the transition. */
+  --video-width: calc(0.56 * var(--row-avail));
 }
 
 @media (max-width: 1200px) {

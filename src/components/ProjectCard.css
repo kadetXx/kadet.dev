@@ -149,7 +149,17 @@
 }
 
 /* Only where the card actually expands -- below this the grid stacks. */
+/* Fixed render size, so the picture holds still and the card crops more or
+   less of it instead of rescaling it. Centred, so widening opens up
+   symmetrically. Only where the card actually resizes -- below this it stacks
+   and the backdrop never reveals anyway. */
 @media (min-width: 1201px) {
+  .project__video {
+    inset: 0 auto 0 50%;
+    width: var(--video-width);
+    transform: translateX(-50%);
+  }
+
   .project:hover .project__media {
     -webkit-mask-position: 100% 0;
     mask-position: 100% 0;
